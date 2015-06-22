@@ -3,11 +3,10 @@ package GraphBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
+import Graph.Graph;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -20,66 +19,66 @@ import javax.swing.JPanel;
  */
 public class GraphBuilder {
 
-    Integer [][] graph;
+    int [][] matrix;
     List<String> vertices;
-    
+    List<String> list;
     public GraphBuilder(){}
     
-    public void buildGraph(List l){
-        graph = new Integer[l.size()][l.size()];
-        vertices = new ArrayList<>();
-        String chil;
-        String [] array;
-        
-        for(int i = 0; i < l.size();i++){
-            for(int j = 0; j < l.size();j++){
-                graph[i][j] = 0;
-            }
-        }
-        
-        
-        for(int i = 0; i < l.size();i++){
-            chil = (String)l.get(i);
-            vertices.add(chil.substring(0,1));
-        }
-        
-        for(int i = 0; i < l.size();i++){
-            chil = (String)l.get(i);
-            chil = chil.substring(chil.lastIndexOf(":")+1, chil.length());
-            array = chil.split(",");
-            for(int j = 0; j < array.length;j++){
-                ++graph[i][vertices.indexOf(array[j])];
-            }
-        }
-    }
-        
-    public List<String> getVertices(){
-        return vertices;
-    }
+    public void readFile(String path){        
+        BufferedReader br = null;
+        list = new ArrayList<>();
+        try{
+            String line;
+            br = new BufferedReader(new FileReader(path));
 
-    public Integer[][] getGraph() {
-        return graph;
+            while ((line = br.readLine()) != null) {
+                line = line.trim();
+                list.add(line);
+            }
+        }catch(IOException e){
+            e.printStackTrace();
+        }finally{
+            try {
+                    if (br != null)br.close();
+            } catch (IOException ex) {
+                    ex.printStackTrace();
+            }
+        }
     }
     
-    public void drawGraph(){
-        JFrame frame = new JFrame("Graph");
-        frame.setSize(500, 500);
-        JPanel panel = new JPanel();
-        frame.add(panel);
-        frame.setVisible(true);        
+    public void buildGraph(){
+        if(list != null){
+            matrix = new int[list.size()][list.size()];
+            vertices = new ArrayList<>();
+            String chil;
+            String [] array;
+
+            for(int i = 0; i < list.size();i++){
+                for(int j = 0; j < list.size();j++){
+                    matrix[i][j] = 0;
+                }
+            }
+
+            for(int i = 0; i < list.size();i++){
+                chil = (String)list.get(i);
+                vertices.add(chil.substring(0,1));
+            }
+            
+            for(int i = 0; i < list.size();i++){
+                chil = (String)list.get(i);
+                chil = chil.substring(chil.lastIndexOf(":")+1, chil.length());
+                array = chil.split(",");
+                for(int j = 0; j < array.length;j++){
+                    ++matrix[i][vertices.indexOf(array[j])];
+                }
+            }
+        }else{
+            System.out.println("GraphBuilder-buildGraph: List is empty");
+            System.exit(0);     
+        }
     }
     
-    @Override
-    public String toString() {
-        String result = "  " + getVertices() + "\n";
-
-        for(int i = 0; i < graph.length;i++){
-            result += vertices.get(i) + " ";
-            for(int j = 0; j < graph[0].length;j++){
-                result += graph[i][j] + " ";
-            }
-            result += "\n";
-        }
-        return result;
+    public Graph getGraph(){
+        return (new Graph(matrix, vertices));
     }
 }

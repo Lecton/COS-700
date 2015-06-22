@@ -1,0 +1,28 @@
+References
+[1]	S. Melnik, H. Garcia-Molina and E. Rahm, Similarity flooding: a versatile graph matching
+	algorithm and its application to schema matching, in Proceedings 18th ICDE, San Jose
+	CA, Feb 2002.
+[2]	L. Cordella, P. Foggia, C. Sansone, and M. Vento, “A (sub)graph isomorphism algorithm for matching large graphs,” IEEE
+	Transactions on Pattern Analysis and Machine Intelligence, vol. 26, no. 10, pp. 1367–1372, Oct. 2004.
+[3]	Marshall, B., Chen, H., Madhusudan, T. (2006). Matching knowledge elements in concept maps using a
+	similarity flooding algorithm. Decision Support Systems, 42 (3), 1290-1306. 
+[4]	VF2 Algorithm(2015). Available at: https://networkx.github.io/documentation/latest/reference/algorithms.isomorphism.vf2.html
+	(Accessed: 10 April 2015)
+[5] P. Foggia, C. Sansone, M. Vento, “A performance comparison of five algorithms
+	for graph isomorphism“, submitted for publication to the Third TC-15
+	International Workshop on Graph Based Representation, Italy, 2001.
+[6]	L.P. Cordella, P. Foggia, C. Sansone, M. Vento, Evaluating Performance of the VF
+	Graph Matching Algorithm, Proc. of the 10th International Conference on Image
+	Analysis and Processing, IEEE Computer Society Press, pp. 1172-1177, 1999.
+[7]	N.J. Nilsson, Principles of Artificial Intelligence, Springer-Verlag, 1982
+[8]	J.R. Ullmann, An Algorithm for Subgraph Isomorphism, Journal of the
+	Association for Computing Machinery, vol. 23, pp. 31-42, 1976.
+[9] B. T. Messmer, Efficient Graph Matching Algorithms for Preprocessed Model
+	Graphs, Ph.D. Thesis, Inst. of Comp. Sci. and Applied Mathematics,
+	University of Bern, 1996
+[10] H. Ehrig, “Introduction to Graph Grammars with Applications to Semantic
+	Networks”, Comput. Math. Appl. 23, pp. 557-572, 1992.
+[11] D.H. Rouvray, A.T. Balaban, “Chemichal Applications of Graph Theory” in
+	Applications of Graph Theory, Academic Press, New York, pp.177-221, 1979.
+[12]Reinhard Diestel, Graph Theory, Graduate Texts in Mathematics,
+	Vol. 173, Springer Verlag, Berlin, 1991.

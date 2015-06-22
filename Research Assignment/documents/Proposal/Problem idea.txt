@@ -1,0 +1,11 @@
+Problem statement
+
+Graph comparison
+-Symmetric comparison
+-Syntactic comparison
+-Efficiency of comparison
+	-Time complexity
+	-Space complexity
+	
+Graph comparison algorithms are vastly complex and expensive considering that they work on large data sets that are often from different and unrelated sources and try to compute the isomorphic syntactic
+and sy

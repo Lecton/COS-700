@@ -1,0 +1,103 @@
+Project the Planing
+
+The project time line outlines the projects progress throughout the year, from the 20th of March 2015 to the 15th of November 2015.
+
+24 April 2015 -Meeting with my supervisor to discuss the project proposal and progress
+			   for the past week and receive guidance on how to design and implement the Methodology.
+			  
+1  May	 2015 -Meeting with my supervisor to discuss the designed methodology and the evaluation parameters
+			   that are used to compare the algorithms against each other.
+			  -Discuss the implemented algorithms and their results.
+			  -Start drafting the paper.
+			  
+8  May	 2015 -Meeting with my supervisor to discuss the research that was done in the previous week and 
+			   the algorithms that are mentioned in the paper as well as their relevance to the research.
+			  -Receive guidance on the paper and how to proceed with regards to writing.
+
+15 May   2015 -Meeting with my supervisor to discuss the results of the implemented algorithms as well as their
+			   graph matching quality as well as how they perform relative to each other with regards to graph matching
+			   quality.
+			   -Propose researched algorithms from the previous weeks and their relevance to the research.
+			   -Discuss the progress of the paper and a critical review from the supervisor.
+
+22 May	 2015  -Meeting with the supervisor to discuss algorithms that have been implemented and their results
+				relative to each other.
+			   -Discuss the quality of the evaluation of these algorithms, and discuss methods of improving the
+				the assessment of the algorithms.
+				
+29 May	 2015  -Meeting with my supervisor to discuss the research that was done in the previous week and 
+			    the algorithms that are mentioned in the paper as well as their relevance to the research.
+			   -Propose researched algorithms from the previous weeks and their relevance to the research.
+			   
+4  June	 2015  -Meeting with my supervisor to discuss the results of the implemented algorithms as well as their
+			    graph matching quality as well as how they perform relative to each other with regards to graph matching
+			    quality.
+			   -Discuss the progress of the paper and a critical review from the supervisor.
+			   
+11 June	 2015  -Meeting with my supervisor to discuss the paper, and review the and time-line for the duration of the exam.
+			   -Discuss the progress of the paper and a critical review from the supervisor.
+			
+
+Preparations for Exams
+
+17 July	 2015	-Meeting with the supervisor to discuss algorithms that have been implemented and their results
+				 relative to each other.
+				-Discuss the quality of the evaluation of these algorithms, and discuss methods of improving the
+				 the assessment of the algorithms.
+			  
+24 July	 2015	-Meeting with my supervisor to discuss the research that was done in the previous week and 
+			     the algorithms that are mentioned in the paper as well as their relevance to the research.
+				-Propose researched algorithms from the previous weeks and their relevance to the research.
+				-Discuss the paper and receive a critical receive from my supervisor.
+				
+31 July	 2015   -Meeting with the supervisor to discuss algorithms that have been implemented and their results
+				 relative to each other.
+				 
+7  August 2015	-Meeting with my supervisor to discus the progress of the paper and its quality.
+
+14  August 2015 -Present the paper and my finding to my peers and receive criticisms and advice on how to improve the
+				 quality of the paper.
+				 
+21  August 2015 -Meeting with my supervisor to discuss the quality of the paper and receive suggestions of improving the paper.
+				-Discuss the evaluated algorithms and their results, and methods of improving the evaluation.
+
+28  August 2015 -Meeting with my supervisor to discuss the research that was done in the previous week and 
+			     the algorithms that are mentioned in the paper as well as their relevance to the research.
+				-Propose researched algorithms from the previous weeks and their relevance to the research.
+				-Discuss the paper and receive a critical receive from my supervisor.
+
+4 September 2015-Meeting with my supervisor to discuss the research that was done in the previous week and 
+			     the algorithms that are mentioned in the paper as well as their relevance to the research.
+				-Propose researched algorithms from the previous weeks and their relevance to the research.
+				-Discuss the paper and receive a critical receive from my supervisor.
+
+11 September 2015-Meeting with the supervisor to discuss the progress of the paper.
+
+18 September 2015-Meeting with my supervisor to discuss the quality of the paper and receive suggestions of improving the paper.
+				 -Discuss the evaluated algorithms and their results, and methods of improving the evaluation.
+				
+25 September 2015-Meeting with my supervisor to discuss the research that was done in the previous week and 
+			     the algorithms that are mentioned in the paper as well as their relevance to the research.
+				-Propose researched algorithms from the previous weeks and their relevance to the research.
+				-Discuss the paper and receive a critical receive from my supervisor.
+
+2 October 2015 -Present the paper and my finding to my peers and receive criticisms and advice on how to improve the
+				 quality of the paper.
+				 
+9 October 2015 -Meeting with my supervisor to discuss the quality of the paper and receive suggestions of improving the paper.
+				-Discuss the evaluated algorithms and their results, and methods of improving the evaluation.
+
+16 October 2015-Meeting with my supervisor to discuss the quality of the paper and receive suggestions of improving the paper.
+				-Discuss the evaluated algorithms and their results, and methods of improving the evaluation.
+				
+23 October 2015 -Meeting with my supervisor to discuss the quality of the paper and receive suggestions of improving the paper.
+				-Discuss the evaluated algorithms and their results, and methods of improving the evaluation.
+
+30 October 2015 -Finalize the paper and results.
+				-Discuss the paper with my supervisor.
+
+6 November 2015 -Meeting with my supervisor to discuss the quality of the paper and receive suggestions of improving the paper.
+				-Present the paper and my finding to my peers and receive criticisms and advice on how to improve the
+				 quality of the paper.
+
+13 November 2015-Final meeting with the supervisor and receive any final suggestions to improve the paper.

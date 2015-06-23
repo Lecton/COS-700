@@ -30,6 +30,21 @@ public class Graph {
     }
     
     
+    public static int [][] dotproduct(int[][] a, int[][] b){
+  int rowsInA = a.length;
+       int columnsInA = a[0].length; // same as rows in B
+       int columnsInB = b[0].length;
+       int[][] c = new int[rowsInA][columnsInB];
+       for (int i = 0; i < rowsInA; i++) {
+           for (int j = 0; j < columnsInB; j++) {
+               for (int k = 0; k < columnsInA; k++) {
+                   c[i][j] = c[i][j] + a[i][k] * b[k][j];
+               }
+           }
+       }
+       return c;
+    }    
+    
     public int getColNumb(){
         return matrix[0].length;
     }
@@ -57,6 +72,30 @@ public class Graph {
         }
         return false;
     }
+    
+    public int [][] transpose(){
+        int [][] t_matrix = new int [matrix[0].length][matrix.length];
+        
+        for(int i = 0; i < t_matrix.length;i++){            
+            for(int j = 0; j < t_matrix[0].length;j++){
+                t_matrix[i][j] = matrix[j][i];
+            }
+        }
+        
+        return t_matrix;
+    }    
+    
+    public int [][] transpose(int [][] m){
+        int [][] t_matrix = new int [m[0].length][m.length];
+        
+        for(int i = 0; i < t_matrix.length;i++){            
+            for(int j = 0; j < t_matrix[0].length;j++){
+                t_matrix[i][j] = m[j][i];
+            }
+        }
+        
+        return t_matrix;
+    }    
     
     @Override
     public String toString() {

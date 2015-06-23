@@ -77,22 +77,18 @@ public class Ullman {
         }
         return degree;
     }
-    
-    int c;
-    int leaf = 0;
-    
+        
     public void pruning(){
         pruning(0,M);
-        System.out.println("cnt:" + c);
-        System.out.println("leaf:" + leaf);
     }
     
     public void pruning(int row, Graph _M){
         if(row == _M.getRowNumb()){
             //Check Isomorphism
             if(isvalid(_M.matrix)){
-                ++leaf;
-//                System.out.println(matrixtoString(_M));
+                if(isIsomorphic(_M)){
+                    System.out.println("yes");
+                }
                 return;
             }else{
                 return;
@@ -110,13 +106,23 @@ public class Ullman {
                     M_.matrix[row][j] = 0;
                 }
             }
-            
-            
-            c++;
             pruning(row+1,M_);
         }
     }
-   
+    
+    public boolean isIsomorphic(Graph P){        
+        int [][] result = Graph.dotproduct(P.matrix, subject.matrix);
+        result = P.transpose(result);
+        result = Graph.dotproduct(P.matrix,result);        
+
+        for(int i = 0; i < result.length;i++){
+            for(int j = 0; j < result[0].length;j++){
+                if(result[i][j] != object.matrix[i][j]) return false;
+            }
+        }
+        return true;
+    }
+    
     public boolean isvalid(int [][] matrix){        
         int sum;
         //Colums
@@ -150,6 +156,7 @@ public class Ullman {
         }
         return result;
     }
+    
     
     @Override
     public String toString(){

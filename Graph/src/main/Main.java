@@ -24,32 +24,7 @@ public class Main {
     final static String pathH = "./object.txt";
     
     public static void main(String[] args){
-//        test();
-        GraphBuilder g = new GraphBuilder();
-        Graph G = null;
-        Graph H = null;
-        
-        g.readFile(pathG);
-        g.buildGraph();        
-        G = g.getGraph();
-        
-        g.readFile(pathH);
-        g.buildGraph();        
-        H = g.getGraph();
-        
-//        System.out.println(G);        
-//        System.out.println(H);
-        
-        Ullman u = new Ullman(G, H);
-        u.buildStart();
-        u.generateRoot();
-        
-        System.out.println("----------------------");
-        System.out.print(u);
-        System.out.println("----------------------");
-        
-//        
-        u.pruning();
+        ullman_test();
     }
     
 //    public static void test(){
@@ -83,5 +58,31 @@ public class Main {
 //        Graph.dotproduct(matrix,matrix2);   
 //    }
     
-
+    public static void ullman_test(){
+        GraphBuilder g = new GraphBuilder();
+        Graph G = null;
+        Graph H = null;
+        
+        g.readFile(pathG);
+        g.buildGraph();        
+        G = g.getGraph();
+        
+        g.readFile(pathH);
+        g.buildGraph();        
+        H = g.getGraph();
+        
+//        System.out.println(G);        
+//        System.out.println(H);
+        
+        Ullman u = new Ullman(G, H);
+        u.buildStart();
+        u.generateRoot();
+        
+        System.out.println("----------------------");
+        System.out.print(u);
+        System.out.println("----------------------");
+        
+//        
+        u.pruning();        
+    }
 }

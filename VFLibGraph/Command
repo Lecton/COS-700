@@ -1,0 +1,3 @@
+g++ -c -I/vflib/include main.cpp
+g++ -o main main.cpp -L/vflib/lib vflib/libvf.a -lstdc++ -lm
+./main

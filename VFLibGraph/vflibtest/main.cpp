@@ -7,7 +7,10 @@
 #include <iostream>
 #include <string>
 #include <iostream>
+#include <fstream>
 #include <stdio.h>
+#include <list>
+#include <boost/tokenizer.hpp>
 #include "./headers/argraph.h"
 #include "./headers/argedit.h"
 #include "./headers/vf2_sub_state.h"
@@ -15,39 +18,96 @@
 #define MAXNODES 3
 
 using namespace std;
+using namespace boost;
 
+typedef std::pair<int,int> relation;
 void createGraphs(ARGEdit &s, ARGEdit &l);
+ARGEdit& createGraph(ARGEdit &g,list<int> &n,list<relation> &r);
 void printGraph(Graph &g);
+void baseComparison();
+bool is_number(const string& s);
 
-int main()
-  { ARGEdit large, small;  // The object used to create the graph
+int main(){
+
+    char_separator<char> sep(" ");
+    
+    string line;
+    list<relation> relationships;
+    list<int> nodes;
+    ifstream file("./data/graph1.txt");
+    if(file.is_open()){
+        int i = 0;
+        int first, second;
+        while(getline(file,line)){
+            ++i;
+            tokenizer<> token(line);
+            tokenizer<>::iterator beg=token.begin();
+            first = std::stoi(*beg);
+            second = std::stoi(*(++beg));
+            nodes.push_back(first);
+            nodes.push_back(second);
+
+            relation rel;
+            rel.first = (first);
+            rel.second = (second);
+            relationships.push_back(rel);
+        }
+        nodes.sort();
+        nodes.erase(unique(nodes.begin(), nodes.end()), nodes.end());
+
+        ARGEdit aet;
+        createGraph(aet,nodes,relationships);
+        Graph graph(&aet);
+        file.close();
+    }else{
+        cout << "Could not open file" << endl;
+    }
+    return 0;
+}
+
+bool is_number(const string& s){
+    return !s.empty() && std::find_if(s.begin(), 
+        s.end(), [](char c) { return !std::isdigit(c); }) == s.end();
+}
+
+void baseComparison(){
+ARGEdit large, small;  // The object used to create the graph
     int i,j;
     createGraphs(small,large);
           
-        // Now the Graph can be constructed...
-        Graph lg(&large);
-        Graph sg(&small);
-        
-        //initialization state
-        VF2SubState s0(&sg,&lg);
+    // Now the Graph can be constructed...
+    Graph lg(&large);
+    Graph sg(&small);
 
-        int n;
-        node_id ni1[MAXNODES];
-        node_id ni2[MAXNODES];
-        
-        if(!match(&s0,&n,ni1,ni2)){
-            printf("No matching found.\n");
-            return 1;
-        }else{
-            cout << "n: " << n << endl;
-            for(int i = 0; i < n;i++){
-                printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n",
-               ni1[i], ni2[i]);
-            }
+    //initialization state
+    VF2SubState s0(&sg,&lg);
+
+    int n;
+    node_id ni1[MAXNODES];
+    node_id ni2[MAXNODES];
+
+    if(!match(&s0,&n,ni1,ni2)){
+        printf("No matching found.\n");
+        return;
+    }else{
+        cout << "n: " << n << endl;
+        for(int i = 0; i < n;i++){
+            printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n",
+           ni1[i], ni2[i]);
         }
-        
-        
-    return 0;
+    }
+            
+}
+
+ARGEdit& createGraph(ARGEdit &g,list<int> &n,list<relation> &r){
+    for(std::list<int>::const_iterator iterator = n.begin(), end = n.end(); iterator != end; ++iterator) {
+        g.InsertNode(NULL);
+     } 
+    
+    for(std::list<relation>::const_iterator iterator = r.begin(), end = r.end(); iterator != end; ++iterator) {
+        g.InsertEdge(((*iterator).first)-1,((*iterator).second)-1,NULL);
+     }    
+    cout << g.NodeCount() << endl;
 }
 
 void createGraphs(ARGEdit &s, ARGEdit &l){

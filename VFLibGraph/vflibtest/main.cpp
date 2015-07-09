@@ -23,44 +23,51 @@ using namespace boost;
 
 //void createGraphs(ARGEdit &s, ARGEdit &l);
 //ARGEdit& createGraph(ARGEdit &g,list<int> &n,list<relation> &r);
-void printGraph(Graph &g);
-void baseComparison();
-bool is_number(const string& s);
+void printGraph(Graph &);
+void baseComparison(Graph,Graph);
 
 int main(){
-    GraphParser* gp = new GraphParser("./data/graph1.txt");
-    gp->parseGraph();
-//
-        ARGEdit aet;
-        gp->createGraph(aet);
-        Graph graph(&aet);
-//        printGraph(graph);
-//    }else{
-//        cout << "Could not open file" << endl;
-//    }
+    GraphParser* gp[2];
+    ARGEdit aet[2];
+    gp[0] = new GraphParser("./data/graph1.txt");
+    gp[1] = new GraphParser("./data/graph2.txt");
+    
+    /************************************** Graph 1 **************************************/
+    gp[0]->parseGraph();
+    gp[0]->createGraph(aet[0]);
+    Graph graph0(&aet[0]);        
+    cout << "Graph one has so many nodes." << endl;
+    cout << graph0.NodeCount() << endl;        
+    /************************************** Graph 2 **************************************/
+    gp[1]->parseGraph();
+    gp[1]->createGraph(aet[1]);
+    Graph graph1(&aet[1]);        
+    cout << "Graph two has so many nodes." << endl;
+    cout << graph1.NodeCount() << endl;
+    
+
+    /************************************** Comparison **************************************/    
+    cout << "\n\nComparison" << endl;
+    if(graph0.NodeCount() < graph1.NodeCount()){
+        baseComparison(graph0,graph1);
+    }else{
+        baseComparison(graph1,graph0);
+    }
+    
     return 0;
 }
 
 
-void baseComparison(){
-ARGEdit large, small;  // The object used to create the graph
-    int i,j;
-//    createGraphs(small,large);
-          
-    // Now the Graph can be constructed...
-    Graph lg(&large);
-    Graph sg(&small);
-
+void baseComparison(Graph sg,Graph lg){
     //initialization state
     VF2SubState s0(&sg,&lg);
 
     int n;
-    node_id ni1[MAXNODES];
-    node_id ni2[MAXNODES];
+    node_id ni1[sg.NodeCount()];
+    node_id ni2[sg.NodeCount()];
 
     if(!match(&s0,&n,ni1,ni2)){
         printf("No matching found.\n");
-        return;
     }else{
         cout << "n: " << n << endl;
         for(int i = 0; i < n;i++){
@@ -70,42 +77,6 @@ ARGEdit large, small;  // The object used to create the graph
     }
             
 }
-//
-//void createGraph(ARGEdit &g,list<int> &n,list<relation> &r){
-//    for(std::list<int>::const_iterator iterator = n.begin(), end = n.end(); iterator != end; ++iterator) {
-//        g.InsertNode(NULL);
-//     } 
-//    
-//    for(std::list<relation>::const_iterator iterator = r.begin(), end = r.end(); iterator != end; ++iterator) {
-//        g.InsertEdge(((*iterator).first)-1,((*iterator).second)-1,NULL);
-//     }
-//    
-//}
-//
-//void createGraphs(ARGEdit &s, ARGEdit &l){
-//    //Large graph
-//    l.InsertNode(NULL);
-//    l.InsertNode(NULL);
-//    l.InsertNode(NULL);
-//    l.InsertNode(NULL);
-//    
-//    l.InsertEdge(0,1,NULL);
-//    l.InsertEdge(1,0,NULL);
-//    l.InsertEdge(1,2,NULL);
-//    l.InsertEdge(1,3,NULL);
-//    l.InsertEdge(2,1,NULL);
-//    l.InsertEdge(3,1,NULL);
-////
-////    //Small graph
-//    s.InsertNode(NULL);
-//    s.InsertNode(NULL);
-//    s.InsertNode(NULL);
-////    
-//    s.InsertEdge(0,2,NULL);
-//    s.InsertEdge(1,2,NULL);
-//    s.InsertEdge(2,0,NULL);
-//    s.InsertEdge(2,1,NULL);
-//}
 
 void printGraph(Graph & g){
         cout << "Edges" << endl;

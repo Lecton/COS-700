@@ -15,65 +15,37 @@
 #include "./headers/argedit.h"
 #include "./headers/vf2_sub_state.h"
 #include "./headers/match.h"
+#include "./headers/graph_parser.h"
 #define MAXNODES 3
 
 using namespace std;
 using namespace boost;
 
-typedef std::pair<int,int> relation;
-void createGraphs(ARGEdit &s, ARGEdit &l);
-ARGEdit& createGraph(ARGEdit &g,list<int> &n,list<relation> &r);
+//void createGraphs(ARGEdit &s, ARGEdit &l);
+//ARGEdit& createGraph(ARGEdit &g,list<int> &n,list<relation> &r);
 void printGraph(Graph &g);
 void baseComparison();
 bool is_number(const string& s);
 
 int main(){
-
-    char_separator<char> sep(" ");
-    
-    string line;
-    list<relation> relationships;
-    list<int> nodes;
-    ifstream file("./data/graph1.txt");
-    if(file.is_open()){
-        int i = 0;
-        int first, second;
-        while(getline(file,line)){
-            ++i;
-            tokenizer<> token(line);
-            tokenizer<>::iterator beg=token.begin();
-            first = std::stoi(*beg);
-            second = std::stoi(*(++beg));
-            nodes.push_back(first);
-            nodes.push_back(second);
-
-            relation rel;
-            rel.first = (first);
-            rel.second = (second);
-            relationships.push_back(rel);
-        }
-        nodes.sort();
-        nodes.erase(unique(nodes.begin(), nodes.end()), nodes.end());
-
+    GraphParser* gp = new GraphParser("./data/graph1.txt");
+    gp->parseGraph();
+//
         ARGEdit aet;
-        createGraph(aet,nodes,relationships);
+        gp->createGraph(aet);
         Graph graph(&aet);
-        file.close();
-    }else{
-        cout << "Could not open file" << endl;
-    }
+//        printGraph(graph);
+//    }else{
+//        cout << "Could not open file" << endl;
+//    }
     return 0;
 }
 
-bool is_number(const string& s){
-    return !s.empty() && std::find_if(s.begin(), 
-        s.end(), [](char c) { return !std::isdigit(c); }) == s.end();
-}
 
 void baseComparison(){
 ARGEdit large, small;  // The object used to create the graph
     int i,j;
-    createGraphs(small,large);
+//    createGraphs(small,large);
           
     // Now the Graph can be constructed...
     Graph lg(&large);
@@ -98,42 +70,42 @@ ARGEdit large, small;  // The object used to create the graph
     }
             
 }
-
-ARGEdit& createGraph(ARGEdit &g,list<int> &n,list<relation> &r){
-    for(std::list<int>::const_iterator iterator = n.begin(), end = n.end(); iterator != end; ++iterator) {
-        g.InsertNode(NULL);
-     } 
-    
-    for(std::list<relation>::const_iterator iterator = r.begin(), end = r.end(); iterator != end; ++iterator) {
-        g.InsertEdge(((*iterator).first)-1,((*iterator).second)-1,NULL);
-     }    
-    cout << g.NodeCount() << endl;
-}
-
-void createGraphs(ARGEdit &s, ARGEdit &l){
-    //Large graph
-    l.InsertNode(NULL);
-    l.InsertNode(NULL);
-    l.InsertNode(NULL);
-    l.InsertNode(NULL);
-    
-    l.InsertEdge(0,1,NULL);
-    l.InsertEdge(1,0,NULL);
-    l.InsertEdge(1,2,NULL);
-    l.InsertEdge(1,3,NULL);
-    l.InsertEdge(2,1,NULL);
-    l.InsertEdge(3,1,NULL);
 //
-//    //Small graph
-    s.InsertNode(NULL);
-    s.InsertNode(NULL);
-    s.InsertNode(NULL);
+//void createGraph(ARGEdit &g,list<int> &n,list<relation> &r){
+//    for(std::list<int>::const_iterator iterator = n.begin(), end = n.end(); iterator != end; ++iterator) {
+//        g.InsertNode(NULL);
+//     } 
 //    
-    s.InsertEdge(0,2,NULL);
-    s.InsertEdge(1,2,NULL);
-    s.InsertEdge(2,0,NULL);
-    s.InsertEdge(2,1,NULL);
-}
+//    for(std::list<relation>::const_iterator iterator = r.begin(), end = r.end(); iterator != end; ++iterator) {
+//        g.InsertEdge(((*iterator).first)-1,((*iterator).second)-1,NULL);
+//     }
+//    
+//}
+//
+//void createGraphs(ARGEdit &s, ARGEdit &l){
+//    //Large graph
+//    l.InsertNode(NULL);
+//    l.InsertNode(NULL);
+//    l.InsertNode(NULL);
+//    l.InsertNode(NULL);
+//    
+//    l.InsertEdge(0,1,NULL);
+//    l.InsertEdge(1,0,NULL);
+//    l.InsertEdge(1,2,NULL);
+//    l.InsertEdge(1,3,NULL);
+//    l.InsertEdge(2,1,NULL);
+//    l.InsertEdge(3,1,NULL);
+////
+////    //Small graph
+//    s.InsertNode(NULL);
+//    s.InsertNode(NULL);
+//    s.InsertNode(NULL);
+////    
+//    s.InsertEdge(0,2,NULL);
+//    s.InsertEdge(1,2,NULL);
+//    s.InsertEdge(2,0,NULL);
+//    s.InsertEdge(2,1,NULL);
+//}
 
 void printGraph(Graph & g){
         cout << "Edges" << endl;

@@ -1,0 +1,2 @@
+References
+[1] J.R. Ullmann,An Algorithm for Subgraph Isomorphism, Journal of the Association for Computing Machinery, vol. 23, pp. 31-42, 1976.

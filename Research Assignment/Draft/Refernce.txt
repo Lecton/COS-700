@@ -1,2 +1,11 @@
 References
 [1] J.R. Ullmann,An Algorithm for Subgraph Isomorphism, Journal of the Association for Computing Machinery, vol. 23, pp. 31-42, 1976.
+[2] Introduction to Graph Grammars with Applications to Semantic Networks Comput. Math. Appl. 23, pp. 557-572, 1992.
+[3]	D.H. Rouvray, A.T. Balaban Chemichal Applications of Graph Theory” in Applications of Graph Theory Academic Press, New York, pp.177-221, 1979.
+[4] S. Melnik, H. Garcia-Molina and E. Rahm Similarity flooding: a versatile graph matching algorithm and its application to schema matching in Proceedings 18th ICDE, San Jose CA, Feb 2002.
+[5]	L. Cordella, P. Foggia, C. Sansone, and M. Vento A (sub)graph isomorphism algorithm for matching large graphs IEEE Transactions on Pattern Analysis and Machine Intelligence vol. 26, no. 10, pp. 1367–1372, Oct. 2004.
+[6]	VF2 Algorithm(2015)} Available at: \url{https://networkx.github.io/documentation/latest/reference/algorithms.isomorphism.vf2.html (Accessed: 10 April 2015)
+[7] DiestelGT.pdf
+[8] 212 book
+[9] Graduate Texts in Mathematics,Vol. 173, Springer Verlag, Berlin, 1991.
+[10] http://web.eecs.utk.edu/~leparker/Courses/CS302-Fall06/Notes/graph-defs-rev.html

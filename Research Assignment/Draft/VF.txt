@@ -1,4 +1,3 @@
-
 The VF2 algorithm was introduced by L.P.Cordella, P.Foggiaa, C.Sansone and M.Vento[11]. The algorithm is suitable for graph matching and isomorphic determination, including subgraph isomorphic
 determination on large graphs, this is attributed to the Data structures that the algorithm uses and the manner in which they are used[11], this feature is discussed later in the paper.
 
@@ -34,3 +33,17 @@ Let TAin(s) be the set of vertices that are not yet in the partial mapping M(s) 
 	
 The pair (n,m) is made by vertice n from TAout(s) and m from TBout(s). If the any of the sets is empty, then we consider the vertice n from TAin(s) and m from TBin(s). In the case where that graphs are 
 not connected, the pairs will be made by all the vertice not yet contained in either GA(s) and GB(s). These pairs form the entries in the set P(s) for that respective state s.
+
+The feasibility rules
+
+The feasibility rules that are used to insure that the states that are evaluated play a role in the improving the performance, by preventing inconsistant states from being explored and thus optimizing the
+excution of the algorithm. There are five general feasibility rules defined as Rpred,Rsucc,Rin,Rout and Rnew repectively. A more formal defination is as follows
+[INSERT ALL THE FEASIBILITY RULES]
+
+The feasibility functions check for two main things, firstly they check the consistancy of the partial solution in the succssor state s', namely M(s'). Rules Rpred and Rsucc are the rules used for this checking.
+The remaining rules are used for preunning the search space for different levels of look ahead. The Rin and Rout are used to look ahead one level and determine which of those successor state are constistant,
+and Rnew is used for the same purpose, but for a look ahead level of two.
+
+This brings use to the conclusion that, in order for a state to be considered consistant it must pass a combination of all of the five rules, namely:
+[INSERT THE RULE]
+Which, as described earlier is defined as the feasibility function.

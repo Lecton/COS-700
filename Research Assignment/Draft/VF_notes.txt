@@ -1,0 +1,3 @@
+SSR ref = N.J. Nilsson,
+Principles of Artificial Intelligence.
+Springer-Verlag, 1982.

@@ -1,0 +1,4 @@
+Memory used:	1440
+Memory used:	1440
+Memory used:	1440
+Time elapsed:	1.43773e+12

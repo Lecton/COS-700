@@ -1,4 +1,4 @@
-/* 
+ /* 
  * File:   main.cpp
  * Author: lecton
  *
@@ -10,27 +10,73 @@
 #include <fstream>
 #include <stdio.h>
 #include <list>
+#include<stdio.h>
+#include<cstdlib>
+#include<iostream>
+#include<string.h>
+#include<fstream>
+#include<dirent.h>
 #include <boost/tokenizer.hpp>
 #include "./headers/argraph.h"
 #include "./headers/argedit.h"
 #include "./headers/vf2_sub_state.h"
 #include "./headers/match.h"
 #include "./headers/graph_parser.h"
-#define MAXNODES 3
+#include "./headers/comperer.h"
+#include "./headers/instance_env.h"
 
 using namespace std;
 using namespace boost;
+
+/*
+ * Degree of isomorphism.
+ * Start writing my paper.
+ * Calibrate the data.
+ * Library and where the data is from.
+ */
 
 //void createGraphs(ARGEdit &s, ARGEdit &l);
 //ARGEdit& createGraph(ARGEdit &g,list<int> &n,list<relation> &r);
 void printGraph(Graph &);
 void baseComparison(Graph,Graph);
-
+void test();
+void algorithm(string,string);
+Enviroment* e;
 int main(){
+    
+    
+    DIR* dir;
+    list<string> dfile;
+    struct dirent *entry;
+    e = new Enviroment("VF2");
+    //Get all the data files
+    if(dir=opendir("./data") ){
+            while(entry = readdir(dir)){
+                    if( strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0 )
+                    dfile.push_back(entry->d_name);
+            }
+            closedir(dir);
+    }
+    
+    for(std::list<string>::iterator i = dfile.begin(); i != dfile.end(); i++){
+        for(std::list<string>::iterator j = dfile.begin(); j != dfile.end(); j++){
+            if((*i).compare(*j) != 0){
+                algorithm(*i,*j);
+            }
+        }
+    }
+    e->env_report();   
+    return 0;
+}
+
+void algorithm(string fn1,string fn2){
     GraphParser* gp[2];
+    Comperer* comperer = new Comperer();
     ARGEdit aet[2];
-    gp[0] = new GraphParser("./data/graph1.txt");
-    gp[1] = new GraphParser("./data/graph2.txt");
+    fn1 = "./data/" + fn1;
+    fn2 = "./data/" + fn2;
+    gp[0] = new GraphParser(fn1);
+    gp[1] = new GraphParser(fn2);
     
     /************************************** Graph 1 **************************************/
     gp[0]->parseGraph();
@@ -49,33 +95,14 @@ int main(){
     /************************************** Comparison **************************************/    
     cout << "\n\nComparison" << endl;
     if(graph0.NodeCount() < graph1.NodeCount()){
-        baseComparison(graph0,graph1);
-    }else{
-        baseComparison(graph1,graph0);
-    }
-    
-    return 0;
-}
-
-
-void baseComparison(Graph sg,Graph lg){
-    //initialization state
-    VF2SubState s0(&sg,&lg);
-
-    int n;
-    node_id ni1[sg.NodeCount()];
-    node_id ni2[sg.NodeCount()];
-
-    if(!match(&s0,&n,ni1,ni2)){
-        printf("No matching found.\n");
-    }else{
-        cout << "n: " << n << endl;
-        for(int i = 0; i < n;i++){
-            printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n",
-           ni1[i], ni2[i]);
+        if(!comperer->comparison(graph0,graph1)){
+            cout << "Match was not found." << endl;
         }
-    }
-            
+    }else{
+        if(!comperer->comparison(graph1,graph0)){
+            cout << "Match was not found." << endl;
+        }
+    } 
 }
 
 void printGraph(Graph & g){

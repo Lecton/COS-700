@@ -1,3 +1,17 @@
 SSR ref = N.J. Nilsson,
 Principles of Artificial Intelligence.
 Springer-Verlag, 1982.
+
+In the VF2 algorithm,
+the mapping procedure is described using Space State Representation (SSR) that is described in
+[7]. Each mapping process has a state s, and the state is associated with a partial mapping solution
+M(s). The M(s) contains only the a subset of the components of the mapping function M. A partial
+M(s) identies two sub graphs, one from Graphs A and another from B, namely GraphA(s) and
+GraphB(s). They are obtained by selecting the nodes that are in M(s) and their branches from
+Graph A and B.
+The algorithm uses a feasibility function [2] that prunes the search tree constructed using the
+graphs. If the value returned by the function is true, it guarantees that state s', which is obtained
+9
+from adding the partial mapping solution M(s) and mapping solution M to the state s is a partial
+isomorphism in s. Thus the nal state is either an isomorphism between GraphA and GraphB, or
+sub graph isomorphism between GraphA and GraphB[2].

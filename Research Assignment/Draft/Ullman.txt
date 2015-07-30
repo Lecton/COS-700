@@ -1,28 +1,20 @@
-Subgraph ismorphis can be determined using a brute-force approach on the tree representation of a graph GA. Though this technique is effective, it is however not efficient because all the possible
-permutation subgraphs of a graph GA are tested against the graph GB to determine if there are subgraphs in graph GA that are isomorphic to graph GB.The number of subgraphs of a graph GA 
-increase at an exponential rate with every addition of a vertice Vn into the graph, thus the total number of subgraphs that are evaluated are ST = 2pow(n/2), where ST is the total
-number of subgraphs and n the number if vertices in the graph GA.
-The matching process is computationally expensive due to this very fact, that is the more vertices and there are in the graph GA the more expensive it becomes to detect the subgraph ismorphisms
-because of the amount of subgraphs it has.
-
-The Ullman algorithm was developed by J.R.Ullman and was published in his titled "An Algorithm for Subgraph Isomorphism"[1].The algorithm performs graph matching on an adjacency matrix representation of both the graphs, and uses the depth search first(DSF) recursicve approach to traverse through the graphs and perform
-the graph matching process. The Ullman algorithm improves the effiency of the brute-force approach at detecting subgraph ismorphisms by deductively eleminating nodes in the tree that are in graph GA, but are not in graph GB, thus reducing the number of subgraphs that are matched against graph GB
-to determine ismorphism.
-
+Sub-graph isomorphism can be determined using a brute-force approach on the tree representation of a graph GA. Though this technique is effective, it is however not efficient because all the possible permutation sub-graphs  of a graph GA are tested against the graph GB to determine if there are sub-graphs  in graph GA that are isomorphic to graph GB. The number of sub-graphs of a graph GA increase at an exponential rate with every addition of a vertex Vn into the graph, thus the total number of sub-graphs  that are evaluated are ST = 2pow(n/2), where ST is the total number of sub-graphs  and n the number if vertexs in the graph GA.
+The matching process is computationally expensive due to this very fact, that is the more vertices and there are in the graph GA the more expensive it becomes to detect the sub-graph isomorphism’s because of the amount of sub-graphs it has.
+The Ullman algorithm was developed by J.R.Ullman and was published in his titled "An Algorithm for Sub-graph  Isomorphism"[1].The algorithm performs graph matching on an adjacency matrix representation of both the graphs, and uses the depth search first(DSF) recursive approach to traverse through the graphs and perform the graph matching process. The Ullman algorithm improves the efficiency of the brute-force approach at detecting sub-graph isomorphism’s by deductively eliminating nodes in the tree that are in graph GA, but are not in graph GB, thus reducing the number of sub-graphs  that are matched against graph GB to determine isomorphism.
 The algorithm starts by building a starting adjacency matrix M0 using the two adjacency matrix representations of graphs GA and GB using the following procedure.
-1)Construct a nxm matrix where n is the number of rows of graph GB and m is the number of colums of graph GA.
-2)Set all the entries in the matrix to the value of 1.
-3)Apply the following rule:
-	Set the values in M0 to 0 for all M0ij where the degree of a vertice in graph GA at j is greater then the degree of the same vertice in graph GB .i.e. deg(Ai) < deg(Bj). A more formal representation of this rule is as follows
+1) Construct an nxm matrix where n is the number of rows of graph GB and m is the number of columns of graph GA.
+2) Set all the entries in the matrix to the value of 1.
+3) Apply the following rule:
+	Set the values in M0 to 0 for all M0ij where the degree of a vertex in graph GA at j is greater than the degree of the same vertex in graph GB .i.e. deg(Ai) < deg(Bj). A more formal representation of this rule is as follows
 [Insert rule here]
 
 When the starting matrix has been constructed, we systematically permute matrices Md from the starting matrix M0 where d represents the depth of the generated matrix. The procedure of 
-generating the permuted matrices follows a depth search first(DSF) recursicve approach where the stopping condition(leaf matrices) conform to the following form:
+generating the permuted matrices follows a depth search first(DSF) recursive approach where the stopping condition(leaf matrices) conform to the following form:
 -M contains only 0's and 1's.
 -There is exactly one 1 in each row.
--Not more than one 1 in each colum.
+-Not more than one 1 in each column.
 
-An demonstration of how the permutation matrices are generated is demonstrated below.
+A demonstration of how the permutation matrices are generated is demonstrated below.
 [demonstration here]
 
 Once all the permutation matrices have been generated, each one of the matrices is matched with a graph C, that is obtained from the dot product of the permuted matrix and the graph GA.
@@ -35,4 +27,4 @@ If there is a single instance of the matrix C, that is calculated using some per
 GB is isomorphic to GB iff
 GBij = 1=>  Cij = 1(upside down A)i,j
 
-If non of the generated permutated matrices can statisfy this condition, then GB is not isomorphic to GB.
+If none of the generated permutated matrices can statisfy this condition, then GB is not isomorphic to GB.

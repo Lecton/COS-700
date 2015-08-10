@@ -1,0 +1,20 @@
+
+\begin{multline}
+	Rpred(s,n,m) \Leftarrow \Rightarrow \\(\forall n' \in M1(s) \cap Pred(G{\tiny B},n) \exists m' \in Pred(G{\tiny A},m)| (n',m') \exists M(s) \wedge \\ \forall m' \in M2(s) \cap Pred(G{\tiny A},m) \exists n' \in Pred(G{\tiny B},n)| (n',m') \exists M(s)),
+\end{multline} 
+
+\begin{multline}
+	Rsucc(s,n,m) \Leftarrow \Rightarrow \\(\forall n' \in M1(s) \cap Succ(G{\tiny B},n) \exists m' \in Succ(G{\tiny A},m)| (n',m') \exists M(s) \wedge \\ \forall m' \in M2(s) \cap Succ(G{\tiny A},m) \exists n' \in Succ(G{\tiny B},n)| (n',m') \exists M(s)),
+\end{multline} 
+
+\begin{multline}
+	Rin(s,n,m) \Leftarrow \Rightarrow \\ (Card(Succ(G{\tiny B},n) \cap TBin(s)) \geq Card(Succ(G{\tiny A},m) \cap TAin(s))) \cap \\ (Card(Pred(G{\tiny B},n) \cap TBin(s)) \geq Card(Pred(G{\tiny A},m) \cap TAin(s)))
+\end{multline}
+
+\begin{multline}
+	Rout(s,n,m) \Leftarrow \Rightarrow \\ (Card(Succ(G{\tiny B},n) \cap TBout(s)) \geq Card(Succ(G{\tiny A},m) \cap TAout(s))) \cap \\ (Card(Pred(G{\tiny B},n) \cap TBout(s)) \geq Card(Pred(G{\tiny A},m) \cap TAout(s)))
+\end{multline}
+
+\begin{multline}
+	Rnew(s,n,m) \Leftarrow \Rightarrow \\ Card(\tilde{NA}(s) \cap Pred(G{\tiny B},n)) \geq Card(\tilde{NB}(s) \cap Pred(G{\tiny A},n)) \wedge \\ Card(\tilde{NA}(s) \cap Succ(G{\tiny B},n)) \geq Card(\tilde{NB}(s) \cap Succ(G{\tiny A},n))
+\end{multline}

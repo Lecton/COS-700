@@ -1,3 +1,9 @@
 g++ -std=c++0x -c -I/vflib/include main.cpp
 g++ -std=c++0x  -o main main.cpp -L/vflib/lib vflib/libvf.a -lstdc++ -lm
 ./main
+
+g++ -std=c++0x -c -I/vflib/include Test.cpp
+g++ -std=c++0x  -o Test Test.cpp -L/vflib/lib vflib/libvf.a -lstdc++ -lm
+./Test
+
+rm -r ./report/*.txt

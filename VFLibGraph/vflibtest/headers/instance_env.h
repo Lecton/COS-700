@@ -19,7 +19,7 @@ class Enviroment{
     public:
         Enviroment(string alg_name){
             startTime = time(0) * 1000;
-            fname = "./report/report_"+alg_name+std::string(".txt");
+            fname = "./report/"+alg_name+std::string(".txt");
             ofstream fs(fname);
             fs.close();
         }
@@ -71,10 +71,11 @@ class Enviroment{
             fstream fs;
             fs.open (fname, std::fstream::in | std::fstream::out | std::fstream::app);
             fs <<"Memory used:\t" << this->process_mem_usage() << endl;
-            fs <<"Memory used:\t" << this->process_mem_usage() << endl;
-            fs <<"Memory used:\t" << this->process_mem_usage() << endl;
-            fs <<"Time elapsed:\t" << ((this->startTime)-(this->endTime)) << endl;
+            fs  <<"Time start:\t" << ((this->startTime)) << endl;
+            fs  <<"Time end:\t" << ((this->endTime)) << endl;
             fs.close();
+            
+             
         }
 };
 

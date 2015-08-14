@@ -49,7 +49,6 @@ int main(){
     list<string> dfile;
     struct dirent *entry;
     e = new Enviroment("VF2");
-    //Get all the data files
     if(dir=opendir("./data") ){
             while(entry = readdir(dir)){
                     if( strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0 )
@@ -61,8 +60,11 @@ int main(){
     for(std::list<string>::iterator i = dfile.begin(); i != dfile.end(); i++){
         for(std::list<string>::iterator j = dfile.begin(); j != dfile.end(); j++){
             if((*i).compare(*j) != 0){
+                
                 algorithm(*i,*j);
+                cout << "here" << endl;
             }
+            
         }
     }
     e->env_report();   
@@ -94,15 +96,22 @@ void algorithm(string fn1,string fn2){
 
     /************************************** Comparison **************************************/    
     cout << "\n\nComparison" << endl;
-    if(graph0.NodeCount() < graph1.NodeCount()){
-        if(!comperer->comparison(graph0,graph1)){
-            cout << "Match was not found." << endl;
-        }
-    }else{
-        if(!comperer->comparison(graph1,graph0)){
-            cout << "Match was not found." << endl;
-        }
-    } 
+    comperer->comparison(graph0,graph1);
+
+//    if(graph0.NodeCount() < graph1.NodeCount()){
+//        if(!comperer->comparison(graph0,graph1)){
+//            cout << "Match was not found." << endl;
+//        }
+//    }else{
+//        if(!comperer->comparison(graph1,graph0)){
+//            cout << "Match was not found." << endl;
+//        }
+//    } 
+    
+//    gp[1] = NULL;
+//    gp[2] = NULL;
+//    graph0 = NULL;
+//    graph1 = NULL;
 }
 
 void printGraph(Graph & g){

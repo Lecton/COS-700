@@ -1,0 +1,3 @@
+Memory used:	22996
+Time start:	1.43955e+12
+Time end:	0

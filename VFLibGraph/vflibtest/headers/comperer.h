@@ -23,8 +23,8 @@ class Comperer{
             VF2SubState s0(&sg,&lg);
 
             int n;
-            node_id ni1[sg.NodeCount()];
-            node_id ni2[sg.NodeCount()];
+            node_id ni1[500000];
+            node_id ni2[500000];
 
             if(!match(&s0,&n,ni1,ni2)){
                 return false;

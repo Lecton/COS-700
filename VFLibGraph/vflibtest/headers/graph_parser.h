@@ -24,7 +24,7 @@ class GraphParser{
         
         GraphParser(string fn){
             fname = fn;
-            cout << fname << endl;
+//            cout << fname << endl;
         }
 
         ~GraphParser();

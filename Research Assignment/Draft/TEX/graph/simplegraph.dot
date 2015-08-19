@@ -1,0 +1,13 @@
+graph mygraph{
+	A -- B;
+	B -- C;
+	B -- G;
+	C -- E;
+	D -- E;
+	E -- G;
+	G -- F;
+	G -- I;
+	G -- H;
+	I -- H;
+	H -- J;
+}

@@ -18,14 +18,20 @@
 #include "./headers/graph_parser.h"
 #include "./headers/comperer.h"
 #include "./headers/instance_env.h"
+
+/*  Algorithms headers */
+#include "./headers/vf2_sub_state.h"
+#include "./headers/ull_sub_state.h"
+
 using namespace std;
 using namespace boost;
 
-void algorithm(string,string);
+void algorithm(string);
 void buildGraphs();
 int test();
 Enviroment* e;
 string method = "VF2";
+string cfile = "./control/control.txt";
 int main(){
     buildGraphs();
     return 0;
@@ -44,26 +50,19 @@ void buildGraphs(){
     }
     
     for(std::list<string>::iterator i = dfile.begin(); i != dfile.end(); i++){
-        for(std::list<string>::iterator j = dfile.begin(); j != dfile.end(); j++){
-            if((*i).compare(*j) != 0){
-                
-                algorithm(*i,*j);
-            }
-            
-        }
+                algorithm(*i);
     }
 }
 
-void algorithm(string fn1,string fn2){    
-    string filename = string(method) + string(" ") + string(fn1) + string(" ") + string(fn2);
+void algorithm(string fn1){    
+    string filename = string(method) + string(" ") + string(fn1);
     e = new Enviroment(filename);
     GraphParser* gp[2];
     Comperer* comperer = new Comperer();
     ARGEdit aet[2];
     fn1 = "./data/" + fn1;
-    fn2 = "./data/" + fn2;
     gp[0] = new GraphParser(fn1);
-    gp[1] = new GraphParser(fn2);
+    gp[1] = new GraphParser(cfile);
     
     /************************************** Graph 1 **************************************/
     gp[0]->parseGraph();
@@ -84,16 +83,16 @@ void algorithm(string fn1,string fn2){
 //    cout << " and ";
 //    cout << fn2 << endl;
     
-    VF2SubState s0(&graph0,&graph1);
+    UllSubState s0(&graph0,&graph1);
     
     int n;
     
     node_id ni1[500000], ni2[500000];
 //    
     if(graph0.NodeCount() < graph1.NodeCount()){
-        VF2SubState s0(&graph0,&graph1);
+        UllSubState s0(&graph0,&graph1);
     }else{
-        VF2SubState s0(&graph1,&graph0);
+        UllSubState s0(&graph1,&graph0);
     }
 //    
 //    if(!match(&s0,&n,ni1,ni2)){

@@ -2,36 +2,36 @@
 \label{Graph Basics}
 
 \subsection{Graph Overview}
-A Graph in Mathematics and Computer Science is defined as a pair G = (V, E),  where V is the set of vertices and E is the set of edges, formed by pairs of vertices with each other. Figure ~\ref{fig:simplegraph} demonstrates the structural 
+A Graph in Mathematics and Computer Science is defined as a pair $G = (V, E)$,  where $V$ is the set of vertices and $E$ is the set of edges, formed by pairs of vertices with each other. Figure ~\ref{fig:simplegraph} demonstrates the structural 
 attributes of a simple graph.
 
 \begin{figure}[H]
   \begin{center}
-      \includegraphics[width=0.65\textwidth]{graph.png}
+      \includegraphics[width=0.2\textwidth]{simplegraph.png}
   \end{center}    
   \caption{Representation of a graph}
   \label{fig:simplegraph}
 \end{figure} 
 
 Graphs can either directed or they can undirected. This means that the edges in the graph could have an abscence of direction as in the ~\ref{fig:simplegraph} above, or they could have a direction showing from which
-vertice the edge is coming from, and to which vertice the edge is going to. The figure below demonstrates a directed graph, commonly known as a digraph. This characteristic is demonstrated by the edge 1, 
-that goes from node a to node b, and also by edges 3 that goes from node c to node a. 
+vertice the edge is coming from, and to which vertice the edge is going to. Figure ~\ref{fig:directedgraph} demonstrates a directed graph, commonly known as a digraph. This characteristic is demonstrated by the edge $3$, 
+that goes from node $B$ to node $G$, and also by edge 2 that goes from node $B$ to node $C$. 
 
 \begin{figure}[H]
   \begin{center}
-      \includegraphics[width=0.65\textwidth]{digraph.png}
+      \includegraphics[width=0.2\textwidth]{directedgraph.png}
   \end{center}    
   \caption{Representation of a digraph}
   \label{fig:directedgraph}
 \end{figure} 
 
 Note that the undirected graph mentioned above is commonly referred to as a bigraph because the direction
-of its edges  could be percieved as to goiing in both direction as it is not specifed.
+of its edges could be percieved as to going in both direction as it is not specifed.
 
 In this paper, the focus is primarily on directed graphs, and they shall be referred to as digraphs from here onward.
 
 \subsection{Digraph}
-A Digraph in mathematics is defined as is a pair of vertices and edges (V,E) that are disjoint, and their repective mappings that comprise of two components, namely the initial vertix and 
+A Digraph in mathematics is defined as is a pair of disjoint vertices and edges $(V,E)$, and their repective mappings that comprises of two components, namely the initial vertix and 
 terminal vertice of each edge i.e. each edge has a initial vertix: 
   \begin{equation}
     Ei\rightarrow Vi
@@ -41,14 +41,13 @@ terminal vertice of each edge i.e. each edge has a initial vertix:
   \begin{equation}
     Vj\rightarrow Ej
   \end{equation} 
-   for some vertices Vi,Vj in V and edges Ei,Ej in E[7] refer to the figure ~\ref{fig:directedgraph}.
+   for some vertices $Vi$,$Vj$ in V and edges $Ei$,$Ej$ in E [7] refer to the figure ~\ref{fig:directedgraph}.
 
 \subsection{Graph representation}
-Graphs are represented in a variaty of ways, from adjacency lists, incident matrices and adjacency matrices. The algorithms that are studied in this paper make us of adjacency matrices and
-adjacency list representations of graphs. 
+Graphs are represented in a variaty of ways, from adjacency lists, incident matrices and adjacency matrices. The algorithms that are studied in this paper make us of adjacency matrices and adjacency list representations of graphs. 
 
 \subsubsection{Adjacency matrices}
-An adjacency matrices is a nxn matrix A, with A(i,j) = 1 iff(i,j) ∈ E[9]. This means that wherever there is an edge in the graph, it is denoted by a 1 in the matrix, places in the matrix A where there is an absence of an edge E are denoted by 0.\newline\newline
+An adjacency matrices is a nxn matrix A, with $A(i,j) = 1 iff(i,j) ∈ E$ [9]. This means that wherever there is an edge in the graph, it is denoted by a 1 in the matrix, places in the matrix where there is an absence of an edge, are denoted by 0.\newline\newline
 Figure ~\ref{fig:adjacencymatrix} depicts the association between a graph and its adjacency matrix.
 \begin{figure}[H]
   \begin{center}

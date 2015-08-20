@@ -56,12 +56,12 @@ If there is a single instance of the matrix $C$, that is calculated using some p
   \end{equation} 
 If non of the generated permutated matrices can statisfy this condition, then $G${\tiny B} is not isomorphic to $G${\tiny B}.
 
-\subsubsection{pseudo code}
+\subsubsection{Ullman Pseudo code}
 	\begin{figure}[H]
 	  \begin{center}
-		  \includegraphics[width=0.2\textwidth]{Ullmanpseudo}
+		  \includegraphics[width=1.0\textwidth]{Ullmanpseudo}
 	  \end{center}    
-	  \caption{Representation of a graph}
+	  \caption{Pseudo code of the Ullman algorith [1]}
 	  \label{fig:ullmanpseudo}
 	\end{figure} 
 
@@ -110,20 +110,20 @@ The remaining rules are used for pruning the search space for different levels o
 
 
 \subimport{}{rules}
-
- In order for a state to be considered consistent, it must pass a combination of all of the five rules, namely:
+\newpage
+In order for a state to be considered consistent, it must pass a combination of all of the five rules, namely:
 	\begin{equation}
 		Fsyn(s,n,m) = Rpred \wedge Rsucc \wedge Rin \wedge Rout \wedge Rnew 
 	\end{equation} 
 
 where $F${\tiny syn}$(s,n,m)$ the feasibility function that is envoked upon the state $s$.
 
-\subsubsection{pseudo code}
+\subsubsection{VF2 Pseudo code}
 	\begin{figure}[H]
 	  \begin{center}
-		  \includegraphics[width=0.2\textwidth]{VF2pseudo}
+		  \includegraphics[width=1.0\textwidth]{VF2pseudo}
 	  \end{center}    
-	  \caption{Representation of a graph}
+	  \caption{Pseudo code of the VF2 algorith [11]}
 	  \label{fig:vf2pseudo}
 	\end{figure} 
 

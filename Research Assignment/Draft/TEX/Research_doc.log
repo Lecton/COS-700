@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.7.30)  20 AUG 2015 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.7.30)  20 AUG 2015 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1109,6 +1109,9 @@ LaTeX Warning: Label `lamport94' multiply defined.
 
 LaTeX Warning: Label `lamport94' multiply defined.
 
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
 )
 \openout1 = `Research_doc.aux'.
 
@@ -1236,14 +1239,14 @@ raph.tex
 \c@myEnumeratei=\count210
 \enitdp@myEnumerate=\count211
 
-<graph/simplegraph.png, id=71, 251.94125pt x 733.74126pt>
+<graph/simplegraph.png, id=95, 251.94125pt x 733.74126pt>
 File: graph/simplegraph.png Graphic file (type png)
 
 <use graph/simplegraph.png>
 Package pdftex.def Info: graph/simplegraph.png used on input line 15.
 (pdftex.def)             Requested size: 85.9996pt x 250.45396pt.
 
-<graph/directedgraph.png, id=75, 281.05pt x 874.26625pt>
+<graph/directedgraph.png, id=99, 281.05pt x 874.26625pt>
 File: graph/directedgraph.png Graphic file (type png)
 
 <use graph/directedgraph.png>
@@ -1260,7 +1263,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 
-<graph/matrix.png, id=96, 349.305pt x 203.25937pt>
+<graph/matrix.png, id=120, 349.305pt x 203.25937pt>
 File: graph/matrix.png Graphic file (type png)
  <use graph/matrix.png>
 Package pdftex.def Info: graph/matrix.png used on input line 57.
@@ -1270,7 +1273,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--61
 
  []
 
-[3 <./graph/matrix.png>] <graph/list.png, id=105, 190.46156pt x 203.25937pt>
+[3 <./graph/matrix.png>] <graph/list.png, id=129, 190.46156pt x 203.25937pt>
 File: graph/list.png Graphic file (type png)
 
 <use graph/list.png>
@@ -1281,14 +1284,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-<graph/isomorphismleft.png, id=117, 231.86626pt x 444.66125pt>
+<graph/isomorphismleft.png, id=141, 231.86626pt x 444.66125pt>
 File: graph/isomorphismleft.png Graphic file (type png)
 
 <use graph/isomorphismleft.png>
 Package pdftex.def Info: graph/isomorphismleft.png used on input line 92.
 (pdftex.def)             Requested size: 85.9996pt x 164.92918pt.
 
-<graph/isomorphismright.png, id=118, 372.39125pt x 155.58125pt>
+<graph/isomorphismright.png, id=142, 372.39125pt x 155.58125pt>
 File: graph/isomorphismright.png Graphic file (type png)
 
 <use graph/isomorphismright.png>
@@ -1310,73 +1313,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
-<algorithms/stratMatrix.png, id=135, 525.46312pt x 511.9125pt>
+<algorithms/stratMatrix.png, id=159, 525.46312pt x 511.9125pt>
 File: algorithms/stratMatrix.png Graphic file (type png)
 
 <use algorithms/stratMatrix.png>
 Package pdftex.def Info: algorithms/stratMatrix.png used on input line 45.
 (pdftex.def)             Requested size: 279.50037pt x 272.30435pt.
- [7] [8 <./algorithms/stratMatrix.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+ [7]
+<algorithms/Ullmanpseudo.png, id=175, 661.72218pt x 341.02406pt>
+File: algorithms/Ullmanpseudo.png Graphic file (type png)
+
+<use algorithms/Ullmanpseudo.png>
+Package pdftex.def Info: algorithms/Ullmanpseudo.png used on input line 62.
+(pdftex.def)             Requested size: 430.00462pt x 221.60577pt.
+ [8 <./algorithms/stratMatrix.png>] [9 <./algorithms/Ullmanpseudo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--71
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--71
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--71
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--76
+Underfull \hbox (badness 10000) in paragraph at lines 82--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--76
+Underfull \hbox (badness 10000) in paragraph at lines 82--86
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--89
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--100
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--100
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
  []
 
-[10] (./algorithms/rules.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+[11] (./algorithms/rules.tex
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 4.
 
@@ -1497,17 +1507,28 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
+) [12] <algorithms/VF2pseudo.png, id=215, 941.01563pt x 461.47406pt>
+File: algorithms/VF2pseudo.png Graphic file (type png)
+
+<use algorithms/VF2pseudo.png>
+Package pdftex.def Info: algorithms/VF2pseudo.png used on input line 124.
+(pdftex.def)             Requested size: 430.00462pt x 210.87233pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
-[11] [12]) (./references/references.tex
+[13 <./algorithms/VF2pseudo.png>]) (./library/library.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+[14]) (./references/references.tex
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no  in font cmti10!
@@ -1532,8 +1553,14 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[13pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
+[15pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
 rt94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.26 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
@@ -1604,25 +1631,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (./Research_doc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
+Package rerunfilecheck Info: File `Research_doc.out' has not changed.
+(rerunfilecheck)             Checksum: B1D61927A21B091D86436291E4708040;1310.
 
-
-Package rerunfilecheck Warning: File `Research_doc.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Research_doc.out':
-(rerunfilecheck)             Before: 405759EB83097A9DDF5B6F4BE4F11F7E;898
-(rerunfilecheck)             After:  84116772433E1F726630C5B5D11DF761;974.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
- 25310 strings out of 494978
- 441817 string characters out of 6180203
- 587940 words of memory out of 5000000
- 27894 multiletter control sequences out of 15000+600000
+ 25341 strings out of 494978
+ 442407 string characters out of 6180203
+ 586940 words of memory out of 5000000
+ 27910 multiletter control sequences out of 15000+600000
  14288 words of font info for 56 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,9n,93p,1850b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1640,10 +1661,10 @@ amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Research_doc.pdf (14 pages, 312789 bytes).
+Output written on Research_doc.pdf (16 pages, 583860 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 222 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
 

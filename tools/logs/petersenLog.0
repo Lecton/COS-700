@@ -1,0 +1,8 @@
+Aug 20, 2015 10:41:14 AM bl run
+SEVERE: Failed to construct graph from the string
+java.lang.Exception: The matrix is not square.
+	at j.makeGraphFromAdjacencyMatrix(Unknown Source)
+	at bl.run(Unknown Source)
+	at petersen.gui.Petersen.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+

@@ -1,6 +1,11 @@
 \asection{Graph Basics}
 \label{Graph Basics}
 
+\setlistdepth{1}
+
+\newlist{myEnumerate}{enumerate}{1}
+\setlist[myEnumerate,1]{label=(\arabic*)}
+
 \subsection{Graph Overview}
 A Graph in Mathematics and Computer Science is defined as a pair $G = (V, E)$,  where $V$ is the set of vertices and $E$ is the set of edges, formed by pairs of vertices with each other. Figure ~\ref{fig:simplegraph} demonstrates the structural 
 attributes of a simple graph.
@@ -47,51 +52,56 @@ terminal vertice of each edge i.e. each edge has a initial vertix:
 Graphs are represented in a variaty of ways, from adjacency lists, incident matrices and adjacency matrices. The algorithms that are studied in this paper make us of adjacency matrices and adjacency list representations of graphs. 
 
 \subsubsection{Adjacency matrices}
-An adjacency matrices is a nxn matrix A, with $A(i,j) = 1 iff(i,j) ∈ E$ [9]. This means that wherever there is an edge in the graph, it is denoted by a 1 in the matrix, places in the matrix where there is an absence of an edge, are denoted by 0.\newline\newline
-Figure ~\ref{fig:adjacencymatrix} depicts the association between a graph and its adjacency matrix.
+An adjacency matrices is a nxn matrix A, with $A(i,j)$ = 1 $iff(i,j) ∈ E$ [9]. This means that wherever there is an edge in the graph, it is denoted by a 1 in the matrix, places in the matrix where there is an absence of an edge, are denoted by 0.\newline\newline
+Figure ~\ref{fig:adjacencymatrix} depicts the association between the graph in figure ~\ref{fig:simplegraph} and its adjacency matrix.
 \begin{figure}[H]
   \begin{center}
-      \includegraphics[width=0.65\textwidth]{adjacencymatrix.png}
+      \includegraphics[width=0.65\textwidth]{matrix.png}
   \end{center}    
   \caption{Representation of a graph and its associated adjacency matrix}
   \label{fig:adjacencymatrix}
 \end{figure}
 
 \subsubsection{Adjacency list}
-An Adjacency list is vertices of a graph, of which each vertice is connected to the list. The vertices in an adjacency list point to their own list of edges that they are connected to(i.e. the list contains the edges that connectect them to other vertices).
-Figure ~\ref{fig:adjacencylist} depicts an example of an adjacency list.
+An Adjacency list is vertices of a graph, of which each vertice is connected to the list. The vertices in an adjacency list point to their own list of edges that they are connected to(i.e. the list contains the edges that connect them to other vertices). \newpage
+Figure ~\ref{fig:adjacencylist} depicts the association between the graph in figure ~\ref{fig:simplegraph} and its adjacency list.
 \begin{figure}[H]
   \begin{center}
-      \includegraphics[width=0.65\textwidth]{adjacencylist.png}
+      \includegraphics[width=0.4\textwidth]{list.png}
   \end{center}    
   \caption{Representation of a graph and its associated adjacency list}
   \label{fig:adjacencylist}
 \end{figure}
 
 \subsection{Supergraphs and subgraphs}
-Let G{\tiny A} be be graph define as follows G{\tiny A} = (VA,EB) and let G{\tiny B} be another graph that is defined as follows G{\tiny B} = (VB,EB) where VA,VB are sets of vertices and EA,EB are sets of edges.
-In graph theory, a graph G{\tiny A} is said to be a subgraph of graph G{\tiny B}, and graph G{\tiny B} is said to be a supergraph of graph G{\tiny A} if all the vertices and edges that are in graph G{\tiny A} are also in graph
-G{\tiny B}, that is [3]
-1) VA <= VB, and
-2) Every edge of G{\tiny A} is also an edge in G{\tiny B}. \newline\newline
-The figure  ~\ref{fig:supersubgraph}  below depicts this relation.
-\begin{figure}[H]
-  \begin{center}
-      \includegraphics[width=0.65\textwidth]{supersubgraph.png}
-  \end{center}     
-  \caption{Representation of a super graph and its subgraph that is depicted in red}
-  \label{fig:supersubgraph}
-\end{figure}
+Let $G${\tiny A} be be graph define as follows $G${\tiny A} = ($V${\tiny A},$E${\tiny A}) and let $G${\tiny B} be another graph that is defined as follows $G${\tiny B} = ($V${\tiny B},$E${\tiny B}) where $V${\tiny A},$V${\tiny B} are sets of vertices and $E${\tiny A},$E${\tiny B} are sets of edges.
+In graph theory, a graph $G${\tiny A} is said to be a subgraph of graph $G${\tiny B}, and graph $G${\tiny B} is said to be a supergraph of graph $G${\tiny A} if all the vertices and edges that are in graph $G${\tiny A} are also in graph $G${\tiny B}, that is [3]:
+
+\begin{myEnumerate}
+  \item $V${\tiny A} $ \subseteq V${\tiny B}, and
+  \item Every edge of $G${\tiny A} is also an edge in $G${\tiny B}.
+\end{myEnumerate}
+
+In figure  ~\ref{fig:simplegraph}, the graph constructed by vertices $D,E,G,F$ and $I$ is the sub-graph of the entire graph. And thus the graph is a super-graph of the sub-graph constructed by the vertices, namely $D,E,G,F$ and $I$.
 
 \subsection{Graph Isomorphism}
-Two graphs are said to be isomorphic if they are syntactically similar to each other iff there is a bijection between their respective nodes which make each edge of G1 correspond to exactly 
-one edge of G2, and vice versa[12], i.e. the graphs are structurally the same to each other. This property is demonstrated in figure ~\ref{fig:isomorphism}. The two graphs look very different, but when they are further
-inspected, it is evident that the two are a representation of the same data scheme or even the same graph that has been rearranged.
-\begin{figure}[H]
-  \begin{center}
-      \includegraphics[width=0.65\textwidth]{isomorphism.png} 
-  \end{center}     
-  \caption{Representation of a super graph and its subgraph that is depicted in red}
-  \label{fig:isomorphism}
+Two graphs are said to be isomorphic if they are syntactically similar to each other $iff$ there is a bijection between their respective nodes which make each edge of $G${\tiny A} correspond to exactly one edge of $G${\tiny B}, and vice versa [12], i.e. the graphs are structurally the same to each other. This property is demonstrated in figures ~\ref{fig:isomorphism}. 
+\newpage
+The two graphs look very different, but when they are further inspected, it is evident that the two are a representation of the same structural scheme or maybe even the same graph that has been rearranged. \newline\newline Consider the vertice $1$ from the left-most graph, it has three edges going to and from vertices $2,4$ and $5$, and now consider the vertix $a$ from the right-most graph, it also has three vertices going to and from it, namely $g,h$ and $i$. These two vertices have the same structural, but from two different graphs, the same goes for all the other vertices in both graphs .i.e each vertice in the left-most graph can be associtated with one in the right-most graph as we did for vertices $1$ and $a$.
+
+\begin{figure}[!tbp]
+  \begin{subfigure}[b]{0.2\textwidth}
+    \includegraphics[width=\textwidth]{isomorphismleft}
+    \caption{Isomorphic graph on the left}
+    \label{fig:isomorphism}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{isomorphismright}
+    \caption{Isomorphic graph on the right}
+    \label{fig:isomorphism}
+  \end{subfigure}
+  \caption{A demostration of two isomorphic graphs}
 \end{figure}
+
 \newpage

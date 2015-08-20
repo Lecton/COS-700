@@ -9,6 +9,5 @@ References
 [8] 212 book
 [9] Graduate Texts in Mathematics,Vol. 173, Springer Verlag, Berlin, 1991.
 [10] http://web.eecs.utk.edu/~leparker/Courses/CS302-Fall06/Notes/graph-defs-rev.html
-[11] A (Sub)Graph Isomorphism Algorithm for Matching Large Graphs
-[12] N.J. Nilsson,Principles of Artificial Intelligence.Springer-Verlag, 1982.
-[13] p412-kubale
+[11] N.J. Nilsson,Principles of Artificial Intelligence.Springer-Verlag, 1982.
+[12] p412-kubale

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.7.30)  20 AUG 2015 10:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.7.30)  20 AUG 2015 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1247,14 +1247,15 @@ Package pdftex.def Info: graph/simplegraph.png used on input line 15.
 File: graph/directedgraph.png Graphic file (type png)
 
 <use graph/directedgraph.png>
-Package pdftex.def Info: graph/directedgraph.png used on input line 27.
+Package pdftex.def Info: graph/directedgraph.png used on input line 26.
 (pdftex.def)             Requested size: 85.9996pt x 267.51126pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 
-      [1 <./graph/simplegraph.png>] [2 <./graph/directedgraph.png>]
+l.31 N
+      ote that the undirected graph mentioned above is commonly referred to ...
+[1 <./graph/simplegraph.png>] [2 <./graph/directedgraph.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ˆ in font cmr10!
@@ -1262,10 +1263,10 @@ Missing character: There is no ˆ in font cmr10!
 <graph/matrix.png, id=96, 349.305pt x 203.25937pt>
 File: graph/matrix.png Graphic file (type png)
  <use graph/matrix.png>
-Package pdftex.def Info: graph/matrix.png used on input line 59.
+Package pdftex.def Info: graph/matrix.png used on input line 57.
 (pdftex.def)             Requested size: 279.50037pt x 162.64803pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--63
+Underfull \hbox (badness 10000) in paragraph at lines 53--61
 
  []
 
@@ -1273,10 +1274,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--63
 File: graph/list.png Graphic file (type png)
 
 <use graph/list.png>
-Package pdftex.def Info: graph/list.png used on input line 70.
+Package pdftex.def Info: graph/list.png used on input line 68.
 (pdftex.def)             Requested size: 171.99922pt x 183.56133pt.
  [4 <./graph/list.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
@@ -1284,14 +1285,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 File: graph/isomorphismleft.png Graphic file (type png)
 
 <use graph/isomorphismleft.png>
-Package pdftex.def Info: graph/isomorphismleft.png used on input line 94.
+Package pdftex.def Info: graph/isomorphismleft.png used on input line 92.
 (pdftex.def)             Requested size: 85.9996pt x 164.92918pt.
 
 <graph/isomorphismright.png, id=118, 372.39125pt x 155.58125pt>
 File: graph/isomorphismright.png Graphic file (type png)
 
 <use graph/isomorphismright.png>
-Package pdftex.def Info: graph/isomorphismright.png used on input line 100.
+Package pdftex.def Info: graph/isomorphismright.png used on input line 98.
 (pdftex.def)             Requested size: 171.99922pt x 71.86023pt.
  [5 <./graph/isomorphismleft.png> <./graph/isomorphismright.png>]) (./algorithm
 s/algorithms.tex
@@ -1309,75 +1310,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
-<algorithms/permutationmatrix.png, id=135, 540.51938pt x 302.63063pt>
-File: algorithms/permutationmatrix.png Graphic file (type png)
+<algorithms/stratMatrix.png, id=135, 525.46312pt x 511.9125pt>
+File: algorithms/stratMatrix.png Graphic file (type png)
 
-<use algorithms/permutationmatrix.png>
-Package pdftex.def Info: algorithms/permutationmatrix.png used on input line 46
-.
-(pdftex.def)             Requested size: 279.50037pt x 156.49146pt.
- [7] [8 <./algorithms/permutationmatrix.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--75
+<use algorithms/stratMatrix.png>
+Package pdftex.def Info: algorithms/stratMatrix.png used on input line 45.
+(pdftex.def)             Requested size: 279.50037pt x 272.30435pt.
+ [7] [8 <./algorithms/stratMatrix.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--75
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--75
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--100
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
@@ -1502,7 +1497,17 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
-) [11]) (./references/references.tex
+)
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
+
+ []
+
+[11] [12]) (./references/references.tex
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no  in font cmti10!
@@ -1527,7 +1532,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[12pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
+[13pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
 rt94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
@@ -1599,19 +1604,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (./Research_doc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
-Package rerunfilecheck Info: File `Research_doc.out' has not changed.
-(rerunfilecheck)             Checksum: 405759EB83097A9DDF5B6F4BE4F11F7E;898.
 
+
+Package rerunfilecheck Warning: File `Research_doc.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Research_doc.out':
+(rerunfilecheck)             Before: 405759EB83097A9DDF5B6F4BE4F11F7E;898
+(rerunfilecheck)             After:  84116772433E1F726630C5B5D11DF761;974.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
- 25303 strings out of 494978
- 441772 string characters out of 6180203
- 585940 words of memory out of 5000000
- 27893 multiletter control sequences out of 15000+600000
+ 25310 strings out of 494978
+ 441817 string characters out of 6180203
+ 587940 words of memory out of 5000000
+ 27894 multiletter control sequences out of 15000+600000
  14288 words of font info for 56 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,9n,93p,1850b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1629,10 +1640,10 @@ amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Research_doc.pdf (13 pages, 324854 bytes).
+Output written on Research_doc.pdf (14 pages, 312789 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
  160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

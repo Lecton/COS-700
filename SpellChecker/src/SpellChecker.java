@@ -24,21 +24,60 @@ public class SpellChecker {
     /**
      * @param args the command line arguments
      */
-//    static File dir = new File("../Research Assignment/Draft/TEX/");
     static List<String> words;
     public static void main(String[] args) throws IOException {
-        words = new ArrayList<>();
-        File currentDir = new File("../Research Assignment/Draft/TEX/"); // current directory
-        displayDirectoryContents(currentDir);
         
-        // add elements to al, including duplicates
-        Set<String> hs = new HashSet<>();
-        hs.addAll(words);
-        words.clear();
-        words.addAll(hs);
-        for(String w: words){
-            System.out.println(w);
-        }
+       BufferedReader br = null;
+        try {
+            String file = "../VFLibGraph/vflibtest/data/10.txt";
+            String line;
+
+            br = new BufferedReader(new FileReader(file));
+            String [] array;
+            while ((line = br.readLine()) != null) {
+                    line = line.trim();
+                    array = line.split(" ");
+//                    if(array[0].equals("1") || array[1].equals("1") || 
+//                       array[0].equals("2") || array[1].equals("2") || 
+//                       array[0].equals("3") || array[1].equals("3") || 
+//                       array[0].equals("4") || array[1].equals("4") || 
+//                       array[0].equals("5") || array[1].equals("5") || 
+//                       array[0].equals("6") || array[1].equals("6") || 
+//                       array[0].equals("7") || array[1].equals("7") || 
+//                       array[0].equals("8") || array[1].equals("8") || 
+//                       array[0].equals("9") || array[1].equals("9") || 
+//                       array[0].equals("10") || array[1].equals("10") ){
+//                       System.out.println(array[0]+" "+array[1]);
+//                    }
+
+                    if(((0 < Integer.parseInt(array[0])) && (Integer.parseInt(array[0]) < 10)) && 
+                            (((0 < Integer.parseInt(array[1])) && (Integer.parseInt(array[1]) < 10)))){
+                               System.out.println(""+array[0]+" "+array[1]+"");
+//                               System.out.println("("+array[0]+","+array[1]+"),");
+                    }                    
+            }
+
+        } catch (IOException e) {
+                e.printStackTrace();
+        } finally {
+                try {
+                        if (br != null)br.close();
+                } catch (IOException ex) {
+                        ex.printStackTrace();
+                }
+        }         
+//        words = new ArrayList<>();
+//        File currentDir = new File("../Research Assignment/Draft/TEX/"); // current directory
+//        displayDirectoryContents(currentDir);
+//        
+//        // add elements to al, including duplicates
+//        Set<String> hs = new HashSet<>();
+//        hs.addAll(words);
+//        words.clear();
+//        words.addAll(hs);
+//        for(String w: words){
+//            System.out.println(w);
+//        }
     }
     
 

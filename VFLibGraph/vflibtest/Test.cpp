@@ -29,81 +29,121 @@ using namespace boost;
 void algorithm(string);
 void buildGraphs();
 int test();
+char *time_stamp();
 Enviroment* e;
-string method = "VF2";
-string cfile = "./control/control.txt";
-int main(){
+string method = "";
+int alg = -1;
+string cfile = "./data/10.txt";
+string file10 = "./data/testgd.txt";
+string file50 = "./data/50.txt";
+string file100 = "./data/100.txt";
+string file500 = "./data/500.txt";
+string file1000 = "./data/1000.txt";
+
+int main(int argc, char *argv[]){
+    alg = atoi(argv[1]);
+    if(alg == 1){
+        method = "Ullman";
+    }else{
+        method = "VF2";
+    }
     buildGraphs();
     return 0;
 }
 
 void buildGraphs(){
-    DIR* dir;
-    list<string> dfile;
-    struct dirent *entry;
-    if(dir=opendir("./data") ){
-            while(entry = readdir(dir)){
-                    if( strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0 )
-                    dfile.push_back(entry->d_name);
-            }
-            closedir(dir);
-    }
-    
-    for(std::list<string>::iterator i = dfile.begin(); i != dfile.end(); i++){
-                algorithm(*i);
-    }
+//    DIR* dir;
+//    list<string> dfile;
+//    struct dirent *entry;
+//    if(dir=opendir("./data") ){
+//            while(entry = readdir(dir)){
+//                    if( strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0 )
+//                    dfile.push_back(entry->d_name);
+//            }
+//            closedir(dir);
+//    }
+//    
+//    for(std::list<string>::iterator i = dfile.begin(); i != dfile.end(); i++){
+//                algorithm(*i);
+//    }
+    algorithm(file10);
+//    algorithm(file50);
+//    algorithm(file100);
+//    algorithm(file500);
+//    algorithm(file1000);
 }
 
 void algorithm(string fn1){    
-    string filename = string(method) + string(" ") + string(fn1);
-    e = new Enviroment(filename);
     GraphParser* gp[2];
     Comperer* comperer = new Comperer();
-    ARGEdit aet[2];
-    fn1 = "./data/" + fn1;
+    ARGEdit aet[2];;
     gp[0] = new GraphParser(fn1);
     gp[1] = new GraphParser(cfile);
     
     /************************************** Graph 1 **************************************/
     gp[0]->parseGraph();
     gp[0]->createGraph(aet[0]);
-    Graph graph0(&aet[0]);        
-//    cout << "Graph one has so many nodes." << endl;
-//    cout << graph0.NodeCount() << endl;        
+    Graph graph0(&aet[0]);
     /************************************** Graph 2 **************************************/
     gp[1]->parseGraph();
     gp[1]->createGraph(aet[1]);
-    Graph graph1(&aet[1]);        
-//    cout << "Graph two has so many nodes." << endl;
-//    cout << graph1.NodeCount() << endl;
-    
+    Graph graph1(&aet[1]);
     /************************************** Comparison **************************************/    
-//    cout << "\n\nComparison file";
-//    cout << fn1;
-//    cout << " and ";
-//    cout << fn2 << endl;
+    int lnodes = 0;
+    string filename;
+    if(graph0.NodeCount() < graph1.NodeCount()){        
+        filename = string(method) + string(" ") + string(fn1);
+    }else{
+        filename = string(method) + string(" ") + string(fn1);
+    }
     
-    UllSubState s0(&graph0,&graph1);
-    
+    e = new Enviroment(filename);
     int n;
     
-    node_id ni1[500000], ni2[500000];
+    node_id ni1[1000], ni2[1000];
 //    
-    if(graph0.NodeCount() < graph1.NodeCount()){
-        UllSubState s0(&graph0,&graph1);
+    if(alg == 1){
+        if(graph0.NodeCount() < graph1.NodeCount()){
+            UllSubState s0(&graph0,&graph1);
+            
+            if(!match(&s0,&n,ni1,ni2)){
+                printf("No match found.\n");
+                return ;
+            }else{
+                printf("Found a matching with %d nodes:\n",n);
+//                printf(ni1);
+            }
+        }else{
+            UllSubState s0(&graph1,&graph0);
+            
+            if(!match(&s0,&n,ni1,ni2)){
+                printf("No match found.\n");
+                return ;
+            }else{
+                printf("Found a matching with %d nodes:\n",n);
+            }
+        }
     }else{
-        UllSubState s0(&graph1,&graph0);
+        if(graph0.NodeCount() < graph1.NodeCount()){
+            VF2SubState s0(&graph0,&graph1);
+            
+            if(!match(&s0,&n,ni1,ni2)){
+                printf("No match found.\n");
+                return ;
+            }else{
+                printf("Found a matching with %d nodes:\n",n);
+            }
+        }else{
+            VF2SubState s0(&graph1,&graph0);
+            
+            if(!match(&s0,&n,ni1,ni2)){
+                printf("No match found.\n");
+                return ;
+            }else{
+                printf("Found a matching with %d nodes:\n",n);
+            }
+        }
     }
-//    
-//    if(!match(&s0,&n,ni1,ni2)){
-//        printf("No match found.\n");
-//        return ;
-//    }else{
-//        printf("Found a matching with %d nodes:\n",n);
-//        for(int i = 0; i < 500000;i++){
-//            printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n",ni1[i], ni2[i]);
-//        }
-//    }
     e->env_report();   
 }
 

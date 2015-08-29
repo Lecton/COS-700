@@ -29,7 +29,7 @@ public class SpellChecker {
         
        BufferedReader br = null;
         try {
-            String file = "../VFLibGraph/vflibtest/data/10.txt";
+            String file = "../VFLibGraph/vflibtest/data/500Control.txt";
             String line;
 
             br = new BufferedReader(new FileReader(file));
@@ -50,11 +50,10 @@ public class SpellChecker {
 //                       System.out.println(array[0]+" "+array[1]);
 //                    }
 
-                    if(((0 < Integer.parseInt(array[0])) && (Integer.parseInt(array[0]) < 10)) && 
-                            (((0 < Integer.parseInt(array[1])) && (Integer.parseInt(array[1]) < 10)))){
+                    if((Integer.parseInt(array[0]) <= 10) && (Integer.parseInt(array[1]) <= 10)){
                                System.out.println(""+array[0]+" "+array[1]+"");
 //                               System.out.println("("+array[0]+","+array[1]+"),");
-                    }                    
+                    }                  
             }
 
         } catch (IOException e) {

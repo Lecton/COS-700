@@ -33,13 +33,19 @@ char *time_stamp();
 Enviroment* e;
 string method = "";
 int alg = -1;
-string cfile = "./data/testControl.txt";
-string testfile = "./data/testFile.txt";
-string file10 = "./data/10.txt";
-string file50 = "./data/50.txt";
-string file100 = "./data/100.txt";
-string file500 = "./data/500.txt";
-string file1000 = "./data/1000.txt";
+string cfile = "./control/250.txt";
+string file30 = "./data/30.txt";
+string file56 = "./data/56.txt";
+string file75 = "./data/75.txt";
+string file92 = "./data/92.txt";
+string file109 = "./data/109.txt";
+string file121 = "./data/121.txt";
+string file148 = "./data/148.txt";
+string file166 = "./data/166.txt";
+string file181 = "./data/181.txt";
+string file197 = "./data/197.txt";
+string file211 = "./data/211.txt";
+string file222 = "./data/222.txt";
 
 int main(int argc, char *argv[]){
     alg = atoi(argv[1]);
@@ -53,28 +59,26 @@ int main(int argc, char *argv[]){
 }
 
 void buildGraphs(){
-//    DIR* dir;
-//    list<string> dfile;
-//    struct dirent *entry;
-//    if(dir=opendir("./data") ){
-//            while(entry = readdir(dir)){
-//                    if( strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0 )
-//                    dfile.push_back(entry->d_name);
-//            }
-//            closedir(dir);
-//    }
-//    
-//    for(std::list<string>::iterator i = dfile.begin(); i != dfile.end(); i++){
-//                algorithm(*i);
-//    }
-    algorithm(testfile);
-//    algorithm(file50);
-//    algorithm(file100);
-//    algorithm(file500);
-//    algorithm(file1000);
+    DIR* dir;
+    list<string> dfile;
+    struct dirent *entry;
+    if(dir=opendir("./data") ){
+            while(entry = readdir(dir)){
+                    if( strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0 )
+                    dfile.push_back(entry->d_name);
+            }
+            closedir(dir);
+    }
+   
+    for(std::list<string>::iterator i = dfile.begin(); i != dfile.end(); i++){
+	      cout << *i << endl;
+                algorithm(*i);
+    }
+//    algorithm(file75);
 }
 
-void algorithm(string fn1){    
+void algorithm(string fn1){
+    fn1 = "./data/" + fn1;
     GraphParser* gp[2];
     Comperer* comperer = new Comperer();
     ARGEdit aet[2];;
@@ -101,8 +105,8 @@ void algorithm(string fn1){
     e = new Enviroment(filename);
     int n;
     
-    node_id ni1[5], ni2[5];
-//    
+    node_id ni1[250], ni2[250];
+    
     if(alg == 1){
         if(graph0.NodeCount() < graph1.NodeCount()){
             UllSubState s0(&graph0,&graph1);
@@ -156,7 +160,7 @@ void algorithm(string fn1){
             }
         }
     }
-    e->env_report();   
+    e->env_report();
 }
 
 int  test(){

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.26)  26 AUG 2015 14:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.26)  31 AUG 2015 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1175,14 +1175,14 @@ raph.tex
 \c@myEnumeratei=\count210
 \enitdp@myEnumerate=\count211
 
-<graph/simplegraph.png, id=95, 251.94125pt x 733.74126pt>
+<graph/simplegraph.png, id=99, 251.94125pt x 733.74126pt>
 File: graph/simplegraph.png Graphic file (type png)
 
 <use graph/simplegraph.png>
 Package pdftex.def Info: graph/simplegraph.png used on input line 15.
 (pdftex.def)             Requested size: 85.9996pt x 250.45396pt.
 
-<graph/directedgraph.png, id=99, 281.05pt x 874.26625pt>
+<graph/directedgraph.png, id=103, 281.05pt x 874.26625pt>
 File: graph/directedgraph.png Graphic file (type png)
 
 <use graph/directedgraph.png>
@@ -1199,7 +1199,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no à in font cmr10!
 Missing character: There is no à in font cmr10!
 
-<graph/matrix.png, id=120, 349.305pt x 203.25937pt>
+<graph/matrix.png, id=124, 349.305pt x 203.25937pt>
 File: graph/matrix.png Graphic file (type png)
  <use graph/matrix.png>
 Package pdftex.def Info: graph/matrix.png used on input line 57.
@@ -1209,7 +1209,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--61
 
  []
 
-[3 <./graph/matrix.png>] <graph/list.png, id=129, 190.46156pt x 203.25937pt>
+[3 <./graph/matrix.png>] <graph/list.png, id=133, 190.46156pt x 203.25937pt>
 File: graph/list.png Graphic file (type png)
 
 <use graph/list.png>
@@ -1220,14 +1220,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-<graph/isomorphismleft.png, id=141, 231.86626pt x 444.66125pt>
+<graph/isomorphismleft.png, id=145, 231.86626pt x 444.66125pt>
 File: graph/isomorphismleft.png Graphic file (type png)
 
 <use graph/isomorphismleft.png>
 Package pdftex.def Info: graph/isomorphismleft.png used on input line 92.
 (pdftex.def)             Requested size: 85.9996pt x 164.92918pt.
 
-<graph/isomorphismright.png, id=142, 372.39125pt x 155.58125pt>
+<graph/isomorphismright.png, id=146, 372.39125pt x 155.58125pt>
 File: graph/isomorphismright.png Graphic file (type png)
 
 <use graph/isomorphismright.png>
@@ -1249,14 +1249,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
-<algorithms/stratMatrix.png, id=159, 525.46312pt x 511.9125pt>
+<algorithms/stratMatrix.png, id=163, 525.46312pt x 511.9125pt>
 File: algorithms/stratMatrix.png Graphic file (type png)
 
 <use algorithms/stratMatrix.png>
 Package pdftex.def Info: algorithms/stratMatrix.png used on input line 45.
 (pdftex.def)             Requested size: 279.50037pt x 272.30435pt.
  [7]
-<algorithms/Ullmanpseudo.png, id=175, 661.72218pt x 341.02406pt>
+<algorithms/Ullmanpseudo.png, id=179, 661.72218pt x 341.02406pt>
 File: algorithms/Ullmanpseudo.png Graphic file (type png)
 
 <use algorithms/Ullmanpseudo.png>
@@ -1443,7 +1443,7 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
-) [12] <algorithms/VF2pseudo.png, id=215, 941.01563pt x 461.47406pt>
+) [12] <algorithms/VF2pseudo.png, id=219, 941.01563pt x 461.47406pt>
 File: algorithms/VF2pseudo.png Graphic file (type png)
 
 <use algorithms/VF2pseudo.png>
@@ -1464,7 +1464,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[14]) (./references/references.tex
+[14]) (./results/results.tex
+<results/memory_comparison.png, id=230, 642.4pt x 481.8pt>
+File: results/memory_comparison.png Graphic file (type png)
+
+<use results/memory_comparison.png>
+Package pdftex.def Info: results/memory_comparison.png used on input line 7.
+(pdftex.def)             Requested size: 344.005pt x 258.00673pt.
+
+<results/time_comparison.png, id=231, 642.4pt x 481.8pt>
+File: results/time_comparison.png Graphic file (type png)
+
+<use results/time_comparison.png>
+Package pdftex.def Info: results/time_comparison.png used on input line 15.
+(pdftex.def)             Requested size: 344.005pt x 258.00673pt.
+) (./references/references.tex [15 <./results/memory_comparison.png>]
 Missing character: There is no ‚ in font cmti10!
 Missing character: There is no Ä in font cmti10!
 Missing character: There is no ù in font cmti10!
@@ -1477,80 +1491,76 @@ Missing character: There is no ì in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
+ [16pdfTeX warning (ext4): destination with the same identifier (name{cite.lamp
+ort94}) has been already used, duplicate ignored
 
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.45 
+     pdfTeX warning (ext4): destination with the same identifier (name{cite.lam
+port94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.45 
+     pdfTeX warning (ext4): destination with the same identifier (name{cite.lam
+port94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.45 
+     pdfTeX warning (ext4): destination with the same identifier (name{cite.lam
+port94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.45 
+     pdfTeX warning (ext4): destination with the same identifier (name{cite.lam
+port94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.45 
+      <./results/time_comparison.png>]pdfTeX warning (ext4): destination with t
+he same identifier (name{cite.lamport94}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.46 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 	\bibitem{lamport94}
+                         
 Underfull \hbox (badness 10000) in paragraph at lines 53--56
 []\OT1/cmr/m/it/10 Graph Def-i-ni-tions\OT1/cmr/m/n/10 , Avail-able at: []$\OT1
 /cmtt/m/n/10 http : / / web . eecs . utk . edu / []leparker / Courses /
  []
 
-))
+pdfTeX warning (ext4): destination with the same identifier (name{cite.lamport9
+4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.62 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 	\bibitem{lamport94}
+                         ))
 
 Package glossaries Warning: No \printglossary or \printglossaries found.
 This document will not have a glossary.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
-[15pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
+[17pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
 rt94}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.26 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.lamport94}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.26 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.lamport94}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.26 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.lamport94}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.26 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.lamport94}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.26 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.lamport94}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.26 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.lamport94}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.26 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.lamport94}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.26 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.lamport94}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.26 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.lamport94}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.26 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
@@ -1567,7 +1577,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `Research_doc.out' has not changed.
-(rerunfilecheck)             Checksum: B1D61927A21B091D86436291E4708040;1310.
+(rerunfilecheck)             Checksum: 00F3361F2EFA455CF3F6D453B5B64271;1364.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1575,10 +1585,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
- 23473 strings out of 494985
- 393186 string characters out of 6180356
+ 23496 strings out of 494985
+ 393675 string characters out of 6180356
  544161 words of memory out of 5000000
- 26078 multiletter control sequences out of 15000+600000
+ 26090 multiletter control sequences out of 15000+600000
  12316 words of font info for 48 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  69i,9n,93p,1803b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1596,10 +1606,10 @@ amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Research_doc.pdf (16 pages, 584136 bytes).
+Output written on Research_doc.pdf (18 pages, 625141 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 325 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 

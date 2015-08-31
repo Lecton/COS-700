@@ -7,3 +7,32 @@ g++ -std=c++0x  -o Test Test.cpp -L/vflib/lib vflib/libvf.a -lstdc++ -lm
 ./Test
 
 rm -r ./report/*.txt
+
+gnuplot> plot 'ullman_memory.dat','vf2_memory.dat'
+gnuplot> plot 'ullman_memory.dat','vf2_memory.dat'
+gnuplot> plot 'ullman_memory.dat','vf2_memory.dat'
+gnuplot> plot 'ullman_memory.dat','vf2_memory.dat'
+gnuplot> set term wxt enchanced
+Terminal type set to 'wxt'
+         undefined variable: enchanced
+
+gnuplot> set term wxt enhanced
+Terminal type set to 'wxt'
+Options are '0 enhanced'
+gnuplot> plot 'ullman_memory.dat','vf2_memory.dat'
+gnuplot> plot 'ullman_memory.dat','vf2_memory.dat' lc rgb 'blue'
+gnuplot> set title 'Memory Comparison on the Ullman and VF2 algorithms'
+gnuplot> plot 'ullman_memory.dat','vf2_memory.dat' lc rgb 'blue'
+gnuplot> plot 'ullman_memory.dat','vf2_memory.dat' lc rgb 'blue'
+gnuplot> set ylabel memory in bytes (b)
+         undefined variable: memory
+
+gnuplot> set ylabel 'memory in bytes (b)'
+gnuplot> set xlabel 'number of vertices'
+
+gnuplot> plot 'ullman_memory.dat' w linespoint,'vf2_memory.dat' lc rgb 'blue' w linespoints
+gnuplot> plot 'ullman_memory.dat' w linespoint,'vf2_memory.dat' lc rgb 'blue' w linespoints
+gnuplot> plot 'ullman_memory.dat' w linespoint,'vf2_memory.dat' lc rgb 'blue' w linespoints
+
+set terminal pngcairo
+

@@ -6,6 +6,7 @@
 #include <list>
 #include <unistd.h>
 #include <ios>
+#include <sys/time.h>
 #include <fstream>
 
 using namespace std;
@@ -13,12 +14,12 @@ using namespace boost;
 
 class Enviroment{ 
     private:
-        long double startTime;
-        long double endTime;
+	long mtime, seconds, useconds; 
+	struct timeval start, end;
         string fname;
     public:
         Enviroment(string alg_name){
-            startTime = time(0) * 1000;
+	    gettimeofday(&start, NULL);
             fname = "./report/"+alg_name+std::string("_report.csv");
             ofstream fs(fname);
             fs.close();
@@ -27,7 +28,12 @@ class Enviroment{
         ~Enviroment();
         
         void setEndTime(){
-            endTime = time(0) * 1000;
+	  gettimeofday(&end, NULL);
+	  seconds  = end.tv_sec  - start.tv_sec;
+	  useconds = end.tv_usec - start.tv_usec;
+	  mtime = ((seconds) * 1000 + useconds/1000.0);
+	  printf("Elapsed time: %ld milliseconds  ", mtime);
+	  cout << fname << endl;
         }
         
         double process_mem_usage(){
@@ -69,12 +75,10 @@ class Enviroment{
         
         void env_report(){
             ofstream fs;
-            fs.open(fname, std::ios::out | std::ios::app);
+            fs.open(fname, ios::app);
             fs << to_string(this->process_mem_usage()) + ",";
-            fs << to_string(this->startTime) + std::string(",");
-            fs << to_string(this->endTime);
+            fs << to_string(this->mtime) + std::string(",");;
             fs.close();
-             
         }
 };
 

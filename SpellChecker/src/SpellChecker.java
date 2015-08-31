@@ -29,7 +29,8 @@ public class SpellChecker {
     public static void main(String[] args) throws IOException {
         
 //        forPython();
-        forC();
+//        forC();
+        forTheLolz();
         List<Integer> list = new ArrayList<>();
        BufferedReader br = null;
         try {
@@ -202,6 +203,37 @@ public class SpellChecker {
                         ex.printStackTrace();
                 }
         }
+    }
+    
+
+    public static void forTheLolz(){
+        BufferedReader br = null;
+        List<Integer> list = new ArrayList<>();
+        try {
+            String file = "../VFLibGraph/vflibtest/data/121.txt";
+            String line;
+
+            br = new BufferedReader(new FileReader(file));
+            String [] array;
+            int edges = 0;
+            while ((line = br.readLine()) != null) {
+                    line = line.trim();
+                    array = line.split(" ");
+                    
+                    array[0] = array[0].trim();                    
+                    array[1] = array[1].trim();
+                    System.out.println("(" + array[0] + " ," + array[1] + "),");
+            }
+
+        } catch (IOException e) {
+                e.printStackTrace();
+        } finally {
+                try {
+                        if (br != null)br.close();
+                } catch (IOException ex) {
+                        ex.printStackTrace();
+                }
+        }          
     }
     
     public static void forPython(){

@@ -1,0 +1,44 @@
+\asection{Experimentation}
+\label{Experimentation}
+
+\subimport{data/}{data}
+
+\subsection{Experiment}
+The experiment that is conducted on the Ullman [1] and the VF2 [11] algorithm uses a quantitative approach that evaluates the algorithms against each 
+other. The search graph matching algorithms are implemented and experimented on, using two digraph objects at a time. The experiment for that is 
+employed, measures and records the algorithms ability and performance of the algorithms in cases where Graph $G${\tiny A} and Graph $G${\tiny B} are 
+either partially or completely isomorphic.
+\subsubsection{Experiment implementation}
+
+We will refer to Graphs $G${\tiny A} and $G${\tiny B} in this context.\newline\newline
+The algorithm has to insert an arbitrarily large number of nodes.\newline\newline
+The comparison that is done, is dependent on the relationship between Graph $G${\tiny A} and $G${\tiny B}.\newline\newline
+\textbf{Syntactic comparison}					
+\begin{myEnumerate}
+\item $G${\tiny A} is compared with the whole of $G${\tiny B} for syntactical similarity.										
+\begin{myEnumerate}
+\item A new subgraph of Graph B is generated.
+\item The subgraph is compared with Graph $G${\tiny A} for syntactical similarity.											
+\begin{myEnumerate}
+\item The time taken to perform the comparison is recorded.
+\item The amount of memory used by the algorithm to perform the comparison is recorded.
+\end{myEnumerate}	
+\item Once all the subgraphs of Graph B have been experimented upon, the result of the subgraph with the best degree of syntactical(isomorphic) 
+similarity is then considered the found subgraph.
+\end{myEnumerate}
+\item If Graph $G${\tiny A} and $G${\tiny B} are not completely syntactically similar, Graph $G${\tiny A} is compared with all the possible subgraphs of Graph B.
+\end{myEnumerate}
+
+The recorded results from all the algorithms is analyzed and used to identify which amongst the algorithms is the best and for which cases it is the best in.\\
+The results from the algorithms are weighed against a comparison criteria, and it is this criteria that is used to evaluate the algorithms against each other.\\
+
+\subsubsection{The comparison criteria}
+The criteria that the algorithm results are weighed against is specified below.
+\begin{myEnumerate}
+	\item Space efficiency
+	\item Time efficiency
+ \end{myEnumerate}
+ \break
+ 
+Once the results have been obtained and throughly evaluated, then the algorithms with the best perform per criteria field are recorded.\\
+And from that set, the best algorithm is chosen overall relative to the others based on the criteria.

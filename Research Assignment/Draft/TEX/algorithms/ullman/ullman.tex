@@ -1,10 +1,19 @@
 \asection{Ullman Algorithm}
 \label{Ullman Algorithm}
 
-\setlistdepth{1}
 
-\newlist{myEnumerate}{enumerate}{1}
+\setlistdepth{9}
+
+\newlist{myEnumerate}{enumerate}{9}
 \setlist[myEnumerate,1]{label=(\arabic*)}
+\setlist[myEnumerate,2]{label=(\Roman*)}
+\setlist[myEnumerate,3]{label=(\Alph*)}
+\setlist[myEnumerate,4]{label=(\roman*)}
+\setlist[myEnumerate,5]{label=(\alph*)}
+\setlist[myEnumerate,6]{label=(\arabic*)}
+\setlist[myEnumerate,7]{label=(\Roman*)}
+\setlist[myEnumerate,8]{label=(\Alph*)}
+\setlist[myEnumerate,9]{label=(\roman*)}
 
 \subsection{Background}
 Subgraph ismorphis can be determined using a brute-force approach on the tree representation of a graph G{\tiny A}. Though this technique is effective, it is however not efficient because all the possible

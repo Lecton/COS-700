@@ -18,4 +18,11 @@
 \BOOKMARK [1][-]{section.3}{VFLibGraph Library}{}% 18
 \BOOKMARK [2][-]{subsection.3.1}{Introduction}{section.3}% 19
 \BOOKMARK [2][-]{subsection.3.2}{Using the library}{section.3}% 20
-\BOOKMARK [1][-]{section.4}{Experiment Results}{}% 21
+\BOOKMARK [1][-]{section.4}{Experimentation}{}% 21
+\BOOKMARK [1][-]{section.5}{Data Set}{}% 22
+\BOOKMARK [2][-]{subsection.5.1}{Experiment}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Experiment implementation}{subsection.5.1}% 24
+\BOOKMARK [3][-]{subsubsection.5.1.2}{The comparison criteria}{subsection.5.1}% 25
+\BOOKMARK [1][-]{section.6}{Experiment Results}{}% 26
+\BOOKMARK [1][-]{section.7}{Memory Results}{}% 27
+\BOOKMARK [1][-]{section.8}{Time Results}{}% 28

@@ -1,0 +1,36 @@
+\documentclass[a4paper,oneside,landscape,12pt]{article}
+\usepackage[english]{babel} % formatting rules for the English language
+\usepackage[T1]{fontenc} % proper formatting for accented characters and non-standard characters such as pipelines
+\usepackage{lmodern} % font formatting
+\usepackage{float} % allow floating environments such as figures
+\usepackage{amsmath} % math eqn forma oooo\usepackage{amssymb} % math fonts
+\usepackage{import}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{listliketab}
+\subimport{latex/}{generalDoc.tex}
+\usepackage{etoolbox}
+\newcommand{\tab}[1]{\hspace{.\textwidth}\rlap{#1}}
+\makeatletter
+\patchcmd{\@maketitle}
+  {\null\vskip 2em\begin{center}}
+  {\centering}
+  {}
+  {}
+\patchcmd{\@maketitle}
+  {\end{center}}
+  {}
+  {}
+  {}
+\makeatother
+
+\title{\large\bfseries COS 783 Assignment 2}
+\author{\large Student number: 10637291 }
+\date{}
+\begin{document}
+\maketitle
+\subimport{}{Assignment}
+\end{document} 

@@ -19,14 +19,16 @@
 \BOOKMARK [2][-]{subsection.3.1}{Introduction}{section.3}% 19
 \BOOKMARK [2][-]{subsection.3.2}{Using the library}{section.3}% 20
 \BOOKMARK [1][-]{section.4}{Experimentation}{}% 21
-\BOOKMARK [1][-]{section.5}{Data Set}{}% 22
-\BOOKMARK [2][-]{subsection.5.1}{Experiment}{section.5}% 23
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Experiment implementation}{subsection.5.1}% 24
-\BOOKMARK [3][-]{subsubsection.5.1.2}{The comparison criteria}{subsection.5.1}% 25
-\BOOKMARK [1][-]{section.6}{Experiment Results}{}% 26
-\BOOKMARK [1][-]{section.7}{Memory Results}{}% 27
-\BOOKMARK [2][-]{subsection.7.1}{Analysis of results}{section.7}% 28
-\BOOKMARK [2][-]{subsection.7.2}{Conclusion}{section.7}% 29
-\BOOKMARK [1][-]{section.8}{Time Results}{}% 30
-\BOOKMARK [2][-]{subsection.8.1}{Analysis of results}{section.8}% 31
-\BOOKMARK [2][-]{subsection.8.2}{Conclusion}{section.8}% 32
+\BOOKMARK [2][-]{subsection.4.1}{Data Set}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.2}{Experiment}{section.4}% 23
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Experiment implementation}{subsection.4.2}% 24
+\BOOKMARK [3][-]{subsubsection.4.2.2}{The comparison criteria}{subsection.4.2}% 25
+\BOOKMARK [1][-]{section.5}{Experiment Results}{}% 26
+\BOOKMARK [2][-]{subsection.5.1}{Memory Results}{section.5}% 27
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Analysis of results}{subsection.5.1}% 28
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Conclusion}{subsection.5.1}% 29
+\BOOKMARK [2][-]{subsection.5.2}{Time Results}{section.5}% 30
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Analysis of results}{subsection.5.2}% 31
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Conclusion}{subsection.5.2}% 32
+\BOOKMARK [2][-]{subsection.5.3}{Boundary Cases}{section.5}% 33
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Introduction}{subsection.5.3}% 34

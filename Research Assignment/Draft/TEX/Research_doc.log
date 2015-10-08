@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.26)  8 OCT 2015 01:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.26)  8 OCT 2015 02:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,14 +1189,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Research.tex (./graph/g
 raph.tex
-<graph/simplegraph.png, id=139, 251.94125pt x 733.74126pt>
+<graph/simplegraph.png, id=143, 251.94125pt x 733.74126pt>
 File: graph/simplegraph.png Graphic file (type png)
 
 <use graph/simplegraph.png>
 Package pdftex.def Info: graph/simplegraph.png used on input line 13.
 (pdftex.def)             Requested size: 85.9996pt x 250.45396pt.
 
-<graph/directedgraph.png, id=143, 281.05pt x 874.26625pt>
+<graph/directedgraph.png, id=147, 281.05pt x 874.26625pt>
 File: graph/directedgraph.png Graphic file (type png)
 
 <use graph/directedgraph.png>
@@ -1213,7 +1213,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 
-<graph/matrix.png, id=164, 349.305pt x 203.25937pt>
+<graph/matrix.png, id=168, 349.305pt x 203.25937pt>
 File: graph/matrix.png Graphic file (type png)
  <use graph/matrix.png>
 Package pdftex.def Info: graph/matrix.png used on input line 55.
@@ -1223,7 +1223,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--59
 
  []
 
-[3 <./graph/matrix.png>] <graph/list.png, id=173, 190.46156pt x 203.25937pt>
+[3 <./graph/matrix.png>] <graph/list.png, id=177, 190.46156pt x 203.25937pt>
 File: graph/list.png Graphic file (type png)
 
 <use graph/list.png>
@@ -1234,14 +1234,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
-<graph/isomorphismleft.png, id=186, 231.86626pt x 444.66125pt>
+<graph/isomorphismleft.png, id=190, 231.86626pt x 444.66125pt>
 File: graph/isomorphismleft.png Graphic file (type png)
 
 <use graph/isomorphismleft.png>
 Package pdftex.def Info: graph/isomorphismleft.png used on input line 90.
 (pdftex.def)             Requested size: 85.9996pt x 164.92918pt.
 
-<graph/isomorphismright.png, id=187, 372.39125pt x 155.58125pt>
+<graph/isomorphismright.png, id=191, 372.39125pt x 155.58125pt>
 File: graph/isomorphismright.png Graphic file (type png)
 
 <use graph/isomorphismright.png>
@@ -1263,14 +1263,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
-<algorithms/stratMatrix.png, id=204, 525.46312pt x 511.9125pt>
+<algorithms/stratMatrix.png, id=208, 525.46312pt x 511.9125pt>
 File: algorithms/stratMatrix.png Graphic file (type png)
 
 <use algorithms/stratMatrix.png>
 Package pdftex.def Info: algorithms/stratMatrix.png used on input line 45.
 (pdftex.def)             Requested size: 279.50037pt x 272.30435pt.
  [7]
-<algorithms/Ullmanpseudo.png, id=219, 661.72218pt x 341.02406pt>
+<algorithms/Ullmanpseudo.png, id=223, 661.72218pt x 341.02406pt>
 File: algorithms/Ullmanpseudo.png Graphic file (type png)
 
 <use algorithms/Ullmanpseudo.png>
@@ -1457,7 +1457,7 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
-) [12] <algorithms/VF2pseudo.png, id=259, 941.01563pt x 461.47406pt>
+) [12] <algorithms/VF2pseudo.png, id=263, 941.01563pt x 461.47406pt>
 File: algorithms/VF2pseudo.png Graphic file (type png)
 
 <use algorithms/VF2pseudo.png>
@@ -1488,7 +1488,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
  []
 
-<experiment/data/250.png, id=271, 1008.1665pt x 677.1699pt>
+<experiment/data/250.png, id=275, 1008.1665pt x 677.1699pt>
 File: experiment/data/250.png Graphic file (type png)
 
 <use experiment/data/250.png>
@@ -1506,42 +1506,42 @@ tices: 30,56,75,92,109,121,148,166,181,197,211
  []
 
 [15 <./experiment/data/250.png>]
-<experiment/data/30.png, id=281, 586.8324pt x 442.2924pt>
+<experiment/data/30.png, id=285, 586.8324pt x 442.2924pt>
 File: experiment/data/30.png Graphic file (type png)
 
 <use experiment/data/30.png>
 Package pdftex.def Info: experiment/data/30.png used on input line 31.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/56.png, id=282, 586.8324pt x 442.2924pt>
+<experiment/data/56.png, id=286, 586.8324pt x 442.2924pt>
 File: experiment/data/56.png Graphic file (type png)
 
 <use experiment/data/56.png>
 Package pdftex.def Info: experiment/data/56.png used on input line 37.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/75.png, id=283, 586.8324pt x 442.2924pt>
+<experiment/data/75.png, id=287, 586.8324pt x 442.2924pt>
 File: experiment/data/75.png Graphic file (type png)
 
 <use experiment/data/75.png>
 Package pdftex.def Info: experiment/data/75.png used on input line 42.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/92.png, id=284, 586.8324pt x 442.2924pt>
+<experiment/data/92.png, id=288, 586.8324pt x 442.2924pt>
 File: experiment/data/92.png Graphic file (type png)
 
 <use experiment/data/92.png>
 Package pdftex.def Info: experiment/data/92.png used on input line 48.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/109.png, id=285, 586.8324pt x 442.2924pt>
+<experiment/data/109.png, id=289, 586.8324pt x 442.2924pt>
 File: experiment/data/109.png Graphic file (type png)
 
 <use experiment/data/109.png>
 Package pdftex.def Info: experiment/data/109.png used on input line 53.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/121.png, id=286, 586.8324pt x 442.2924pt>
+<experiment/data/121.png, id=290, 586.8324pt x 442.2924pt>
 File: experiment/data/121.png Graphic file (type png)
 
 <use experiment/data/121.png>
@@ -1597,8 +1597,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--42
 
  []
 
-) (./results/results.tex [18] (./results/memory/memory.tex
-<results/memory/memory_comparison.png, id=319, 642.4pt x 481.8pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--42
+
+ []
+
+[18]) (./results/results.tex (./results/memory/memory.tex
+<results/memory/memory_comparison.png, id=323, 642.4pt x 481.8pt>
 File: results/memory/memory_comparison.png Graphic file (type png)
 
 <use results/memory/memory_comparison.png>
@@ -1625,7 +1640,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--1
 
  []
 
-<results/time/time_comparison.png, id=332, 642.4pt x 481.8pt>
+<results/time/time_comparison.png, id=336, 642.4pt x 481.8pt>
 File: results/time/time_comparison.png Graphic file (type png)
 
 <use results/time/time_comparison.png>
@@ -1647,7 +1662,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--22
 
  []
 
-) [21 <./results/time/time_comparison.png>] [22]) (./references/references.tex
+) (./results/cases/cases.tex [21 <./results/time/time_comparison.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+[22]) (./references/references.tex
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no  in font cmti10!
@@ -1768,18 +1803,18 @@ Package rerunfilecheck Warning: File `Research_doc.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Research_doc.out':
-(rerunfilecheck)             Before: 0101661F6E48052B0945B2F559C08568;1983
-(rerunfilecheck)             After:  9A15CD8634AD4826A34A45796EFBA9BE;2043.
+(rerunfilecheck)             Before: B39C96819FF70A6CE94B9DB0740DF7C4;2125
+(rerunfilecheck)             After:  1666F56077A68E387D79FAC8F5F1AC97;2261.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
  ) 
 Here is how much of TeX's memory you used:
- 23663 strings out of 494985
- 396393 string characters out of 6180356
+ 23670 strings out of 494985
+ 396590 string characters out of 6180356
  545580 words of memory out of 5000000
- 26208 multiletter control sequences out of 15000+600000
+ 26210 multiletter control sequences out of 15000+600000
  12651 words of font info for 49 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  69i,9n,96p,1803b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1798,10 +1833,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Research_doc.pdf (24 pages, 2108563 bytes).
+Output written on Research_doc.pdf (24 pages, 2109938 bytes).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
- 368 compressed objects within 4 object streams
- 106 named destinations out of 1000 (max. 500000)
- 351 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 449 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 

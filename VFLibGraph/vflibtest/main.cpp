@@ -24,6 +24,9 @@
 #include "./headers/graph_parser.h"
 #include "./headers/comperer.h"
 #include "./headers/instance_env.h"
+/*  Algorithms headers */
+#include "./headers/vf2_sub_state.h"
+#include "./headers/ull_sub_state.h"
 
 using namespace std;
 using namespace boost;
@@ -44,39 +47,20 @@ void algorithm(string,string);
 Enviroment* e;
 int main(){
     
-    
-    DIR* dir;
-    list<string> dfile;
-    struct dirent *entry;
-    e = new Enviroment("VF2");
-    if(dir=opendir("./data") ){
-            while(entry = readdir(dir)){
-                    if( strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0 )
-                    dfile.push_back(entry->d_name);
-            }
-            closedir(dir);
-    }
-    
-    for(std::list<string>::iterator i = dfile.begin(); i != dfile.end(); i++){
-        for(std::list<string>::iterator j = dfile.begin(); j != dfile.end(); j++){
-            if((*i).compare(*j) != 0){
-                
-                algorithm(*i,*j);
-                cout << "here" << endl;
-            }
-            
-        }
-    }
-    e->env_report();   
+    string con = "./cases/control/worst/worst.txt";
+    string conTest = "./cases/data/worst/worstTest.txt";
+    algorithm(con,conTest);   
     return 0;
 }
 
-void algorithm(string fn1,string fn2){
+void algorithm(string fn1,string fn2){  
+    int alg = 2;
+    string filename = "worst";
+    string method = "VF2";
+    
     GraphParser* gp[2];
     Comperer* comperer = new Comperer();
     ARGEdit aet[2];
-    fn1 = "./data/" + fn1;
-    fn2 = "./data/" + fn2;
     gp[0] = new GraphParser(fn1);
     gp[1] = new GraphParser(fn2);
     
@@ -94,24 +78,73 @@ void algorithm(string fn1,string fn2){
     cout << graph1.NodeCount() << endl;
     
 
-    /************************************** Comparison **************************************/    
-    cout << "\n\nComparison" << endl;
-    comperer->comparison(graph0,graph1);
-
-//    if(graph0.NodeCount() < graph1.NodeCount()){
-//        if(!comperer->comparison(graph0,graph1)){
-//            cout << "Match was not found." << endl;
-//        }
-//    }else{
-//        if(!comperer->comparison(graph1,graph0)){
-//            cout << "Match was not found." << endl;
-//        }
-//    } 
+    int lnodes = 0;
     
-//    gp[1] = NULL;
-//    gp[2] = NULL;
-//    graph0 = NULL;
-//    graph1 = NULL;
+    if(graph0.NodeCount() < graph1.NodeCount()){        
+        filename = string(method) + string(" ") + string(filename);
+    }else{
+        filename = string(method) + string(" ") + string(filename);
+    }
+    
+    e = new Enviroment(filename);
+    int n;
+    
+    node_id ni1[100], ni2[100];
+    if(alg == 1){
+        if(graph0.NodeCount() < graph1.NodeCount()){
+            UllSubState s0(&graph0,&graph1);
+            
+            if(!match(&s0,&n,ni1,ni2)){
+                printf("No match found.\n");
+                return ;
+            }else{
+                printf("Found a matching with %d nodes:\n",n);
+		for(int i = 0; i < n; i++){
+		  printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n", ni1[i],ni2[i]);
+		}
+            }
+        }else{
+            UllSubState s0(&graph1,&graph0);
+            
+            if(!match(&s0,&n,ni1,ni2)){
+                printf("No match found.\n");
+                return ;
+            }else{
+                printf("Found a matching with %d nodes:\n",n);
+		for(int i = 0; i < n; i++){
+		  printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n", ni1[i],ni2[i]);
+		}
+            }
+        }
+    }else{
+        if(graph0.NodeCount() < graph1.NodeCount()){
+            VF2SubState s0(&graph0,&graph1);
+            
+            if(!match(&s0,&n,ni1,ni2)){
+                printf("No match found.\n");
+                return ;
+            }else{
+                printf("Found a matching with %d nodes:\n",n);
+		for(int i = 0; i < n; i++){
+		  printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n", ni1[i],ni2[i]);
+		}
+            }
+        }else{
+            VF2SubState s0(&graph1,&graph0);
+            
+            if(!match(&s0,&n,ni1,ni2)){
+                //printf("No match found.\n");
+                return ;
+            }else{
+                //printf("Found a matching with %d nodes:\n",n);
+		/*for(int i = 0; i < n; i++){
+		  printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n", ni1[i],ni2[i]);
+		}*/
+            }
+        }
+    }
+    e->setEndTime();
+    e->env_report();
 }
 
 void printGraph(Graph & g){

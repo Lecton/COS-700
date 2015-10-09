@@ -22,12 +22,13 @@ public class DataGenerator {
      * @param args the command line arguments
      */
     public static List<Element> list;
-    public static int SIZE = 100;
+    public static int SIZE = 1000;
     
     public static void main(String[] args) {
         best();
         average();
         worst();
+        System.out.println("Done");
     }
     
     public static void best(){
@@ -157,7 +158,6 @@ public class DataGenerator {
                 
                 bw.close();
 
-                System.out.println("Done");
 
         } catch (IOException e) {
                 e.printStackTrace();

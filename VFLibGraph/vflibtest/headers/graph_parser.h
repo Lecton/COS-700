@@ -41,13 +41,13 @@ class GraphParser{
                     tokenizer<> token(line);
                     tokenizer<>::iterator beg=token.begin();
                     first = std::stoi(*beg);
-                    second = std::stoi(*(++beg));
+                    //second = std::stoi(*(++beg));
                     nodes.push_back(first);
-                    nodes.push_back(second);
+                    //nodes.push_back(second);
 
                     relation rel;
                     rel.first = (first);
-                    rel.second = (second);
+                    //rel.second = (second);
                     relationships.push_back(rel);
                 }
                 nodes.sort();
@@ -63,10 +63,10 @@ class GraphParser{
             for(std::list<int>::const_iterator iterator = nodes.begin(), end = nodes.end(); iterator != end; ++iterator) {
                 g.InsertNode(NULL);
              } 
-
+/*
             for(std::list<relation>::const_iterator iterator = relationships.begin(), end = relationships.end(); iterator != end; ++iterator) {
                 g.InsertEdge(((*iterator).first)-1,((*iterator).second)-1,NULL);
-             }
+             }*/
         }
 };
 

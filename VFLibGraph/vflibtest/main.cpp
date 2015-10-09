@@ -47,15 +47,15 @@ void algorithm(string,string);
 Enviroment* e;
 int main(){
     
-    string con = "./cases/control/worst/worst.txt";
-    string conTest = "./cases/data/worst/worstTest.txt";
+    string con = "./cases/control/best/best.txt";
+    string conTest = "./cases/data/best/bestTest.txt";
     algorithm(con,conTest);   
     return 0;
 }
 
 void algorithm(string fn1,string fn2){  
     int alg = 2;
-    string filename = "worst";
+    string filename = "best";
     string method = "VF2";
     
     GraphParser* gp[2];
@@ -89,7 +89,7 @@ void algorithm(string fn1,string fn2){
     e = new Enviroment(filename);
     int n;
     
-    node_id ni1[100], ni2[100];
+    node_id ni1[10000], ni2[10000];
     if(alg == 1){
         if(graph0.NodeCount() < graph1.NodeCount()){
             UllSubState s0(&graph0,&graph1);
@@ -133,13 +133,13 @@ void algorithm(string fn1,string fn2){
             VF2SubState s0(&graph1,&graph0);
             
             if(!match(&s0,&n,ni1,ni2)){
-                //printf("No match found.\n");
+                printf("No match found.\n");
                 return ;
             }else{
-                //printf("Found a matching with %d nodes:\n",n);
-		/*for(int i = 0; i < n; i++){
+                printf("Found a matching with %d nodes:\n",n);
+		for(int i = 0; i < n; i++){
 		  printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n", ni1[i],ni2[i]);
-		}*/
+		}
             }
         }
     }

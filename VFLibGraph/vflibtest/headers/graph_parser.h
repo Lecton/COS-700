@@ -63,7 +63,7 @@ class GraphParser{
             for(std::list<int>::const_iterator iterator = nodes.begin(), end = nodes.end(); iterator != end; ++iterator) {
                 g.InsertNode(NULL);
              } 
-/*
+	    /*
             for(std::list<relation>::const_iterator iterator = relationships.begin(), end = relationships.end(); iterator != end; ++iterator) {
                 g.InsertEdge(((*iterator).first)-1,((*iterator).second)-1,NULL);
              }*/

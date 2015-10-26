@@ -45,18 +45,26 @@ void baseComparison(Graph,Graph);
 void test();
 void algorithm(string,string);
 Enviroment* e;
-int main(){
+char alg;
+string filename;
+string method;
     
-    string con = "./cases/control/best/best.txt";
-    string conTest = "./cases/data/best/bestTest.txt";
-    algorithm(con,conTest);   
+int main(int ini,char* in[]){    
+    alg = *in[1];
+    filename = in[2];
+    if(alg == '1'){
+      method = "Ullman";
+    }else{
+      method = "VF2";
+    }
+    
+    string con = "./cases/control/control.txt";
+    string conTest = string("./cases/data/") + string(in[2]) + string(".txt");
+    algorithm(con,conTest);
     return 0;
 }
 
-void algorithm(string fn1,string fn2){  
-    int alg = 2;
-    string filename = "best";
-    string method = "VF2";
+void algorithm(string fn1,string fn2){
     
     GraphParser* gp[2];
     Comperer* comperer = new Comperer();
@@ -89,9 +97,9 @@ void algorithm(string fn1,string fn2){
     e = new Enviroment(filename);
     int n;
     
-    node_id ni1[10000], ni2[10000];
-    if(alg == 1){
-        if(graph0.NodeCount() < graph1.NodeCount()){
+    node_id ni1[1000], ni2[1000];
+    if(alg == '1'){
+      if(graph0.NodeCount() < graph1.NodeCount()){
             UllSubState s0(&graph0,&graph1);
             
             if(!match(&s0,&n,ni1,ni2)){
@@ -117,7 +125,7 @@ void algorithm(string fn1,string fn2){
             }
         }
     }else{
-        if(graph0.NodeCount() < graph1.NodeCount()){
+      if(graph0.NodeCount() < graph1.NodeCount()){
             VF2SubState s0(&graph0,&graph1);
             
             if(!match(&s0,&n,ni1,ni2)){

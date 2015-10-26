@@ -5,15 +5,45 @@
 
 \subsection{Experiment}
 The experiment that is conducted on the Ullman [1] and the VF2 [11] algorithm uses a quantitative approach that evaluates the algorithms against each 
-other. The search graph matching algorithms are implemented and experimented on, using two digraph objects at a time. The experiment for that is 
-employed, measures and records the algorithms ability and performance of the algorithms in cases where Graph $G${\tiny A} and Graph $G${\tiny B} are 
-either partially or completely isomorphic.
-\subsubsection{Experiment implementation}
+other. The search graph matching algorithms are implemented and experimented on, using two digraph or disjoint objects at a time. The experiment for that is 
+employed, measured and records the algorithms ability and performance of the algorithms in cases where Graph $G${\tiny A} and Graph $G${\tiny B} are 
+either partially or completely isomorphic.\newline\newline
+Several experiments are done on the two algorithms so that we can understand their behaviour in different conditions, and these experiments that are conducted 
+are done on both joint and disjoint graphs. The experiments that are performed are expained below.
 
-We will refer to Graphs $G${\tiny A} and $G${\tiny B} in this context.\newline\newline
-The algorithm has to insert an arbitrarily large number of nodes.\newline\newline
-The comparison that is done, is dependent on the relationship between Graph $G${\tiny A} and $G${\tiny B}.\newline\newline
-\textbf{Syntactic comparison}					
+\subsubsection{The comparison criteria}
+\label{The comparison criteria}
+The evaluation performed on the algorithm results is based on two criteria's. These are use to weigh the algorithms against against each other to determine which amongst them is better. The criteria's are listed below.\newline\newline
+\textbf{Space efficiency:} This factor measures the amount of virtual memory (RAM) that is used by the algorithm in the graph matching process of its
+execution.The unit used to measure the amount of memory  by the respective algorithms is measured in \textit{bytes (b)}. \newline\newline
+\textbf{Time efficiency:} This factor measures the time taken by the algorithm to start and \textit{successfully} complete the graph matching process of its
+execution. The unit used to measure the amount of time taken by the respective algorithms is measured in \textit{millisecond (ms)}. 
+
+\subsubsection{Description Conducted Experiments}
+\label{Description Conducted Experiments}
+This section lists each of the experiments that where conducted for both algorithms as well as provides an explains of each experiment.
+\paragraph{Performance evaluation for different vertice numbers}\mbox{}\\
+\label{Performance evaluation for different vertice numbers}
+This experiment uses data that is mentioned in chapter \ref{Data Set}. The experiment is conducted on joint and disjoint graphs. This experiment is intended on evaluating the behaviour of the two algorithms performance for graphs of 
+different vertice numbers. The number of the vertices in the graphs range from 55 to 250 vertices in the graphs.
+
+\paragraph{Performance evaluation for different edge numbers}\mbox{}\\
+This experiment uses generated graph data comprising of 1000 vertices and 499500 edges. The generated graph data is defined using the following rules.
+\begin{myEnumerate}
+  \item Define a set of vertices \textit{V} for some graph \textit{G}.
+  \item Each vertice \textit{v} in \textit{V} is connect to every other vertice in \textit{V}
+  \item Non of the edges in the graph G are reflexive.
+\end{myEnumerate}
+This experiment is intended on evaluating the behaviour of the algorithms for graphs with different numbers of edges. The number of edges of the graph are sequencially 
+removed and the performance of the algorithms for each interval is evaluated.
+
+\subsubsection{Experiment implementation}
+The experimentation process is accomplished in phases and each phase is explained below. We will refer to Graphs $G${\tiny A} and $G${\tiny B} in this context.
+\paragraph{Generate two graphs, $G${\tiny A} and $G${\tiny B}}\mbox{}\\
+In the first phase of the experimentation process, a supergraph $G${\tiny A} and a subgraph $G${\tiny B} are generated. The two graphs are built together 
+with their associate vertices and edges.
+\paragraph{Syntactic comparison}\mbox{}\\
+The comparison that is done, is dependent on the relationship between Graph $G${\tiny A} and $G${\tiny B}.
 \begin{myEnumerate}
 \item $G${\tiny A} is compared with the whole of $G${\tiny B} for syntactical similarity.										
 \begin{myEnumerate}
@@ -22,23 +52,13 @@ The comparison that is done, is dependent on the relationship between Graph $G${
 \begin{myEnumerate}
 \item The time taken to perform the comparison is recorded.
 \item The amount of memory used by the algorithm to perform the comparison is recorded.
-\end{myEnumerate}	
-\item Once all the subgraphs of Graph B have been experimented upon, the result of the subgraph with the best degree of syntactical(isomorphic) 
-similarity is then considered the found subgraph.
+\end{myEnumerate}
 \end{myEnumerate}
 \item If Graph $G${\tiny A} and $G${\tiny B} are not completely syntactically similar, Graph $G${\tiny A} is compared with all the possible subgraphs of Graph B.
 \end{myEnumerate}
 
-The recorded results from all the algorithms is analyzed and used to identify which amongst the algorithms is the best and for which cases it is the best in.\\
-The results from the algorithms are weighed against a comparison criteria, and it is this criteria that is used to evaluate the algorithms against each other.\\
-
-\subsubsection{The comparison criteria}
-The criteria that the algorithm results are weighed against is specified below.\newline\newline
-\textbf{Space efficiency:} This factor measures the amount of virtual memory (RAM) that is used by the algorithm in the graph matching process of its
-execution.The unit used to measure the amount of memory  by the respective algorithms is measured in \textit{bytes (b)}. \newline\newline
-\textbf{Time efficiency:} This factor measures the time taken by the algorithm to start and \textit{successfully} complete the graph matching process of its
-execution. The unit used to measure the amount of time taken by the respective algorithms is measured in \textit{millisecond (ms)}. \newline\newline
- \break
- 
-Once the results have been obtained and throughly evaluated, then the algorithms with the best perform per criteria field are recorded.\\
-And from that set, the best algorithm is chosen overall relative to the others based on the criteria.
+\subsubsection{Result presevation}
+The amount of time and memory required by both alogrithm to complete the comparison procedure of each respective experiment is stored and graphically represented. 
+The results from the algorithms are weighed against a comparison criteria, and it is this criteria that is used to evaluate the algorithms against each other.\newline
+Once the results have been obtained and throughly evaluated, then the algorithms with the best perform per criteria field are recorded.\newline
+And from that set, the best algorithm is chosen overall relative to the others based on the criteria.\newpage

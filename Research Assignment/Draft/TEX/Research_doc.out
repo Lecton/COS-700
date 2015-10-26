@@ -21,24 +21,12 @@
 \BOOKMARK [1][-]{section.4}{Experimentation}{}% 21
 \BOOKMARK [2][-]{subsection.4.1}{Data Set}{section.4}% 22
 \BOOKMARK [2][-]{subsection.4.2}{Experiment}{section.4}% 23
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Experiment implementation}{subsection.4.2}% 24
-\BOOKMARK [3][-]{subsubsection.4.2.2}{The comparison criteria}{subsection.4.2}% 25
-\BOOKMARK [1][-]{section.5}{Experiment Results}{}% 26
-\BOOKMARK [2][-]{subsection.5.1}{Memory Results}{section.5}% 27
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Analysis of results}{subsection.5.1}% 28
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Conclusion}{subsection.5.1}% 29
-\BOOKMARK [2][-]{subsection.5.2}{Time Results}{section.5}% 30
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Analysis of results}{subsection.5.2}% 31
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Conclusion}{subsection.5.2}% 32
-\BOOKMARK [2][-]{subsection.5.3}{Boundary Cases}{section.5}% 33
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Introduction}{subsection.5.3}% 34
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Experiment}{subsection.5.3}% 35
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Memory Boundary Results}{subsection.5.3}% 36
-\BOOKMARK [3][-]{subsubsection.5.3.4}{Ullman Algorithm}{subsection.5.3}% 37
-\BOOKMARK [3][-]{subsubsection.5.3.5}{VF2 Algorithm}{subsection.5.3}% 38
-\BOOKMARK [3][-]{subsubsection.5.3.6}{Conclution}{subsection.5.3}% 39
-\BOOKMARK [3][-]{subsubsection.5.3.7}{Time Boundary Results}{subsection.5.3}% 40
-\BOOKMARK [3][-]{subsubsection.5.3.8}{Ullman Algorithm}{subsection.5.3}% 41
-\BOOKMARK [3][-]{subsubsection.5.3.9}{VF2 Algorithm}{subsection.5.3}% 42
-\BOOKMARK [3][-]{subsubsection.5.3.10}{Conclution}{subsection.5.3}% 43
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 44
+\BOOKMARK [3][-]{subsubsection.4.2.1}{The comparison criteria}{subsection.4.2}% 24
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Description Conducted Experiments}{subsection.4.2}% 25
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Experiment implementation}{subsection.4.2}% 26
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Result presevation}{subsection.4.2}% 27
+\BOOKMARK [1][-]{section.5}{Experiment Results}{}% 28
+\BOOKMARK [2][-]{subsection.5.1}{Joined graph results for the evaluation of different vertice numbers experiment}{section.5}% 29
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Memory Results}{subsection.5.1}% 30
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Time Results}{subsection.5.1}% 31
+\BOOKMARK [2][-]{subsection.5.2}{Disjoined graph results for the evaluation of different vertice numbers experiment}{section.5}% 32

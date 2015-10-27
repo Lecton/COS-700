@@ -33,19 +33,7 @@ char *time_stamp();
 Enviroment* e;
 string method = "";
 int alg = -1;
-string cfile = "./control/250.txt";
-string file30 = "./data/30.txt";
-string file56 = "./data/56.txt";
-string file75 = "./data/75.txt";
-string file92 = "./data/92.txt";
-string file109 = "./data/109.txt";
-string file121 = "./data/121.txt";
-string file148 = "./data/148.txt";
-string file166 = "./data/166.txt";
-string file181 = "./data/181.txt";
-string file197 = "./data/197.txt";
-string file211 = "./data/211.txt";
-string file222 = "./data/222.txt";
+string cfile = "./control/disjoint/250.txt";
 
 int main(int argc, char *argv[]){
     alg = atoi(argv[1]);
@@ -62,7 +50,7 @@ void buildGraphs(){
     DIR* dir;
     list<string> dfile;
     struct dirent *entry;
-    if(dir=opendir("./data") ){
+    if(dir=opendir("./disjoint") ){
             while(entry = readdir(dir)){
                     if( strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0 )
                     dfile.push_back(entry->d_name);
@@ -77,7 +65,7 @@ void buildGraphs(){
 
 void algorithm(string fn1){
     string filename = fn1;
-    fn1 = "./data/" + fn1;
+    fn1 = "./disjoint/" + fn1;
     GraphParser* gp[2];
     Comperer* comperer = new Comperer();
     ARGEdit aet[2];;

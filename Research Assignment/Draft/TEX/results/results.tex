@@ -11,6 +11,7 @@ experiment is conducted on joined graphs.
 \label{Memory Results}
 This section compares the efficiency of the two algorithms in terms of their memory. The amount of virtual memory used by the two algorithms are graphically 
 represented, analysed and a conclusion of as to which of the two algorithm is more efficient in terms of memory is reached based on figure \ref{fig:memory_comparison}.
+The red line depics the amount of memory used by the Ullman algorithm and the blue line depicts the amount of memory used by the VF2 algorithm.
 \begin{figure}[H]
   \begin{center}
       \includegraphics[width=0.8\textwidth]{memory_comparison.png}
@@ -42,6 +43,7 @@ of virtual memory overall for its execution.
 \label{Time Results}
 This section compares the efficiency of the two algorithms in terms of their time. The amount of taken by the two algorithms are graphically 
 represented, analysed and a conclusion of as to which of the two algorithm is more efficient in terms of taken is reached based on figure \ref{fig:time_comparison}.
+The red line depics the amount of memory used by the Ullman algorithm and the blue line depicts the amount of memory used by the VF2 algorithm.
 \begin{figure}[H]
   \begin{center}
       \includegraphics[width=0.8\textwidth]{time_comparison.png}
@@ -65,25 +67,56 @@ Based of figure \ref{fig:time_comparison}, it can be deduced that the time effic
 with the exception that for small graphs, the Ullman algorithm is more efficient than the VF2 algorithm in terms of the time taken to complete the graph matching
 procedures.
 
-\newpage
-
 \subsection{Disjoined graph results for the evaluation of different vertice numbers experiment}
 This section presents the time and memory results for experiment described in section \ref{Performance evaluation for different vertice numbers}. The 
 experiment is conducted on disjoined graphs.
 \subsubsection{Memory Results}
-This section depicts the memory results for the two algorithms on a set disjoined graphs of various vertice numbers.
+This section depicts the memory results for the two algorithms on a set disjoined graphs of various vertice numbers. The red line depics the amount of memory
+ used by the Ullman algorithm and the blue line depicts the amount of memory used by the VF2 algorithm.
 \begin{figure}[H]
   \begin{center}
       \includegraphics[width=0.8\textwidth]{disjoint_memory.png}
   \end{center}    
   \caption{Graph depiting the results for the memory comparison between the algorithms for a set of disjoined graphs}
-  \label{fig:time_comparison}
+  \label{fig:disjoint_memory_comparison}
 \end{figure}
+
+\paragraph{Analysis of results}\mbox{}\\
+Figure \ref{fig:disjoint_memory_comparison} depicts the memory used by the two graphs by the two algorithms for a set of disjoint graphs with different vertice 
+numbers.\newline\newline
+The behavour of the two graphs appear to be very different for small graphs .i.e that is graphs with a size less than 120 approximately. The Ullman algorithm's
+memory usage has a steep positive gradient from the beginning, and the gradient does not flactuate alot and stays consistant until it reaches its peeck.
+The VF2 algorithm however does not have very steep gradient, and it reaches its peek faster than the Ullman algorithm.\newline\newline
+The behavour of the algorithms is approximately similar, they both increase and crease and decrease their gradient in a similar pattern, even though the Ullman
+ still uses a greater amount of memory than the VF2 algorithm.
+ 
+\paragraph{Conclusion}\mbox{}\\
+Based on figure \ref{fig:disjoint_memory_comparison}, it is clear that the VF2 more memory efficient than the Ullman algorithm. The its difference in memory 
+usage is more vast for small disjoint graphs, and the Ullman algorithms demand for memory is very high and consistant. The algorithms have a similar 
+performance for larger graphs, but the Ullman algorithm still has a larger demand of memory than the VF2 algorithm.
+
+
+\subsubsection{Time Results}
+This section reports the time taken by the algorithms to complete the graph matching procedure for a set of disjoint graphs with different number of vertices.The red line depics the amount of memory
+ used by the Ullman algorithm and the blue line depicts the amount of memory used by the VF2 algorithm.
 
 \begin{figure}[H]
   \begin{center}
       \includegraphics[width=0.8\textwidth]{disjoint_time.png}
   \end{center}    
   \caption{Graph depiting the results for the time comparison between the algorithms for a set of disjoined graphs}
-  \label{fig:time_comparison}
+  \label{fig:disjoint_time_comparison}
 \end{figure}
+
+
+\paragraph{Analysis of results}\mbox{}\\
+ Figure \ref{fig:disjoint_time_comparison} depitcs the behavour of the two algorithms with regards to the amount of time taken by each algorithm to complete its 
+ respective graph matching procedures.\newline\newline
+ The Ullman algorithm has a gradually increasing slope that appears to be arbitrarily consistant throughout all the graph sizes. The VF2 algorithm has a 
+ very constant and consistent behavour with regards to the time that it requires. The amount of time required seems to be neglibable for this algorithm as
+  it seems to be very close to zero for all graph sizes.
+  
+ 
+  \newpage
+\subimport{cases/}{cases}
+  \newpage

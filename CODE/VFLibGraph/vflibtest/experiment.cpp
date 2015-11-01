@@ -33,7 +33,7 @@ char *time_stamp();
 Enviroment* e;
 string method = "";
 int alg = -1;
-string cfile = "./control/disjoint/250.txt";
+string cfile = "./expcontrol/expcontrol.txt";
 
 int main(int argc, char *argv[]){
     alg = atoi(argv[1]);
@@ -91,60 +91,32 @@ void algorithm(string fn1){
     e = new Enviroment(filename);
     int n;
     
-    node_id ni1[250], ni2[250];
+    node_id ni1[1000000], ni2[1000000];
     
     if(alg == 1){
-        if(graph0.NodeCount() < graph1.NodeCount()){
             UllSubState s0(&graph0,&graph1);
             
             if(!match(&s0,&n,ni1,ni2)){
                 //printf("No match found.\n");
-                return ;
+                //return ;
             }else{
                 //printf("Found a matching with %d nodes:\n",n);
 		/*for(int i = 0; i < n; i++){
 		  printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n", ni1[i],ni2[i]);
 		}*/
             }
-        }else{
-            UllSubState s0(&graph1,&graph0);
-            
-            if(!match(&s0,&n,ni1,ni2)){
-                //printf("No match found.\n");
-                return ;
-            }else{
-                //printf("Found a matching with %d nodes:\n",n);
-		/*for(int i = 0; i < n; i++){
-		  printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n", ni1[i],ni2[i]);
-		}*/
-            }
-        }
     }else{
-        if(graph0.NodeCount() < graph1.NodeCount()){
             VF2SubState s0(&graph0,&graph1);
             
             if(!match(&s0,&n,ni1,ni2)){
                 //printf("No match found.\n");
-                return ;
+                //return ;
             }else{
                 //printf("Found a matching with %d nodes:\n",n);
 		/*for(int i = 0; i < n; i++){
 		  printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n", ni1[i],ni2[i]);
 		}*/
             }
-        }else{
-            VF2SubState s0(&graph1,&graph0);
-            
-            if(!match(&s0,&n,ni1,ni2)){
-                //printf("No match found.\n");
-                return ;
-            }else{
-                //printf("Found a matching with %d nodes:\n",n);
-		/*for(int i = 0; i < n; i++){
-		  printf("\tNode %hd of graph 1 is paired with node %hd of graph 2\n", ni1[i],ni2[i]);
-		}*/
-            }
-        }
     }
     e->setEndTime();
     e->env_report();

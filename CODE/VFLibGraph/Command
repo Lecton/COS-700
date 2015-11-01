@@ -6,6 +6,10 @@ g++ -std=c++0x -c -I/vflib/include Test.cpp
 g++ -std=c++0x  -o Test Test.cpp -L/vflib/lib vflib/libvf.a -lstdc++ -lm
 ./Test
 
+g++ -std=c++0x -c -I/vflib/include experiment.cpp
+g++ -std=c++0x  -o experiment experiment.cpp -L/vflib/lib vflib/libvf.a -lstdc++ -lm
+./experiment
+
 rm -r ./report/*.txt
 
 gnuplot> plot 'ullman_memory.dat','vf2_memory.dat'

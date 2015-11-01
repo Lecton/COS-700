@@ -34,4 +34,5 @@ gnuplot> plot 'ullman_memory.dat' w linespoint,'vf2_memory.dat' lc rgb 'blue' w 
 gnuplot> plot 'ullman_memory.dat' w linespoint,'vf2_memory.dat' lc rgb 'blue' w linespoints
 gnuplot> plot 'ullman_memory.dat' w linespoint,'vf2_memory.dat' lc rgb 'blue' w linespoints
 
+set terminal pngcairo
 

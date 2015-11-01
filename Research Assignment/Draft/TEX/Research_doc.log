@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.26)  30 OCT 2015 05:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.26)  1 NOV 2015 10:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1054,10 +1054,49 @@ LaTeX Warning: Label `fig:isomorphism' multiply defined.
 LaTeX Warning: Label `sub@fig:isomorphism' multiply defined.
 
 
-LaTeX Warning: Label `fig:time_comparison' multiply defined.
+LaTeX Warning: Label `lamport94' multiply defined.
 
 
-LaTeX Warning: Label `fig:time_comparison' multiply defined.
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
 
 )
 \openout1 = `Research_doc.aux'.
@@ -1178,14 +1217,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Research.tex (./graph/g
 raph.tex
-<graph/simplegraph.png, id=147, 251.94125pt x 733.74126pt>
+<graph/simplegraph.png, id=199, 251.94125pt x 733.74126pt>
 File: graph/simplegraph.png Graphic file (type png)
 
 <use graph/simplegraph.png>
 Package pdftex.def Info: graph/simplegraph.png used on input line 13.
 (pdftex.def)             Requested size: 85.9996pt x 250.45396pt.
 
-<graph/directedgraph.png, id=151, 281.05pt x 874.26625pt>
+<graph/directedgraph.png, id=203, 281.05pt x 874.26625pt>
 File: graph/directedgraph.png Graphic file (type png)
 
 <use graph/directedgraph.png>
@@ -1197,46 +1236,62 @@ been already used, duplicate ignored
                    \relax 
 l.29 N
       ote that the undirected graph mentioned above is commonly referred to ...
-[1 <./graph/simplegraph.png>] [2 <./graph/directedgraph.png>]
+[1 <./graph/simplegraph.png>]
+
+LaTeX Warning: Reference `fig:empty_graph' on page 2 undefined on input line 36
+.
+
+<graph/empty.png, id=214, 950.55125pt x 59.22125pt>
+File: graph/empty.png Graphic file (type png)
+ <use graph/empty.png>
+Package pdftex.def Info: graph/empty.png used on input line 39.
+(pdftex.def)             Requested size: 279.50037pt x 17.41318pt.
+
+
+LaTeX Warning: Reference `fig:empty_graph' on page 2 undefined on input line 45
+.
+
+[2 <./graph/directedgraph.png> <./graph/empty.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no à in font cmr10!
 Missing character: There is no à in font cmr10!
 
-<graph/matrix.png, id=172, 349.305pt x 203.25937pt>
+<graph/matrix.png, id=227, 349.305pt x 203.25937pt>
 File: graph/matrix.png Graphic file (type png)
  <use graph/matrix.png>
-Package pdftex.def Info: graph/matrix.png used on input line 55.
+Package pdftex.def Info: graph/matrix.png used on input line 68.
 (pdftex.def)             Requested size: 279.50037pt x 162.64803pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--59
+Underfull \hbox (badness 10000) in paragraph at lines 64--72
 
  []
 
-[3 <./graph/matrix.png>] <graph/list.png, id=181, 190.46156pt x 203.25937pt>
+[3 <./graph/matrix.png>] [4]
+<graph/list.png, id=242, 190.46156pt x 203.25937pt>
 File: graph/list.png Graphic file (type png)
-
-<use graph/list.png>
-Package pdftex.def Info: graph/list.png used on input line 66.
+ <use graph/list.png>
+Package pdftex.def Info: graph/list.png used on input line 79.
 (pdftex.def)             Requested size: 171.99922pt x 183.56133pt.
- [4 <./graph/list.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+[5 <./graph/list.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-<graph/isomorphismleft.png, id=194, 231.86626pt x 444.66125pt>
+<graph/isomorphismleft.png, id=253, 231.86626pt x 444.66125pt>
 File: graph/isomorphismleft.png Graphic file (type png)
 
 <use graph/isomorphismleft.png>
-Package pdftex.def Info: graph/isomorphismleft.png used on input line 90.
+Package pdftex.def Info: graph/isomorphismleft.png used on input line 103.
 (pdftex.def)             Requested size: 85.9996pt x 164.92918pt.
 
-<graph/isomorphismright.png, id=195, 372.39125pt x 155.58125pt>
+<graph/isomorphismright.png, id=254, 372.39125pt x 155.58125pt>
 File: graph/isomorphismright.png Graphic file (type png)
 
 <use graph/isomorphismright.png>
-Package pdftex.def Info: graph/isomorphismright.png used on input line 96.
+Package pdftex.def Info: graph/isomorphismright.png used on input line 109.
 (pdftex.def)             Requested size: 171.99922pt x 71.86023pt.
- [5 <./graph/isomorphismleft.png> <./graph/isomorphismright.png>]) (./algorithm
+ [6 <./graph/isomorphismleft.png> <./graph/isomorphismright.png>]) (./algorithm
 s/algorithms.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
@@ -1247,25 +1302,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-[6]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
-<algorithms/stratMatrix.png, id=212, 525.46312pt x 511.9125pt>
+<algorithms/stratMatrix.png, id=272, 525.46312pt x 511.9125pt>
 File: algorithms/stratMatrix.png Graphic file (type png)
 
 <use algorithms/stratMatrix.png>
 Package pdftex.def Info: algorithms/stratMatrix.png used on input line 45.
 (pdftex.def)             Requested size: 279.50037pt x 272.30435pt.
- [7]
-<algorithms/Ullmanpseudo.png, id=227, 661.72218pt x 341.02406pt>
+ [8]
+<algorithms/Ullmanpseudo.png, id=286, 661.72218pt x 341.02406pt>
 File: algorithms/Ullmanpseudo.png Graphic file (type png)
 
 <use algorithms/Ullmanpseudo.png>
 Package pdftex.def Info: algorithms/Ullmanpseudo.png used on input line 62.
 (pdftex.def)             Requested size: 430.00462pt x 221.60577pt.
- [8 <./algorithms/stratMatrix.png>] [9 <./algorithms/Ullmanpseudo.png>]
+ [9 <./algorithms/stratMatrix.png>] [10 <./algorithms/Ullmanpseudo.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
@@ -1295,7 +1350,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--85
 
  []
 
-[10]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 91--93
 
  []
@@ -1325,7 +1380,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--109
 
  []
 
-[11] (./algorithms/rules.tex
+[12] (./algorithms/rules.tex
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 4.
 
@@ -1446,7 +1501,7 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
-) [12] <algorithms/VF2pseudo.png, id=267, 941.01563pt x 461.47406pt>
+) [13] <algorithms/VF2pseudo.png, id=327, 941.01563pt x 461.47406pt>
 File: algorithms/VF2pseudo.png Graphic file (type png)
 
 <use algorithms/VF2pseudo.png>
@@ -1462,12 +1517,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--134
 
  []
 
-[13 <./algorithms/VF2pseudo.png>]) (./library/library.tex
+[14 <./algorithms/VF2pseudo.png>]) (./library/library.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[14]) (./experiment/experiment.tex (./experiment/data/data.tex
+[15]) (./experiment/experiment.tex (./experiment/data/data.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
  []
@@ -1477,7 +1532,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
  []
 
-<experiment/data/250.png, id=279, 1008.1665pt x 677.1699pt>
+<experiment/data/250.png, id=340, 1008.1665pt x 677.1699pt>
 File: experiment/data/250.png Graphic file (type png)
 
 <use experiment/data/250.png>
@@ -1494,43 +1549,43 @@ Overfull \hbox (17.21857pt too wide) in paragraph at lines 22--27
 tices: 30,56,75,92,109,121,148,166,181,197,211
  []
 
-[15 <./experiment/data/250.png>]
-<experiment/data/30.png, id=289, 586.8324pt x 442.2924pt>
+[16 <./experiment/data/250.png>]
+<experiment/data/30.png, id=350, 586.8324pt x 442.2924pt>
 File: experiment/data/30.png Graphic file (type png)
 
 <use experiment/data/30.png>
 Package pdftex.def Info: experiment/data/30.png used on input line 31.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/56.png, id=290, 586.8324pt x 442.2924pt>
+<experiment/data/56.png, id=351, 586.8324pt x 442.2924pt>
 File: experiment/data/56.png Graphic file (type png)
 
 <use experiment/data/56.png>
 Package pdftex.def Info: experiment/data/56.png used on input line 37.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/75.png, id=291, 586.8324pt x 442.2924pt>
+<experiment/data/75.png, id=352, 586.8324pt x 442.2924pt>
 File: experiment/data/75.png Graphic file (type png)
 
 <use experiment/data/75.png>
 Package pdftex.def Info: experiment/data/75.png used on input line 42.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/92.png, id=292, 586.8324pt x 442.2924pt>
+<experiment/data/92.png, id=353, 586.8324pt x 442.2924pt>
 File: experiment/data/92.png Graphic file (type png)
 
 <use experiment/data/92.png>
 Package pdftex.def Info: experiment/data/92.png used on input line 48.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/109.png, id=293, 586.8324pt x 442.2924pt>
+<experiment/data/109.png, id=354, 586.8324pt x 442.2924pt>
 File: experiment/data/109.png Graphic file (type png)
 
 <use experiment/data/109.png>
 Package pdftex.def Info: experiment/data/109.png used on input line 53.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/121.png, id=294, 586.8324pt x 442.2924pt>
+<experiment/data/121.png, id=355, 586.8324pt x 442.2924pt>
 File: experiment/data/121.png Graphic file (type png)
 
 <use experiment/data/121.png>
@@ -1554,7 +1609,7 @@ Overfull \hbox (88.22836pt too wide) in paragraph at lines 30--63
 
 LaTeX Warning: Float too large for page by 101.90579pt on input line 65.
 
-[16] [17 <./experiment/data/30.png> <./experiment/data/56.png> <./experiment/da
+[17] [18 <./experiment/data/30.png> <./experiment/data/56.png> <./experiment/da
 ta/75.png> <./experiment/data/92.png> <./experiment/data/109.png> <./experiment
 /data/121.png>])
 Underfull \hbox (badness 10000) in paragraph at lines 7--13
@@ -1571,81 +1626,330 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--21
 
  []
 
-[18] [19]) (./results/results.tex
-<results/memory_comparison.png, id=340, 642.4pt x 481.8pt>
+[19] [20]) (./results/results.tex
+<results/memory_comparison.png, id=399, 642.4pt x 481.8pt>
 File: results/memory_comparison.png Graphic file (type png)
 
 <use results/memory_comparison.png>
-Package pdftex.def Info: results/memory_comparison.png used on input line 16.
+Package pdftex.def Info: results/memory_comparison.png used on input line 17.
 (pdftex.def)             Requested size: 344.005pt x 258.00673pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--34
+Underfull \hbox (badness 10000) in paragraph at lines 23--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--34
+Underfull \hbox (badness 10000) in paragraph at lines 23--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--34
+Underfull \hbox (badness 10000) in paragraph at lines 23--35
 
  []
 
-[20 <./results/memory_comparison.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 35--40
+[21 <./results/memory_comparison.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
  []
 
-<results/time_comparison.png, id=353, 642.4pt x 481.8pt>
+<results/time_comparison.png, id=412, 642.4pt x 481.8pt>
 File: results/time_comparison.png Graphic file (type png)
 
 <use results/time_comparison.png>
-Package pdftex.def Info: results/time_comparison.png used on input line 47.
+Package pdftex.def Info: results/time_comparison.png used on input line 49.
 (pdftex.def)             Requested size: 344.005pt x 258.00673pt.
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 53--62
+ [22]
+Underfull \hbox (badness 10000) in paragraph at lines 55--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--62
+Underfull \hbox (badness 10000) in paragraph at lines 55--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--62
+Underfull \hbox (badness 10000) in paragraph at lines 55--64
 
  []
 
-[22 <./results/time_comparison.png>] [23]
-<results/disjoint_memory.png, id=378, 481.8pt x 361.35pt>
+[23 <./results/time_comparison.png>]
+<results/disjoint_memory.png, id=432, 481.8pt x 361.35pt>
 File: results/disjoint_memory.png Graphic file (type png)
 
 <use results/disjoint_memory.png>
-Package pdftex.def Info: results/disjoint_memory.png used on input line 77.
+Package pdftex.def Info: results/disjoint_memory.png used on input line 78.
 (pdftex.def)             Requested size: 344.005pt x 258.0104pt.
 
-<results/disjoint_time.png, id=379, 481.8pt x 361.35pt>
+Underfull \hbox (badness 10000) in paragraph at lines 84--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--92
+
+ []
+
+[24 <./results/disjoint_memory.png>]
+<results/disjoint_time.png, id=443, 481.8pt x 361.35pt>
 File: results/disjoint_time.png Graphic file (type png)
 
 <use results/disjoint_time.png>
-Package pdftex.def Info: results/disjoint_time.png used on input line 85.
+Package pdftex.def Info: results/disjoint_time.png used on input line 105.
 (pdftex.def)             Requested size: 344.005pt x 258.0104pt.
-)) [24 <./results/disjoint_memory.png>]
+ [25]
+Underfull \hbox (badness 10000) in paragraph at lines 112--118
+
+ []
+
+[26 <./results/disjoint_time.png>] (./results/cases/cases.tex
+(./results/cases/introduction/introduction.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
+
+ []
+
+<results/cases/introduction/best.png, id=459, 950.55125pt x 59.22125pt>
+File: results/cases/introduction/best.png Graphic file (type png)
+
+<use results/cases/introduction/best.png>
+Package pdftex.def Info: results/cases/introduction/best.png used on input line
+ 15.
+(pdftex.def)             Requested size: 344.005pt x 21.43257pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no í in font cmr10!
+
+<results/cases/introduction/average.png, id=461, 490.83376pt x 637.38126pt>
+File: results/cases/introduction/average.png Graphic file (type png)
+
+<use results/cases/introduction/average.png>
+Package pdftex.def Info: results/cases/introduction/average.png used on input l
+ine 27.
+(pdftex.def)             Requested size: 344.005pt x 446.72792pt.
+ [27 <./results/cases/introduction/best.png>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no í in font cmr10!
+
+<results/cases/introduction/worst.png, id=469, 1073.00874pt x 926.46124pt>
+File: results/cases/introduction/worst.png Graphic file (type png)
+
+<use results/cases/introduction/worst.png>
+Package pdftex.def Info: results/cases/introduction/worst.png used on input lin
+e 39.
+(pdftex.def)             Requested size: 344.005pt x 297.01083pt.
+ [28 <./results/cases/introduction/average.png>] [29 <./results/cases/introduct
+ion/worst.png>])
+<results/cases/ullman_memory.png, id=482, 642.4pt x 481.8pt>
+File: results/cases/ullman_memory.png Graphic file (type png)
+
+<use results/cases/ullman_memory.png>
+Package pdftex.def Info: results/cases/ullman_memory.png used on input line 13.
+
+(pdftex.def)             Requested size: 344.005pt x 258.00673pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+
+ []
+
+<results/cases/vf2_memory.png, id=485, 642.4pt x 481.8pt>
+File: results/cases/vf2_memory.png Graphic file (type png)
+
+<use results/cases/vf2_memory.png>
+Package pdftex.def Info: results/cases/vf2_memory.png used on input line 28.
+(pdftex.def)             Requested size: 344.005pt x 258.00673pt.
+ [30 <./results/cases/ullman_memory.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 35--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--50
+
+ []
+
+[31 <./results/cases/vf2_memory.png>] [32]
+<results/cases/ullman_time.png, id=507, 642.4pt x 481.8pt>
+File: results/cases/ullman_time.png Graphic file (type png)
+
+<use results/cases/ullman_time.png>
+Package pdftex.def Info: results/cases/ullman_time.png used on input line 61.
+(pdftex.def)             Requested size: 344.005pt x 258.00673pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--72
+
+ []
+
+<results/cases/vf2_time.png, id=511, 642.4pt x 481.8pt>
+File: results/cases/vf2_time.png Graphic file (type png)
+
+<use results/cases/vf2_time.png>
+Package pdftex.def Info: results/cases/vf2_time.png used on input line 76.
+(pdftex.def)             Requested size: 344.005pt x 258.00673pt.
+ [33 <./results/cases/ullman_time.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
+
+ []
+
+[34 <./results/cases/vf2_time.png>]) [35]) (./conclusion/conclusion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--11
+
+ []
+
+[36]) (./references/references.tex
+Missing character: There is no ‚ in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no ù in font cmti10!
+Missing character: There is no ‚ in font cmti10!
+Missing character: There is no Ä in font cmti10!
+Missing character: There is no ú in font cmti10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
+[]\OT1/cmr/m/it/10 Graph Def-i-ni-tions\OT1/cmr/m/n/10 , Avail-able at: []$\OT1
+/cmtt/m/n/10 http : / / web . eecs . utk . edu / []leparker / Courses /
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+))
 
 Package glossaries Warning: No \printglossary or \printglossaries found.
 This document will not have a glossary.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
-[25 <./results/disjoint_time.png>]
+[37pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
+rt94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{cite.lamport94}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{document}
+                   ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
  (./Research_doc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `Research_doc.out' has not changed.
-(rerunfilecheck)             Checksum: 5CEDFEA44BC800B07028AD6309A306BC;2353.
+(rerunfilecheck)             Checksum: D0026F3B8F905A6BEC45975880B915A5;3270.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1653,13 +1957,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 24172 strings out of 494985
- 404063 string characters out of 6180356
- 553357 words of memory out of 5000000
- 26702 multiletter control sequences out of 15000+600000
- 12792 words of font info for 49 fonts, out of 8000000 for 9000
+ 24301 strings out of 494985
+ 406801 string characters out of 6180356
+ 554384 words of memory out of 5000000
+ 26765 multiletter control sequences out of 15000+600000
+ 12960 words of font info for 50 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 69i,9n,96p,1803b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,9n,103p,1803b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/user/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/te
@@ -1674,11 +1978,12 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Research_doc.pdf (26 pages, 2109619 bytes).
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Research_doc.pdf (38 pages, 2456677 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
- 119 named destinations out of 1000 (max. 500000)
- 377 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 540 compressed objects within 6 object streams
+ 162 named destinations out of 1000 (max. 500000)
+ 521 words of extra memory for PDF output out of 10000 (max. 10000000)
 

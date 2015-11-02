@@ -5,42 +5,43 @@
 \BOOKMARK [2][-]{subsection.1.4}{Graph representation}{section.1}% 5
 \BOOKMARK [3][-]{subsubsection.1.4.1}{Adjacency matrices}{subsection.1.4}% 6
 \BOOKMARK [3][-]{subsubsection.1.4.2}{Adjacency list}{subsection.1.4}% 7
-\BOOKMARK [2][-]{subsection.1.5}{Supergraphs and subgraphs}{section.1}% 8
-\BOOKMARK [2][-]{subsection.1.6}{Graph Isomorphism}{section.1}% 9
-\BOOKMARK [1][-]{section.2}{Search Matching Algorithm}{}% 10
-\BOOKMARK [2][-]{subsection.2.1}{Introduction}{section.2}% 11
-\BOOKMARK [2][-]{subsection.2.2}{Ullman Algorithm}{section.2}% 12
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Algorithm}{subsection.2.2}% 13
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Ullman Pseudo code}{subsection.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.3}{VF2 Algorithm}{section.2}% 15
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Algorithm}{subsection.2.3}% 16
-\BOOKMARK [3][-]{subsubsection.2.3.2}{VF2 Pseudo code}{subsection.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.4}{Conclusion}{section.2}% 18
-\BOOKMARK [1][-]{section.3}{VFLibGraph Library}{}% 19
-\BOOKMARK [2][-]{subsection.3.1}{Introduction}{section.3}% 20
-\BOOKMARK [2][-]{subsection.3.2}{Using the library}{section.3}% 21
-\BOOKMARK [1][-]{section.4}{Experimentation}{}% 22
-\BOOKMARK [2][-]{subsection.4.1}{Data Set}{section.4}% 23
-\BOOKMARK [2][-]{subsection.4.2}{Experiment}{section.4}% 24
-\BOOKMARK [3][-]{subsubsection.4.2.1}{The comparison criteria}{subsection.4.2}% 25
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Description Conducted Experiments}{subsection.4.2}% 26
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Experiment implementation}{subsection.4.2}% 27
-\BOOKMARK [3][-]{subsubsection.4.2.4}{Result presevation}{subsection.4.2}% 28
-\BOOKMARK [1][-]{section.5}{Experiment Results}{}% 29
-\BOOKMARK [2][-]{subsection.5.1}{Joined graph results for the evaluation of different vertice numbers experiment}{section.5}% 30
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Memory Results}{subsection.5.1}% 31
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Time Results}{subsection.5.1}% 32
-\BOOKMARK [2][-]{subsection.5.2}{Disjoined graph results for the evaluation of different vertice numbers experiment}{section.5}% 33
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Memory Results}{subsection.5.2}% 34
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Time Results}{subsection.5.2}% 35
-\BOOKMARK [2][-]{subsection.5.3}{Boundary Cases}{section.5}% 36
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Introduction}{subsection.5.3}% 37
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Memory Boundary Results}{subsection.5.3}% 38
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Ullman Algorithm}{subsection.5.3}% 39
-\BOOKMARK [3][-]{subsubsection.5.3.4}{VF2 Algorithm}{subsection.5.3}% 40
-\BOOKMARK [3][-]{subsubsection.5.3.5}{Conclution}{subsection.5.3}% 41
-\BOOKMARK [3][-]{subsubsection.5.3.6}{Time Boundary Results}{subsection.5.3}% 42
-\BOOKMARK [3][-]{subsubsection.5.3.7}{Ullman Algorithm}{subsection.5.3}% 43
-\BOOKMARK [3][-]{subsubsection.5.3.8}{VF2 Algorithm}{subsection.5.3}% 44
-\BOOKMARK [3][-]{subsubsection.5.3.9}{Conclution}{subsection.5.3}% 45
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 46
+\BOOKMARK [3][-]{subsubsection.1.4.3}{Set of Pairs}{subsection.1.4}% 8
+\BOOKMARK [2][-]{subsection.1.5}{Supergraphs and subgraphs}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.6}{Graph Isomorphism}{section.1}% 10
+\BOOKMARK [1][-]{section.2}{Search Matching Algorithm}{}% 11
+\BOOKMARK [2][-]{subsection.2.1}{Introduction}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.2}{Ullman Algorithm}{section.2}% 13
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Algorithm}{subsection.2.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Ullman Pseudo code}{subsection.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.3}{VF2 Algorithm}{section.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Algorithm}{subsection.2.3}% 17
+\BOOKMARK [3][-]{subsubsection.2.3.2}{VF2 Pseudo code}{subsection.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.4}{Conclusion}{section.2}% 19
+\BOOKMARK [1][-]{section.3}{VFLibGraph Library}{}% 20
+\BOOKMARK [2][-]{subsection.3.1}{Introduction}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.2}{Using the library}{section.3}% 22
+\BOOKMARK [1][-]{section.4}{Experimentation}{}% 23
+\BOOKMARK [2][-]{subsection.4.1}{Data Set}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.2}{Experiment}{section.4}% 25
+\BOOKMARK [3][-]{subsubsection.4.2.1}{The comparison criteria}{subsection.4.2}% 26
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Description Conducted Experiments}{subsection.4.2}% 27
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Experiment implementation}{subsection.4.2}% 28
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Result presevation}{subsection.4.2}% 29
+\BOOKMARK [1][-]{section.5}{Experiment Results}{}% 30
+\BOOKMARK [2][-]{subsection.5.1}{Joined graph results for the evaluation of different vertice numbers experiment}{section.5}% 31
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Memory Results}{subsection.5.1}% 32
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Time Results}{subsection.5.1}% 33
+\BOOKMARK [2][-]{subsection.5.2}{Disjoined graph results for the evaluation of different vertice numbers experiment}{section.5}% 34
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Memory Results}{subsection.5.2}% 35
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Time Results}{subsection.5.2}% 36
+\BOOKMARK [2][-]{subsection.5.3}{Boundary Cases}{section.5}% 37
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Introduction}{subsection.5.3}% 38
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Memory Boundary Results}{subsection.5.3}% 39
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Ullman Algorithm}{subsection.5.3}% 40
+\BOOKMARK [3][-]{subsubsection.5.3.4}{VF2 Algorithm}{subsection.5.3}% 41
+\BOOKMARK [3][-]{subsubsection.5.3.5}{Conclution}{subsection.5.3}% 42
+\BOOKMARK [3][-]{subsubsection.5.3.6}{Time Boundary Results}{subsection.5.3}% 43
+\BOOKMARK [3][-]{subsubsection.5.3.7}{Ullman Algorithm}{subsection.5.3}% 44
+\BOOKMARK [3][-]{subsubsection.5.3.8}{VF2 Algorithm}{subsection.5.3}% 45
+\BOOKMARK [3][-]{subsubsection.5.3.9}{Conclution}{subsection.5.3}% 46
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 47

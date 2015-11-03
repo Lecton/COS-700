@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.26)  3 NOV 2015 14:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.26)  3 NOV 2015 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1101,6 +1101,9 @@ LaTeX Warning: Label `lamport94' multiply defined.
 
 LaTeX Warning: Label `lamport94' multiply defined.
 
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
 )
 \openout1 = `Research_doc.aux'.
 
@@ -1273,7 +1276,7 @@ Overfull \hbox (75.04514pt too wide) in paragraph at lines 96--97
  []
 
 [4 <./graph/list.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 116--120
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
@@ -1281,17 +1284,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--120
 File: graph/isomorphismleft.png Graphic file (type png)
 
 <use graph/isomorphismleft.png>
-Package pdftex.def Info: graph/isomorphismleft.png used on input line 123.
+Package pdftex.def Info: graph/isomorphismleft.png used on input line 125.
 (pdftex.def)             Requested size: 85.9996pt x 164.92918pt.
 
 <graph/isomorphismright.png, id=266, 372.39125pt x 155.58125pt>
 File: graph/isomorphismright.png Graphic file (type png)
 
 <use graph/isomorphismright.png>
-Package pdftex.def Info: graph/isomorphismright.png used on input line 129.
+Package pdftex.def Info: graph/isomorphismright.png used on input line 131.
 (pdftex.def)             Requested size: 171.99922pt x 71.86023pt.
- [5 <./graph/isomorphismleft.png> <./graph/isomorphismright.png>] [6]) (./algor
-ithms/algorithms.tex
+
+<graph/subgraph.png, id=268, 215.80624pt x 444.66125pt>
+File: graph/subgraph.png Graphic file (type png)
+
+<use graph/subgraph.png>
+Package pdftex.def Info: graph/subgraph.png used on input line 145.
+(pdftex.def)             Requested size: 129.00269pt x 265.81497pt.
+ [5 <./graph/isomorphismleft.png> <./graph/isomorphismright.png>] [6 <./graph/s
+ubgraph.png>]) (./algorithms/algorithms.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
@@ -1306,14 +1316,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
-<algorithms/stratMatrix.png, id=290, 525.46312pt x 511.9125pt>
+<algorithms/stratMatrix.png, id=297, 525.46312pt x 511.9125pt>
 File: algorithms/stratMatrix.png Graphic file (type png)
 
 <use algorithms/stratMatrix.png>
 Package pdftex.def Info: algorithms/stratMatrix.png used on input line 45.
 (pdftex.def)             Requested size: 279.50037pt x 272.30435pt.
  [8]
-<algorithms/Ullmanpseudo.png, id=305, 661.72218pt x 341.02406pt>
+<algorithms/Ullmanpseudo.png, id=312, 661.72218pt x 341.02406pt>
 File: algorithms/Ullmanpseudo.png Graphic file (type png)
 
 <use algorithms/Ullmanpseudo.png>
@@ -1500,7 +1510,7 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
-) [13] <algorithms/VF2pseudo.png, id=346, 941.01563pt x 461.47406pt>
+) [13] <algorithms/VF2pseudo.png, id=353, 941.01563pt x 461.47406pt>
 File: algorithms/VF2pseudo.png Graphic file (type png)
 
 <use algorithms/VF2pseudo.png>
@@ -1531,7 +1541,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
  []
 
-<experiment/data/250.png, id=358, 1008.1665pt x 677.1699pt>
+<experiment/data/250.png, id=365, 1008.1665pt x 677.1699pt>
 File: experiment/data/250.png Graphic file (type png)
 
 <use experiment/data/250.png>
@@ -1549,42 +1559,42 @@ tices: 30,56,75,92,109,121,148,166,181,197,211
  []
 
 [16 <./experiment/data/250.png>]
-<experiment/data/30.png, id=368, 586.8324pt x 442.2924pt>
+<experiment/data/30.png, id=375, 586.8324pt x 442.2924pt>
 File: experiment/data/30.png Graphic file (type png)
 
 <use experiment/data/30.png>
 Package pdftex.def Info: experiment/data/30.png used on input line 31.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/56.png, id=369, 586.8324pt x 442.2924pt>
+<experiment/data/56.png, id=376, 586.8324pt x 442.2924pt>
 File: experiment/data/56.png Graphic file (type png)
 
 <use experiment/data/56.png>
 Package pdftex.def Info: experiment/data/56.png used on input line 37.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/75.png, id=370, 586.8324pt x 442.2924pt>
+<experiment/data/75.png, id=377, 586.8324pt x 442.2924pt>
 File: experiment/data/75.png Graphic file (type png)
 
 <use experiment/data/75.png>
 Package pdftex.def Info: experiment/data/75.png used on input line 42.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/92.png, id=371, 586.8324pt x 442.2924pt>
+<experiment/data/92.png, id=378, 586.8324pt x 442.2924pt>
 File: experiment/data/92.png Graphic file (type png)
 
 <use experiment/data/92.png>
 Package pdftex.def Info: experiment/data/92.png used on input line 48.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/109.png, id=372, 586.8324pt x 442.2924pt>
+<experiment/data/109.png, id=379, 586.8324pt x 442.2924pt>
 File: experiment/data/109.png Graphic file (type png)
 
 <use experiment/data/109.png>
 Package pdftex.def Info: experiment/data/109.png used on input line 53.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/121.png, id=373, 586.8324pt x 442.2924pt>
+<experiment/data/121.png, id=380, 586.8324pt x 442.2924pt>
 File: experiment/data/121.png Graphic file (type png)
 
 <use experiment/data/121.png>
@@ -1626,7 +1636,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--21
  []
 
 [19] [20]) (./results/results.tex
-<results/memory_comparison.png, id=417, 642.4pt x 481.8pt>
+<results/memory_comparison.png, id=424, 642.4pt x 481.8pt>
 File: results/memory_comparison.png Graphic file (type png)
 
 <use results/memory_comparison.png>
@@ -1652,7 +1662,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
  []
 
-<results/time_comparison.png, id=430, 642.4pt x 481.8pt>
+<results/time_comparison.png, id=437, 642.4pt x 481.8pt>
 File: results/time_comparison.png Graphic file (type png)
 
 <use results/time_comparison.png>
@@ -1674,7 +1684,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--64
  []
 
 [23 <./results/time_comparison.png>]
-<results/disjoint_memory.png, id=451, 481.8pt x 361.35pt>
+<results/disjoint_memory.png, id=458, 481.8pt x 361.35pt>
 File: results/disjoint_memory.png Graphic file (type png)
 
 <use results/disjoint_memory.png>
@@ -1691,7 +1701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--92
  []
 
 [24 <./results/disjoint_memory.png>]
-<results/disjoint_time.png, id=462, 481.8pt x 361.35pt>
+<results/disjoint_time.png, id=469, 481.8pt x 361.35pt>
 File: results/disjoint_time.png Graphic file (type png)
 
 <use results/disjoint_time.png>
@@ -1708,7 +1718,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-<results/cases/introduction/best.png, id=477, 950.55125pt x 59.22125pt>
+<results/cases/introduction/best.png, id=484, 950.55125pt x 59.22125pt>
 File: results/cases/introduction/best.png Graphic file (type png)
 
 <use results/cases/introduction/best.png>
@@ -1719,7 +1729,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
 
-<results/cases/introduction/average.png, id=479, 490.83376pt x 637.38126pt>
+<results/cases/introduction/average.png, id=486, 490.83376pt x 637.38126pt>
 File: results/cases/introduction/average.png Graphic file (type png)
 
 <use results/cases/introduction/average.png>
@@ -1731,7 +1741,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
 
-<results/cases/introduction/worst.png, id=488, 1073.00874pt x 926.46124pt>
+<results/cases/introduction/worst.png, id=495, 1073.00874pt x 926.46124pt>
 File: results/cases/introduction/worst.png Graphic file (type png)
 
 <use results/cases/introduction/worst.png>
@@ -1740,7 +1750,7 @@ e 39.
 (pdftex.def)             Requested size: 344.005pt x 297.01083pt.
  [28 <./results/cases/introduction/average.png>] [29 <./results/cases/introduct
 ion/worst.png>])
-<results/cases/ullman_memory.png, id=500, 642.4pt x 481.8pt>
+<results/cases/ullman_memory.png, id=507, 642.4pt x 481.8pt>
 File: results/cases/ullman_memory.png Graphic file (type png)
 
 <use results/cases/ullman_memory.png>
@@ -1752,7 +1762,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--24
 
  []
 
-<results/cases/vf2_memory.png, id=503, 642.4pt x 481.8pt>
+<results/cases/vf2_memory.png, id=510, 642.4pt x 481.8pt>
 File: results/cases/vf2_memory.png Graphic file (type png)
 
 <use results/cases/vf2_memory.png>
@@ -1784,7 +1794,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--50
  []
 
 [31 <./results/cases/vf2_memory.png>] [32]
-<results/cases/ullman_time.png, id=525, 642.4pt x 481.8pt>
+<results/cases/ullman_time.png, id=532, 642.4pt x 481.8pt>
 File: results/cases/ullman_time.png Graphic file (type png)
 
 <use results/cases/ullman_time.png>
@@ -1795,7 +1805,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--72
 
  []
 
-<results/cases/vf2_time.png, id=529, 642.4pt x 481.8pt>
+<results/cases/vf2_time.png, id=536, 642.4pt x 481.8pt>
 File: results/cases/vf2_time.png Graphic file (type png)
 
 <use results/cases/vf2_time.png>
@@ -1848,92 +1858,97 @@ rt94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.lamport94}) has been already used, duplicate ignored
+l.94 	\bibitem{lamport94}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.lamport94}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.93 \end{thebibliography}
-                          ]))
+l.94 	\bibitem{lamport94}
+                         ]pdfTeX warning (ext4): destination with the same iden
+tifier (name{cite.lamport94}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.94 	\bibitem{lamport94}
+                         ))
 
 Package glossaries Warning: No \printglossary or \printglossaries found.
 This document will not have a glossary.
@@ -1959,10 +1974,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 24311 strings out of 494985
- 406951 string characters out of 6180356
+ 24318 strings out of 494985
+ 407097 string characters out of 6180356
  554384 words of memory out of 5000000
- 26768 multiletter control sequences out of 15000+600000
+ 26773 multiletter control sequences out of 15000+600000
  12960 words of font info for 50 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  69i,9n,103p,1803b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1982,10 +1997,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Research_doc.pdf (39 pages, 2459842 bytes).
+Output written on Research_doc.pdf (39 pages, 2474811 bytes).
 PDF statistics:
- 673 PDF objects out of 1000 (max. 8388607)
- 563 compressed objects within 6 object streams
- 169 named destinations out of 1000 (max. 500000)
- 545 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 680 PDF objects out of 1000 (max. 8388607)
+ 567 compressed objects within 6 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 550 words of extra memory for PDF output out of 10000 (max. 10000000)
 

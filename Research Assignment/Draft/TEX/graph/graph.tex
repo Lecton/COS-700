@@ -95,6 +95,8 @@ using this representation is demonstrated below.
 \begin{myEnumerate}
   \item $G = {(A,B,1), (B,C,2), (B,G,3), (C,E,4), (D,E,5), (E,G,6), (G,F,7), (G,I,8),(G,H,9), (I,H,10), (H,I,11)}$
 \end{myEnumerate}
+In this example, all starting vertices of figure \ref{fig:directedgraph} are places first, the end vertice second and the label last. It is important 
+to note that this order can be changed depending on the graph that is to represented [18].
 
 \subsection{Supergraphs and subgraphs}
 Let $G${\tiny A} be graph define as follows $G${\tiny A} = ($V${\tiny A},$E${\tiny A}) and let $G${\tiny B} be another graph that is defined as 
@@ -137,8 +139,14 @@ The two graphs look very different, but when they are further inspected, it is e
 A subgraph $G${\tiny A}  has a subgraph isomorphic relationship with a graph $G${\tiny B} $iff$ there is a 1:1 relationship between the vertice of graph 
 $G${\tiny A} and graph $G${\tiny B}. Thus all the vertices and corresponding of graph $G${\tiny A} are also present in $G${\tiny B} [1]. Mathematically this
 relationship is expressed as follows, let $G${\tiny A} = ($V${\tiny A},$E${\tiny A}) and let $G${\tiny B} be another graph that is defined as 
-follows $G${\tiny B} = ($V${\tiny B} [7].
-
+follows $G${\tiny B} = ($V${\tiny B} [7]. The figure below depicts the subgraph isomorphism of figure \ref{fig:simplegraph}.
+\begin{figure}[H]
+  \begin{center}
+      \includegraphics[width=0.3\textwidth]{subgraph.png}
+  \end{center}    
+  \caption{Subgraph isomorphism of figure \ref{fig:simplegraph}}
+  \label{fig:isomorphism_subgraph}
+\end{figure}
 \begin{myEnumerate}
   \item If $V${\tiny A} $ \subseteq V${\tiny B}, and
   \item If $E${\tiny A} $ \subseteq E${\tiny B}.

@@ -3,17 +3,31 @@
 
 
 \subsection{Introduction}
-Subgraph ismorphis can be determined using a brute-force approach on the tree representation of a graph $G${\tiny A}. Though this technique is effective, it is however not efficient, this is because all the possible permutation subgraphs of a graph $G${\tiny A} are tested against the graph $G${\tiny B} to determine if there are subgraphs in graph $G${\tiny A} that are isomorphic to graph $G${\tiny B}.The number of subgraphs of a graph $G${\tiny A} increase at an exponential rate with every addition of a vertice $V${\tiny n} into the graph, thus the total number of subgraphs that can be evaluated are  
-	\begin{equation}
-		ST = 2^{n/2}
-	\end{equation} where $ST$ is the total number of subgraphs and $n$ the number if vertices in the graph $G${\tiny A}.\newline\newline
-The matching process is computationally expensive due to this very fact, that is the more vertices there are in the graph $G${\tiny A}, the more expensive it becomes to detect the subgraph ismorphisms because of the amount of subgraphs it has and thus must be evaluated.\newline\newline This paper explores two graphs that are very effective with regards to graph isomorphis and sub-graph isomorphism detection. The algorithms that are invesicated are the Ullman Algorithm and the VF2 algorithm. \newpage
+Subgraph ismorphis can be determined using a brute-force approach on the tree representation of a graph $G${\tiny A}. Though this technique is effective,
+it is however not efficient, this is because all the possible permutation subgraphs of a graph $G${\tiny A} are tested against the supergraph $G${\tiny B}, 
+to determine if there are subgraphs in graph $G${\tiny A} that are isomorphic to graph $G${\tiny B}. The number of subgraphs of a graph $G${\tiny B} increase
+at an exponential rate with every addition of a vertice $V${\tiny n} into the graph, thus the total number of subgraphs that graph $G${\tiny A} will be compared against is:
+\begin{myEnumerate}
+  \item $ST = 2^{n/2}$
+\end{myEnumerate}
+where \textbf{ST} is the total number of subgraphs and \textbf{n} the number if vertices in the graph $G${\tiny A}.\newline\newline
+The matching process is computationally expensive due to this very fact, that is, the more vertices there are in the graph $G${\tiny A}, 
+the more expensive it becomes to detect the subgraph ismorphisms because of the amount of subgraphs it has and thus must be evaluated.
+\newline\newline This paper
+explores two graphs that are very effective with regards to complete graph isomorphism and subgraph isomorphism detection. The algorithms that are invesicated 
+are the \textit{Ullman Algorithm} and the \textit{VF2} algorithm. \newpage
 
 \subsection{Ullman Algorithm}
 \label{Ullman Algorithm}
 
 \subsubsection{Algorithm}
-The Ullman algorithm was developed by J.R.Ullman and was published in his paper titled "An Algorithm for Subgraph Isomorphism" [1].The algorithm performs graph matching on an adjacency matrix representation of both the graphs, and uses the depth search first(DSF) recursicve approach to traverse through the graphs and perform the graph matching process. The Ullman algorithm improves the effiency of the brute-force approach at detecting subgraph ismorphisms by deductively eleminating nodes in the tree that are in graph $G${\tiny A}, but are not in graph $G${\tiny B}, thus reducing the number of subgraphs that are matched against graph $G${\tiny B} to determine ismorphism.\newline\newline The algorithm starts by building a starting adjacency matrix $M0$ using the two adjacency matrix representations of graphs $G${\tiny A} and $G${\tiny B} using the following procedure.
+The Ullman algorithm was developed by J.R.Ullman and was published in his paper titled "An Algorithm for Subgraph Isomorphism" [1]. 
+The algorithm performs graph matching on an adjacency matrix representation of the two graphs. The algorithm uses the depth search first(DSF) recursicve
+method to traverse through the graphs and perform the graph matching procedure. The Ullman algorithm improves the effiency of the \textit{brute force} approach at 
+detecting subgraph ismorphisms by deductively eleminating nodes in the tree, that are in graph $G${\tiny A}, but are not in graph $G${\tiny B}, 
+thus reducing the number of subgraphs that are matched against graph $G${\tiny B} to determine ismorphism.\newline\newline The algorithm starts 
+by building a starting adjacency matrix $M0$ using the two adjacency matrix representations of graphs $G${\tiny A} and $G${\tiny B} using the 
+following procedure.
 \begin{myEnumerate}
 \item Construct a $n * m$ matrix where $n$ is the number of rows of graph $G${\tiny B} and $m$ is the number of colums of graph $G${\tiny A}.
 \item Set all the entries in the matrix to the value of 1.
@@ -32,14 +46,15 @@ The Ullman algorithm was developed by J.R.Ullman and was published in his paper 
 				0,              & \text{otherwise}\   \forall \text{i,j}
 			\end{cases}
 	\]
-When the starting matrix has been constructed, we systematically permute matrices $M^d$ from the starting matrix $M0$ where $d$ represents the depth of the generated matrix. The procedure of generating the permuted matrices follows a depth search first (DSF) recursicve approach where the stopping condition (leaf matrices) conform to the following form:
+When the starting matrix has been constructed, the algorithm permutes matrices $M^d$ from the starting matrix \textbf{M0} where \textbf{d} 
+represents the depth of the generated matrix. The procedure of generating the permuted matrices follows a depth search first (DSF) recursicve approach where 
+the stopping condition (leaf matrices) conform to the following condition:
 \begin{myEnumerate}
 \item $M$ contains only $0's$ and $1's$.
 \item There is exactly one $1$ in each row.
 \item Not more than one $1$ in each colum.
 \end{myEnumerate}
 An demonstration of how the permutation matrices are generated is demonstrated in figure ~\ref{fig:permutationmatrix}.
-
 \begin{figure}[H]
   \begin{center}
       \includegraphics[width=0.65\textwidth]{stratMatrix}
@@ -49,7 +64,13 @@ An demonstration of how the permutation matrices are generated is demonstrated i
 \end{figure} 
 Once all the permutation matrices have been generated, each one of the matrices is matched with a graph $C$, that is obtained from the dot product of the permuted matrix and the graph $G${\tiny A}.
 The formula for calculating graph $C$ is follows:
-$C$=$M${\tiny n}($M${\tiny n} . G{\tiny A})T, where $G${\tiny A} = input graph and  $M${\tiny n} = permutated matrix $M${\tiny n} in $M^d$, obtained from the starting matrix $M0$ ($M${\tiny n} . $G${\tiny A})$T$ = the transpose of the dot product of the permutated matrix $M${\tiny n} and the graph $G${\tiny A}.
+\begin{myEnumerate}
+  \item $C$=$M${\tiny n} * ($M${\tiny n}. G{\tiny A}) * T
+\end{myEnumerate}
+  where,\newline
+$G${\tiny A} = \textit{input graph} \newline
+$M${\tiny n} = \textit{permutated matrix $M${\tiny n} in $M^d$, obtained from the starting matrix $M0$} \newline
+($M${\tiny n} . $G${\tiny A}) $ * $ \textit{T} = \textit{the transpose of the dot product of the permutated matrix $M${\tiny n} and the graph $G${\tiny A}} \newline\newline 
 If there is a single instance of the matrix $C$, that is calculated using some permutated matrix $M${\tiny n} obtained from the starting matrix $M0$, that is equal to matrix $G${\tiny B}, then $G${\tiny B} is isomorphic to $G${\tiny A}. Thus $G${\tiny B} is isomorphic to $G${\tiny A} $iff G${\tiny B}
   \begin{equation}	
 	ij = 1 \rightarrow  Cij = 1 \forall i,j
@@ -79,12 +100,12 @@ The isomorphism determining properties of the mapping are defined as follows, a 
 The mapping $M \subset N${\tiny A}$ * N${\tiny B} is subgraph isomorphic $iff M$ is isomorphic to $G${\tiny A} and a subgraph of $G${\tiny B}.
 
 \myparagraph{Mapping Procedure}
-The mapping $M$ comprises of state based partial solution morphisms $M(s)$ for each state $s$.The process of finding the mapping $M$ that is described above uses State Space Representations (SSR) [12].
+The mapping \textit{M} comprises of state based partial solution morphisms $M(s)$ for each state $s$.The process of finding the mapping $M$ that is described above uses State Space Representations (SSR) [12].
 The partial solution morphisms $M(s)$ selects two subgraphs from $G${\tiny A} and $G${\tiny B}, namely $G${\tiny A}$(s)$ and $G${\tiny B}$(s)$ respectively. The subgraphs comprises of only vertices that are present in the partial solution $M(s)$ for the state $s$ as well as the edges joining them together.\newline\newline
 The algorithm starts with an initial state $s0$ that has no mapping between the two graphs, thus $M(s0)= NULL$. The algorithm then computes a set of candidate pairs $P(s)$. Each candidate $p$ in the set is checked against the feasibility function that is discussed in the following chapter, if $p$ is successful then it is added to the state $s$. And the successor $s'$ is computed using a combination of the predecessor state and the candidate $p$, thus:
-	\begin{equation}
-		s' = s \cup p
-	\end{equation}
+      \begin{equation}
+	      s' = s \cup p
+      \end{equation}
 The process of generating successor states is a recursive procedure that makes use of the depth first traversal for graphs. When a path has been 
 exhausted and a solution has not yet been found, the algorithm uses backtracking to explore the alternative paths [11,13]. \newpage
 

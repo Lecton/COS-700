@@ -13,6 +13,7 @@
 \usepackage{subcaption}
 \usepackage{amsmath}
 \usepackage{subcaption}
+\usepackage{pdfpages}
 \usepackage{algorithm}% http://ctan.org/pkg/algorithms
 \usepackage{algpseudocode}%http://ctan.org/pkg/algorithmicx
 
@@ -28,11 +29,14 @@
 \setlist[myEnumerate,7]{label=(\Roman*)}
 \setlist[myEnumerate,8]{label=(\Alph*)}
 \setlist[myEnumerate,9]{label=(\roman*)}
-
+\setcounter{secnumdepth}{10}
+\setcounter{tocdepth}{10}
 \subimport{latex/}{generalDoc.tex}
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\\\}
 \begin{document}
 \maketitle
+\includepdf[pages={1}]{declaration.pdf}
+\tableofcontents
 \newpage
 
 \subimport{}{Research}

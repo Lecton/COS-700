@@ -77,14 +77,31 @@ If there is a single instance of the matrix $C$, that is calculated using some p
   \end{equation} 
 If non of the generated permutated matrices can statisfy this condition, then $G${\tiny B} is not isomorphic to $G${\tiny B}.
 
-\subsubsection{Ullman Pseudo code}
-	\begin{figure}[H]
-	  \begin{center}
-		  \includegraphics[width=1.0\textwidth]{Ullmanpseudo}
-	  \end{center}    
-	  \caption{Pseudo code of the Ullman algorith [1]}
-	  \label{fig:ullmanpseudo}
-	\end{figure} 
+\subsubsection{Ullman Pseudo code}	
+	\begin{algorithm}[H]
+	    \caption{Ullman algorithm}
+	    \begin{algorithmic}[1]
+	      \State $M = M^0$, d = 1, $H${\tiny 1} = 0, \newline
+		      fir all $i$ = 1,...,$p${\tiny a} set $F${\tiny i} = 0 \newline
+		      refing $M$, if exit FAIL then terminate algorithm;\newline
+	      \State If there is no value of $j$ such that $m${\tiny d}, = 1 and $f${\tiny j} = 0 then ago to step 7,\newline
+		      $M${\tiny d} = $M$\newline
+		      if $d$ = 1 then $k$ = $H${\tiny 1} else $k$ = 0;\newline
+	      \State $k$ = $k$ + 1\newline
+		      if $m${\tiny dk} = 0 or $f${\tiny k} = 1 then go to step 3\newline
+		      for all $j \neq k$ set $m${\tiny d}, = 0\newline
+		      refined $M$; if exit FAIL then go to step 5;\newline
+	      \State If $d < p${\tiny a} then go to step 6 else give output to indicate that an isomorphism has been found;\newline
+	      \State If there is no $j$ > $k$ such that $m${\tiny d} = 1 and $f$ = 0 then go to step 7\newline
+		      $M$ = $M${\tiny d}\newline
+		      go to step 2\newline
+	      \State $H${\tiny d} = $k$, $F${\tiny k} = 1; $d$ = $d$ + 1\newline
+		      go to step 2\newline
+	      \State If $d$ = 1 then terminate algorithm,\newline
+		      $F${\tiny k} = 0; $d$ = $d$ = $d$ - 1; $M$ .= $M${\tiny d}, $k$ := $H${\tiny d};\newline
+		      go to step 5;\newline
+	    \end{algorithmic}
+	\end{algorithm}
 \newpage
 
  \subsection{VF2 Algorithm}
@@ -139,18 +156,30 @@ In order for a state to be considered consistent, it must pass a combination of 
 where $F${\tiny syn}$(s,n,m)$ the feasibility function that is envoked upon the state $s$.
 
 \subsubsection{VF2 Pseudo code}
-	\begin{figure}[H]
-	  \begin{center}
-		  \includegraphics[width=1.0\textwidth]{VF2pseudo}
-	  \end{center}    
-	  \caption{Pseudo code of the VF2 algorith [11]}
-	  \label{fig:vf2pseudo}
-	\end{figure} 
+	\begin{algorithm}[H]
+	    \caption{VF2 algorithm Match(s)}
+	    \begin{algorithmic}[1]
+		\State INPUT: an intermeidate state $s$; the initial state $s${\tiny 0} has $M$(s{\tiny 0}) = $\Theta$ \newline
+		\State OUTPUT: the mapping between the two graphs \newline\newline
+		\State IF $M$($s$) covers all the nodes of $G${\tiny 2} THEN\newline
+		       OUTPUT $M$($s$) \newline
+		\State ELSE \newline
+		       Compute the set $P$($s$) of the pairs candidate for the inclusion in $M$($s$)\newline
+		\State FOREACH $p$ in $P$($s$)\newline
+		\State IF the feasibility rules succeed for the inclusion in $M$($s$) THEN\newline
+		       Compute the state $s'$ obtained by adding $p$ to $M$($s$)\newline
+		       CALL Match($s'$)\newline
+		       ENDIF\newline
+		       ENDFOREACH\newline
+		       Restore data structures\newline
+		       ENDIF
+	    \end{algorithmic}
+	\end{algorithm}
 
  \subsection{Conclusion}
 
  The Ullman and VF2 algorithm that are discussed above both follow a similar approach in attempting to perform graph mathing. They both construct a tree from the adjacency representation of their input graphs and use the depth first tree traversal techniques to evaluate the graphs, this is done every effectively by both the algorithms.\newline\newline
  Though both algorithms are effective in their own respective regards, they are optimized rather differently and thus differe in their degree of complexity. The VF2 algorithm optimizes its execution by performing a look-ahead operation of two states from its current states in an attempt to ignore paths that will result in inconsistant states.\newline\newline
  The Ullman algorithm on the other hand optimizes its execution by not computing all possible sub-graphs of some graph $G$, but reduces the computated matrices by initially computing a matrice $M0$ from the input graphs and then ensuring that all the matrices that are computed from $M0$ are tested so as to prevent the algorithm from exploring a branch that will not result in a graph or sub-graph isomorphism
-\newpage
+
 

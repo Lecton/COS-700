@@ -1,0 +1,35 @@
+\asection{Introduction}
+\label{Introduction}
+\subsection{Introduction}
+Graphs are used in a variety of disciplines and they serve a multitude of purposes, such as rep-
+resenting the syntactical representations of the components in a sentence and their relationships
+to each other[10], describing the structures of chemical compounds in chemistry[11],representing
+the entries in a database and their relationships, pattern recognition and computer vision[2]. Thus
+because the digraph database structure is so widely used, it is important to find methods of finding
+the correlation between of data schemas in applications that make use of this comprehensive data
+structure[1]. This process is referred to as graph matching. Before we get to some of the graph
+matching algorithms, some concepts of graph theory will need to be understood, and they are discussed in section \ref{Graph Overview}.
+
+\subsection{Problem Statement}
+Evaluating the isomorphic (syntactic) relationship between two or more digraphs
+using search algorithms, and then comparing the similarities of the graphs is an expensive enterprise. 
+This is because the procedures that are required to achieve this task are often expensive.
+Thus cases where the degree of similarity between two graphs is evaluated,
+only to find that the graphs are not syntactically similar after a large amount of time and resources
+have been exhausted is very common, particular in cases where the graphs contain large datasets.\newline\newline
+Graph matching algorithms such as the VF2 algorithm[2] compare the syntactic relationship between graphs by iterating through the graphs
+from one node to another, and evaluating once node at a time in order to perform similarity relation comparison, and because the comparison
+operation requires processing of all the nodes, the larger the graphs are the more time and resources must be used in order to completely evaluate this
+relation between the graphs. Thus better search algorithms and strategies are required in order to
+improve the efficiency of the comparison.
+
+\subsection{Objective}
+In order to improve on the quality of the comparison between digraphs, efficient search algorithms
+that perform comprehensive comparison on the syntactical relationships between
+graphs as well as their subgraphs are investigate in order to perform comprehensive graph matching
+relative the generic brute force approach of simply iterative through each graph node and comparing its
+relative position. The graph search algorithms that are required and thus investigated must be
+efficient in terms of their respective space and time complexities.\newline\newline
+Apart from being efficient, the algorithms must also perform graph matching on lower levels of
+granularity of the graphs, thus the algorithms must also compare the syntactic comparisons on the subgraphs
+for all the permutations of the two graphs subgraphs, so that the optimal graph matched result can be generated.

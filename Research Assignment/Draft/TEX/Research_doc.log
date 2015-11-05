@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.26)  5 NOV 2015 17:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.26)  5 NOV 2015 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1073,6 +1073,57 @@ LaTeX Warning: Label `fig:isomorphism' multiply defined.
 
 LaTeX Warning: Label `sub@fig:isomorphism' multiply defined.
 
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
+
+LaTeX Warning: Label `lamport94' multiply defined.
+
 )
 \openout1 = `Research_doc.aux'.
 
@@ -1191,7 +1242,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout5 = `Research_doc.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<declaration.pdf, id=134, 597.31157pt x 844.83629pt>
+<declaration.pdf, id=307, 597.31157pt x 844.83629pt>
 File: declaration.pdf Graphic file (type pdf)
  <use declaration.pdf>
 Package pdftex.def Info: declaration.pdf used on input line 38.
@@ -1202,7 +1253,7 @@ File: declaration.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration.pdf used on input line 38.
 (pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
 
-<declaration.pdf, id=137, page=1, 597.31157pt x 844.83629pt>
+<declaration.pdf, id=310, page=1, 597.31157pt x 844.83629pt>
 File: declaration.pdf Graphic file (type pdf)
 
 <use declaration.pdf, page 1>
@@ -1237,16 +1288,18 @@ y used, duplicate ignored
 <to be read again> 
                    \relax 
 l.45 \end{abstract}
-                    [1] (./Research_doc.toc)
+                    [1] (./Research_doc.tocpdfTeX warning (ext4): destination w
+ith the same identifier (name{page.1}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.44 ...ntactic comparison}{22}{paragraph.5.2.3.2}
+                                                   [1])
 \tf@toc=\write9
 \openout9 = `Research_doc.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.47 \newpage
-              [1] (./Research.tex (./introduction/introduction.tex
+ [2] (./Research.tex
+(./introduction/introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--25
 
  []
@@ -1256,32 +1309,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--1
 
  []
 
-[2] <graph/simplegraph.png, id=192, 251.94125pt x 733.74126pt>
+[3] <graph/simplegraph.png, id=413, 251.94125pt x 733.74126pt>
 File: graph/simplegraph.png Graphic file (type png)
 
 <use graph/simplegraph.png>
 Package pdftex.def Info: graph/simplegraph.png used on input line 14.
 (pdftex.def)             Requested size: 85.9996pt x 250.45396pt.
 
-<graph/directedgraph.png, id=196, 281.05pt x 874.26625pt>
+<graph/directedgraph.png, id=417, 281.05pt x 874.26625pt>
 File: graph/directedgraph.png Graphic file (type png)
 
 <use graph/directedgraph.png>
 Package pdftex.def Info: graph/directedgraph.png used on input line 26.
 (pdftex.def)             Requested size: 85.9996pt x 267.51126pt.
- [3 <./graph/simplegraph.png>]
-<graph/empty.png, id=206, 950.55125pt x 59.22125pt>
+ [4 <./graph/simplegraph.png>]
+<graph/empty.png, id=428, 950.55125pt x 59.22125pt>
 File: graph/empty.png Graphic file (type png)
  <use graph/empty.png>
 Package pdftex.def Info: graph/empty.png used on input line 41.
 (pdftex.def)             Requested size: 279.50037pt x 17.41318pt.
 
-[4 <./graph/directedgraph.png> <./graph/empty.png>]
+[5 <./graph/directedgraph.png> <./graph/empty.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 
-<graph/matrix.png, id=219, 349.305pt x 203.25937pt>
+<graph/matrix.png, id=440, 349.305pt x 203.25937pt>
 File: graph/matrix.png Graphic file (type png)
  <use graph/matrix.png>
 Package pdftex.def Info: graph/matrix.png used on input line 70.
@@ -1291,7 +1344,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--74
 
  []
 
-[5 <./graph/matrix.png>] <graph/list.png, id=230, 190.46156pt x 203.25937pt>
+[6 <./graph/matrix.png>] <graph/list.png, id=451, 190.46156pt x 203.25937pt>
 File: graph/list.png Graphic file (type png)
 
 <use graph/list.png>
@@ -1302,32 +1355,32 @@ Overfull \hbox (75.04514pt too wide) in paragraph at lines 96--97
 []$\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 = []$ 
  []
 
-[6 <./graph/list.png>]
+[7 <./graph/list.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
-<graph/isomorphismleft.png, id=243, 231.86626pt x 444.66125pt>
+<graph/isomorphismleft.png, id=463, 231.86626pt x 444.66125pt>
 File: graph/isomorphismleft.png Graphic file (type png)
 
 <use graph/isomorphismleft.png>
 Package pdftex.def Info: graph/isomorphismleft.png used on input line 125.
 (pdftex.def)             Requested size: 85.9996pt x 164.92918pt.
 
-<graph/isomorphismright.png, id=244, 372.39125pt x 155.58125pt>
+<graph/isomorphismright.png, id=464, 372.39125pt x 155.58125pt>
 File: graph/isomorphismright.png Graphic file (type png)
 
 <use graph/isomorphismright.png>
 Package pdftex.def Info: graph/isomorphismright.png used on input line 131.
 (pdftex.def)             Requested size: 171.99922pt x 71.86023pt.
 
-<graph/subgraph.png, id=246, 215.80624pt x 444.66125pt>
+<graph/subgraph.png, id=466, 215.80624pt x 444.66125pt>
 File: graph/subgraph.png Graphic file (type png)
 
 <use graph/subgraph.png>
 Package pdftex.def Info: graph/subgraph.png used on input line 145.
 (pdftex.def)             Requested size: 129.00269pt x 265.81497pt.
- [7 <./graph/isomorphismleft.png> <./graph/isomorphismright.png>] [8 <./graph/s
+ [8 <./graph/isomorphismleft.png> <./graph/isomorphismright.png>] [9 <./graph/s
 ubgraph.png>]) (./algorithms/algorithms.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--18
 
@@ -1338,18 +1391,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--18
 
  []
 
-[9]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 24--32
 
  []
 
-<algorithms/stratMatrix.png, id=274, 525.46312pt x 511.9125pt>
+<algorithms/stratMatrix.png, id=496, 525.46312pt x 511.9125pt>
 File: algorithms/stratMatrix.png Graphic file (type png)
 
 <use algorithms/stratMatrix.png>
 Package pdftex.def Info: algorithms/stratMatrix.png used on input line 60.
 (pdftex.def)             Requested size: 279.50037pt x 272.30435pt.
- [10]
+ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 70--75
 
  []
@@ -1391,7 +1444,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--103
 
  []
 
-[11 <./algorithms/stratMatrix.png>] [12]
+[12 <./algorithms/stratMatrix.png>] [13]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
@@ -1421,7 +1474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--123
 
  []
 
-[13]
+[14]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 129.
@@ -1468,7 +1521,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
-[14] (./algorithms/rules.tex
+[15] (./algorithms/rules.tex
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 4.
 
@@ -1589,7 +1642,7 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 20.
 
-) [15]
+) [16]
 Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
@@ -1629,16 +1682,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--184
 
  []
 
-) (./library/library.tex [16]) (./experiment/experiment.tex
+) (./library/library.tex [17]) (./experiment/experiment.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--1
 
  []
 
 (./experiment/data/data.tex
-
-LaTeX Warning: Reference `fig:250' on page 17 undefined on input line 8.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
  []
@@ -1648,21 +1697,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
  []
 
-<experiment/data/250.png, id=334, 1008.1665pt x 677.1699pt>
+<experiment/data/250.png, id=555, 1008.1665pt x 677.1699pt>
 File: experiment/data/250.png Graphic file (type png)
 
 <use experiment/data/250.png>
 Package pdftex.def Info: experiment/data/250.png used on input line 17.
 (pdftex.def)             Requested size: 430.00462pt x 288.82152pt.
- [17]
-
-LaTeX Warning: Reference `fig:generatedSubs' on page 18 undefined on input line
- 26.
-
-
-LaTeX Warning: Reference `fig:250' on page 18 undefined on input line 26.
-
-
+ [18]
 Underfull \hbox (badness 10000) in paragraph at lines 22--27
 
  []
@@ -1673,42 +1714,42 @@ Overfull \hbox (17.21857pt too wide) in paragraph at lines 22--27
 tices: 30,56,75,92,109,121,148,166,181,197,211
  []
 
-<experiment/data/30.png, id=345, 586.8324pt x 442.2924pt>
+<experiment/data/30.png, id=564, 586.8324pt x 442.2924pt>
 File: experiment/data/30.png Graphic file (type png)
 
 <use experiment/data/30.png>
 Package pdftex.def Info: experiment/data/30.png used on input line 31.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/56.png, id=346, 586.8324pt x 442.2924pt>
+<experiment/data/56.png, id=565, 586.8324pt x 442.2924pt>
 File: experiment/data/56.png Graphic file (type png)
 
 <use experiment/data/56.png>
 Package pdftex.def Info: experiment/data/56.png used on input line 37.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/75.png, id=347, 586.8324pt x 442.2924pt>
+<experiment/data/75.png, id=566, 586.8324pt x 442.2924pt>
 File: experiment/data/75.png Graphic file (type png)
 
 <use experiment/data/75.png>
 Package pdftex.def Info: experiment/data/75.png used on input line 42.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/92.png, id=348, 586.8324pt x 442.2924pt>
+<experiment/data/92.png, id=567, 586.8324pt x 442.2924pt>
 File: experiment/data/92.png Graphic file (type png)
 
 <use experiment/data/92.png>
 Package pdftex.def Info: experiment/data/92.png used on input line 48.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/109.png, id=349, 586.8324pt x 442.2924pt>
+<experiment/data/109.png, id=568, 586.8324pt x 442.2924pt>
 File: experiment/data/109.png Graphic file (type png)
 
 <use experiment/data/109.png>
 Package pdftex.def Info: experiment/data/109.png used on input line 53.
 (pdftex.def)             Requested size: 258.00539pt x 194.46078pt.
 
-<experiment/data/121.png, id=350, 586.8324pt x 442.2924pt>
+<experiment/data/121.png, id=569, 586.8324pt x 442.2924pt>
 File: experiment/data/121.png Graphic file (type png)
 
 <use experiment/data/121.png>
@@ -1732,7 +1773,7 @@ Overfull \hbox (88.22836pt too wide) in paragraph at lines 30--63
 
 LaTeX Warning: Float too large for page by 101.90579pt on input line 65.
 
-[18 <./experiment/data/250.png>] [19 <./experiment/data/30.png> <./experiment/d
+[19 <./experiment/data/250.png>] [20 <./experiment/data/30.png> <./experiment/d
 ata/56.png> <./experiment/data/75.png> <./experiment/data/92.png> <./experiment
 /data/109.png> <./experiment/data/121.png>])
 Underfull \hbox (badness 10000) in paragraph at lines 7--13
@@ -1749,10 +1790,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--21
 
  []
 
-
-LaTeX Warning: Reference `Data Set' on page 20 undefined on input line 27.
-
-[20]
+[21]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 43.
@@ -1779,47 +1817,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
  []
 
-[21]) (./results/results.tex
-
-LaTeX Warning: Reference `Description Conducted Experiments' on page 22 undefin
-ed on input line 3.
-
-
-LaTeX Warning: Reference `The comparison criteria' on page 22 undefined on inpu
-t line 4.
-
-
-LaTeX Warning: Reference `Performance evaluation for different vertice numbers'
- on page 22 undefined on input line 8.
-
-
-LaTeX Warning: Reference `fig:memory_comparison' on page 22 undefined on input 
-line 13.
-
-<results/memory_comparison.png, id=395, 642.4pt x 481.8pt>
+[22]) (./results/results.tex
+<results/memory_comparison.png, id=611, 642.4pt x 481.8pt>
 File: results/memory_comparison.png Graphic file (type png)
 
 <use results/memory_comparison.png>
 Package pdftex.def Info: results/memory_comparison.png used on input line 17.
 (pdftex.def)             Requested size: 344.005pt x 258.00673pt.
 
-
-LaTeX Warning: Reference `fig:memory_comparison' on page 22 undefined on input 
-line 24.
-
-
-LaTeX Warning: Reference `fig:memory_comparison' on page 22 undefined on input 
-line 26.
-
-
-LaTeX Warning: Reference `fig:memory_comparison' on page 22 undefined on input 
-line 28.
-
-
-LaTeX Warning: Reference `fig:memory_comparison' on page 22 undefined on input 
-line 30.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 23--35
 
  []
@@ -1834,48 +1839,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--35
 
  []
 
-[22 <./results/memory_comparison.png>]
-
-LaTeX Warning: Reference `fig:memory_comparison' on page 23 undefined on input 
-line 37.
-
-
-LaTeX Warning: Reference `fig:memory_comparison' on page 23 undefined on input 
-line 39.
-
-
+[23 <./results/memory_comparison.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
  []
 
-
-LaTeX Warning: Reference `fig:time_comparison' on page 23 undefined on input li
-ne 45.
-
-<results/time_comparison.png, id=405, 642.4pt x 481.8pt>
+<results/time_comparison.png, id=624, 642.4pt x 481.8pt>
 File: results/time_comparison.png Graphic file (type png)
 
 <use results/time_comparison.png>
 Package pdftex.def Info: results/time_comparison.png used on input line 49.
 (pdftex.def)             Requested size: 344.005pt x 258.00673pt.
- [23]
-
-LaTeX Warning: Reference `fig:time_comparison' on page 24 undefined on input li
-ne 56.
-
-
-LaTeX Warning: Reference `fig:time_comparison' on page 24 undefined on input li
-ne 58.
-
-
-LaTeX Warning: Reference `fig:time_comparison' on page 24 undefined on input li
-ne 59.
-
-
-LaTeX Warning: Reference `fig:time_comparison' on page 24 undefined on input li
-ne 60.
-
-
+ [24]
 Underfull \hbox (badness 10000) in paragraph at lines 55--64
 
  []
@@ -1890,27 +1865,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--64
 
  []
 
-
-LaTeX Warning: Reference `fig:time_comparison' on page 24 undefined on input li
-ne 66.
-
-[24 <./results/time_comparison.png>]
-
-LaTeX Warning: Reference `Performance evaluation for different vertice numbers'
- on page 25 undefined on input line 71.
-
-<results/disjoint_memory.png, id=420, 481.8pt x 361.35pt>
+[25 <./results/time_comparison.png>]
+<results/disjoint_memory.png, id=640, 481.8pt x 361.35pt>
 File: results/disjoint_memory.png Graphic file (type png)
 
 <use results/disjoint_memory.png>
 Package pdftex.def Info: results/disjoint_memory.png used on input line 78.
 (pdftex.def)             Requested size: 344.005pt x 258.0104pt.
 
-
-LaTeX Warning: Reference `fig:disjoint_memory_comparison' on page 25 undefined 
-on input line 85.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 84--92
 
  []
@@ -1920,38 +1882,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--92
 
  []
 
-[25 <./results/disjoint_memory.png>]
-
-LaTeX Warning: Reference `fig:disjoint_memory_comparison' on page 26 undefined 
-on input line 94.
-
-<results/disjoint_time.png, id=431, 481.8pt x 361.35pt>
+[26 <./results/disjoint_memory.png>]
+<results/disjoint_time.png, id=649, 481.8pt x 361.35pt>
 File: results/disjoint_time.png Graphic file (type png)
 
 <use results/disjoint_time.png>
 Package pdftex.def Info: results/disjoint_time.png used on input line 105.
 (pdftex.def)             Requested size: 344.005pt x 258.0104pt.
- [26]
-
-LaTeX Warning: Reference `fig:disjoint_time_comparison' on page 27 undefined on
- input line 113.
-
-
+ [27]
 Underfull \hbox (badness 10000) in paragraph at lines 112--118
 
  []
 
-[27 <./results/disjoint_time.png>] (./results/cases/cases.tex
+[28 <./results/disjoint_time.png>] (./results/cases/cases.tex
 (./results/cases/introduction/introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-
-LaTeX Warning: Reference `fig:best_case' on page 28 undefined on input line 10.
-
-
-<results/cases/introduction/best.png, id=445, 950.55125pt x 59.22125pt>
+<results/cases/introduction/best.png, id=663, 950.55125pt x 59.22125pt>
 File: results/cases/introduction/best.png Graphic file (type png)
 
 <use results/cases/introduction/best.png>
@@ -1962,36 +1911,28 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
 
-
-LaTeX Warning: Reference `fig:average_case' on page 28 undefined on input line 
-23.
-
-<results/cases/introduction/average.png, id=446, 490.83376pt x 637.38126pt>
+<results/cases/introduction/average.png, id=665, 490.83376pt x 637.38126pt>
 File: results/cases/introduction/average.png Graphic file (type png)
 
 <use results/cases/introduction/average.png>
 Package pdftex.def Info: results/cases/introduction/average.png used on input l
 ine 27.
 (pdftex.def)             Requested size: 344.005pt x 446.72792pt.
- [28 <./results/cases/introduction/best.png>]
+ [29 <./results/cases/introduction/best.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
 
-
-LaTeX Warning: Reference `fig:worst_case' on page 29 undefined on input line 34
-.
-
-<results/cases/introduction/worst.png, id=456, 1073.00874pt x 926.46124pt>
+<results/cases/introduction/worst.png, id=674, 1073.00874pt x 926.46124pt>
 File: results/cases/introduction/worst.png Graphic file (type png)
 
 <use results/cases/introduction/worst.png>
 Package pdftex.def Info: results/cases/introduction/worst.png used on input lin
 e 39.
 (pdftex.def)             Requested size: 344.005pt x 297.01083pt.
- [29 <./results/cases/introduction/average.png>] [30 <./results/cases/introduct
+ [30 <./results/cases/introduction/average.png>] [31 <./results/cases/introduct
 ion/worst.png>])
-<results/cases/ullman_memory.png, id=469, 642.4pt x 481.8pt>
+<results/cases/ullman_memory.png, id=686, 642.4pt x 481.8pt>
 File: results/cases/ullman_memory.png Graphic file (type png)
 
 <use results/cases/ullman_memory.png>
@@ -1999,48 +1940,22 @@ Package pdftex.def Info: results/cases/ullman_memory.png used on input line 13.
 
 (pdftex.def)             Requested size: 344.005pt x 258.00673pt.
 
-
-LaTeX Warning: Reference `fig:case_ullman_memory' on page 31 undefined on input
- line 20.
-
-
-LaTeX Warning: Reference `fig:case_ullman_memory' on page 31 undefined on input
- line 22.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 20--24
 
  []
 
-<results/cases/vf2_memory.png, id=470, 642.4pt x 481.8pt>
+<results/cases/vf2_memory.png, id=689, 642.4pt x 481.8pt>
 File: results/cases/vf2_memory.png Graphic file (type png)
 
 <use results/cases/vf2_memory.png>
 Package pdftex.def Info: results/cases/vf2_memory.png used on input line 28.
 (pdftex.def)             Requested size: 344.005pt x 258.00673pt.
- [31 <./results/cases/ullman_memory.png>]
-
-LaTeX Warning: Reference `fig:case_vf2_memory' on page 32 undefined on input li
-ne 35.
-
-
-LaTeX Warning: Reference `fig:case_vf2_memory' on page 32 undefined on input li
-ne 37.
-
-
+ [32 <./results/cases/ullman_memory.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 35--39
 
  []
 
 
-LaTeX Warning: Reference `fig:case_ullman_memory' on page 32 undefined on input
- line 41.
-
-
-LaTeX Warning: Reference `fig:case_vf2_memory' on page 32 undefined on input li
-ne 41.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 41--50
 
  []
@@ -2060,51 +1975,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--50
 
  []
 
-[32 <./results/cases/vf2_memory.png>] [33]
-<results/cases/ullman_time.png, id=491, 642.4pt x 481.8pt>
+[33 <./results/cases/vf2_memory.png>] [34]
+<results/cases/ullman_time.png, id=710, 642.4pt x 481.8pt>
 File: results/cases/ullman_time.png Graphic file (type png)
 
 <use results/cases/ullman_time.png>
 Package pdftex.def Info: results/cases/ullman_time.png used on input line 61.
 (pdftex.def)             Requested size: 344.005pt x 258.00673pt.
 
-
-LaTeX Warning: Reference `fig:case_ullman_time' on page 34 undefined on input l
-ine 68.
-
-
-LaTeX Warning: Reference `fig:case_ullman_time' on page 34 undefined on input l
-ine 69.
-
-
-LaTeX Warning: Reference `fig:case_ullman_time' on page 34 undefined on input l
-ine 71.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 68--72
 
  []
 
-<results/cases/vf2_time.png, id=492, 642.4pt x 481.8pt>
+<results/cases/vf2_time.png, id=714, 642.4pt x 481.8pt>
 File: results/cases/vf2_time.png Graphic file (type png)
 
 <use results/cases/vf2_time.png>
 Package pdftex.def Info: results/cases/vf2_time.png used on input line 76.
 (pdftex.def)             Requested size: 344.005pt x 258.00673pt.
- [34 <./results/cases/ullman_time.png>]
-
-LaTeX Warning: Reference `fig:case_vf2_time' on page 35 undefined on input line
- 83.
-
-
-LaTeX Warning: Reference `fig:case_vf2_time' on page 35 undefined on input line
- 84.
-
-
-LaTeX Warning: Reference `fig:case_vf2_time' on page 35 undefined on input line
- 91.
-
-
+ [35 <./results/cases/ullman_time.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 88--94
 
  []
@@ -2119,21 +2008,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--94
 
  []
 
-[35 <./results/cases/vf2_time.png>]) [36]) (./conclusion/conclusion.tex
-
-LaTeX Warning: Reference `Experiment Results' on page 37 undefined on input lin
-e 3.
-
-
-LaTeX Warning: Reference `Experiment Results' on page 37 undefined on input lin
-e 3.
-
-
+[36 <./results/cases/vf2_time.png>]) [37]) (./conclusion/conclusion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--11
 
  []
 
-[37]) (./references/references.tex
+[38]) (./references/references.tex
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no  in font cmti10!
@@ -2155,7 +2035,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--56
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[38pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
+[39pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
 rt94}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2256,7 +2136,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 This document will not have a glossary.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-[39pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
+[40pdfTeX warning (ext4): destination with the same identifier (name{cite.lampo
 rt94}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2267,17 +2147,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./Research_doc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
-
-
-Package rerunfilecheck Warning: File `Research_doc.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Research_doc.out':
-(rerunfilecheck)             Before: 752F39C86DBA47AE51E8EF8225113D48;2128
-(rerunfilecheck)             After:  AF88CE21BD3A70656F4E61BC40670557;5484.
-
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Info: File `Research_doc.out' has not changed.
+(rerunfilecheck)             Checksum: AF88CE21BD3A70656F4E61BC40670557;5484.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2285,10 +2156,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 24889 strings out of 494985
- 416323 string characters out of 6180356
- 566488 words of memory out of 5000000
- 27312 multiletter control sequences out of 15000+600000
+ 24933 strings out of 494985
+ 417128 string characters out of 6180356
+ 568488 words of memory out of 5000000
+ 27355 multiletter control sequences out of 15000+600000
  13309 words of font info for 51 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  69i,18n,103p,1803b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2310,10 +2181,10 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt10.pfb>
-Output written on Research_doc.pdf (42 pages, 2404975 bytes).
+Output written on Research_doc.pdf (43 pages, 2410615 bytes).
 PDF statistics:
- 643 PDF objects out of 1000 (max. 8388607)
- 522 compressed objects within 6 object streams
- 177 named destinations out of 1000 (max. 500000)
- 408 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 863 PDF objects out of 1000 (max. 8388607)
+ 739 compressed objects within 8 object streams
+ 178 named destinations out of 1000 (max. 500000)
+ 752 words of extra memory for PDF output out of 10000 (max. 10000000)
 

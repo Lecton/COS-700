@@ -1,74 +1,74 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Introduction}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Problem Statement}{2}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Objective}{2}{subsection.1.3}
-\contentsline {section}{\numberline {2}Graph Overview}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Simple graph}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Empty graph}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Digraph}{5}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Graph representation}{5}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Adjacency matrices}{5}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Adjacency list}{6}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Set of Pairs}{6}{subsubsection.2.4.3}
-\contentsline {subsection}{\numberline {2.5}Supergraphs and subgraphs}{6}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Graph Isomorphism}{7}{subsection.2.6}
-\contentsline {subsubsection}{\numberline {2.6.1}Complete Isomorphism}{7}{subsubsection.2.6.1}
-\contentsline {subsubsection}{\numberline {2.6.2}Subgraph Isomorphism}{8}{subsubsection.2.6.2}
-\contentsline {section}{\numberline {3}Search Matching Algorithm}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}Introduction}{9}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Ullman Algorithm}{10}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Algorithm}{10}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Ullman Pseudo code}{12}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}VF2 Algorithm}{13}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Algorithm}{13}{subsubsection.3.3.1}
-\contentsline {paragraph}{\numberline {3.3.1.1}Matching and Mapping definition}{13}{paragraph.3.3.1.1}
-\contentsline {paragraph}{\numberline {3.3.1.2}Mapping Procedure}{13}{paragraph.3.3.1.2}
-\contentsline {paragraph}{\numberline {3.3.1.3}Definition of the set $P(s)$ and of the feasibility function $F(s, n, m)$}{14}{paragraph.3.3.1.3}
-\contentsline {paragraph}{\numberline {3.3.1.4}Condidate Pairs}{14}{paragraph.3.3.1.4}
-\contentsline {paragraph}{\numberline {3.3.1.5}The feasibility rules}{14}{paragraph.3.3.1.5}
-\contentsline {subsubsection}{\numberline {3.3.2}VF2 Pseudo code}{16}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}Conclusion}{16}{subsection.3.4}
-\contentsline {section}{\numberline {4}VFLibGraph Library}{17}{section.4}
-\contentsline {subsection}{\numberline {4.1}Introduction}{17}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Using the library}{17}{subsection.4.2}
-\contentsline {section}{\numberline {5}Experimentation}{17}{section.5}
-\contentsline {subsection}{\numberline {5.1}Data Set}{17}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Experiment}{20}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}The comparison criteria}{20}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Description Conducted Experiments}{20}{subsubsection.5.2.2}
-\contentsline {paragraph}{\numberline {5.2.2.1}Performance evaluation for different vertice numbers}{20}{paragraph.5.2.2.1}
-\contentsline {paragraph}{\numberline {5.2.2.2}Performance evaluation for different edge numbers}{20}{paragraph.5.2.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Experiment implementation}{21}{subsubsection.5.2.3}
-\contentsline {paragraph}{\numberline {5.2.3.1}Generate two graphs, $G${\relax \fontsize {5}{6}\selectfont A} and $G${\relax \fontsize {5}{6}\selectfont B}}{21}{paragraph.5.2.3.1}
-\contentsline {paragraph}{\numberline {5.2.3.2}Syntactic comparison}{21}{paragraph.5.2.3.2}
-\contentsline {subsubsection}{\numberline {5.2.4}Result presevation}{21}{subsubsection.5.2.4}
-\contentsline {section}{\numberline {6}Experiment Results}{22}{section.6}
-\contentsline {subsection}{\numberline {6.1}Joined graph results for the evaluation of different vertice numbers experiment}{22}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Memory Results}{22}{subsubsection.6.1.1}
-\contentsline {paragraph}{\numberline {6.1.1.1}Analysis of results}{23}{paragraph.6.1.1.1}
-\contentsline {paragraph}{\numberline {6.1.1.2}Conclusion}{23}{paragraph.6.1.1.2}
-\contentsline {subsubsection}{\numberline {6.1.2}Time Results}{23}{subsubsection.6.1.2}
-\contentsline {paragraph}{\numberline {6.1.2.1}Analysis of results}{24}{paragraph.6.1.2.1}
-\contentsline {paragraph}{\numberline {6.1.2.2}Conclusion}{24}{paragraph.6.1.2.2}
-\contentsline {subsection}{\numberline {6.2}Empty graph results for the evaluation of different vertice numbers experiment}{25}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Memory Results}{25}{subsubsection.6.2.1}
-\contentsline {paragraph}{\numberline {6.2.1.1}Analysis of results}{25}{paragraph.6.2.1.1}
-\contentsline {paragraph}{\numberline {6.2.1.2}Conclusion}{26}{paragraph.6.2.1.2}
-\contentsline {subsubsection}{\numberline {6.2.2}Time Results}{26}{subsubsection.6.2.2}
-\contentsline {paragraph}{\numberline {6.2.2.1}Analysis of results}{27}{paragraph.6.2.2.1}
-\contentsline {subsection}{\numberline {6.3}Boundary Cases}{28}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Introduction}{28}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Memory Boundary Results}{31}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Ullman Algorithm}{31}{subsubsection.6.3.3}
-\contentsline {paragraph}{\numberline {6.3.3.1}Analysis of results}{31}{paragraph.6.3.3.1}
-\contentsline {subsubsection}{\numberline {6.3.4}VF2 Algorithm}{32}{subsubsection.6.3.4}
-\contentsline {paragraph}{\numberline {6.3.4.1}Analysis of results}{32}{paragraph.6.3.4.1}
-\contentsline {subsubsection}{\numberline {6.3.5}Conclution}{32}{subsubsection.6.3.5}
-\contentsline {subsubsection}{\numberline {6.3.6}Time Boundary Results}{34}{subsubsection.6.3.6}
-\contentsline {subsubsection}{\numberline {6.3.7}Ullman Algorithm}{34}{subsubsection.6.3.7}
-\contentsline {paragraph}{\numberline {6.3.7.1}Analysis of results}{34}{paragraph.6.3.7.1}
-\contentsline {subsubsection}{\numberline {6.3.8}VF2 Algorithm}{35}{subsubsection.6.3.8}
-\contentsline {paragraph}{\numberline {6.3.8.1}Analysis of results}{35}{paragraph.6.3.8.1}
-\contentsline {subsubsection}{\numberline {6.3.9}Conclution}{35}{subsubsection.6.3.9}
-\contentsline {section}{\numberline {7}Conclusion}{37}{section.7}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Introduction}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Problem Statement}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Objective}{3}{subsection.1.3}
+\contentsline {section}{\numberline {2}Graph Overview}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Simple graph}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Empty graph}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Digraph}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Graph representation}{6}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Adjacency matrices}{6}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Adjacency list}{7}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Set of Pairs}{7}{subsubsection.2.4.3}
+\contentsline {subsection}{\numberline {2.5}Supergraphs and subgraphs}{7}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Graph Isomorphism}{8}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Complete Isomorphism}{8}{subsubsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.2}Subgraph Isomorphism}{9}{subsubsection.2.6.2}
+\contentsline {section}{\numberline {3}Search Matching Algorithm}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Introduction}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Ullman Algorithm}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Algorithm}{11}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Ullman Pseudo code}{13}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}VF2 Algorithm}{14}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Algorithm}{14}{subsubsection.3.3.1}
+\contentsline {paragraph}{\numberline {3.3.1.1}Matching and Mapping definition}{14}{paragraph.3.3.1.1}
+\contentsline {paragraph}{\numberline {3.3.1.2}Mapping Procedure}{14}{paragraph.3.3.1.2}
+\contentsline {paragraph}{\numberline {3.3.1.3}Definition of the set $P(s)$ and of the feasibility function $F(s, n, m)$}{15}{paragraph.3.3.1.3}
+\contentsline {paragraph}{\numberline {3.3.1.4}Condidate Pairs}{15}{paragraph.3.3.1.4}
+\contentsline {paragraph}{\numberline {3.3.1.5}The feasibility rules}{15}{paragraph.3.3.1.5}
+\contentsline {subsubsection}{\numberline {3.3.2}VF2 Pseudo code}{17}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Conclusion}{17}{subsection.3.4}
+\contentsline {section}{\numberline {4}VFLibGraph Library}{18}{section.4}
+\contentsline {subsection}{\numberline {4.1}Introduction}{18}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Using the library}{18}{subsection.4.2}
+\contentsline {section}{\numberline {5}Experimentation}{18}{section.5}
+\contentsline {subsection}{\numberline {5.1}Data Set}{18}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Experiment}{21}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}The comparison criteria}{21}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Description Conducted Experiments}{21}{subsubsection.5.2.2}
+\contentsline {paragraph}{\numberline {5.2.2.1}Performance evaluation for different vertice numbers}{21}{paragraph.5.2.2.1}
+\contentsline {paragraph}{\numberline {5.2.2.2}Performance evaluation for different edge numbers}{21}{paragraph.5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Experiment implementation}{22}{subsubsection.5.2.3}
+\contentsline {paragraph}{\numberline {5.2.3.1}Generate two graphs, $G${\relax \fontsize {5}{6}\selectfont A} and $G${\relax \fontsize {5}{6}\selectfont B}}{22}{paragraph.5.2.3.1}
+\contentsline {paragraph}{\numberline {5.2.3.2}Syntactic comparison}{22}{paragraph.5.2.3.2}
+\contentsline {subsubsection}{\numberline {5.2.4}Result presevation}{22}{subsubsection.5.2.4}
+\contentsline {section}{\numberline {6}Experiment Results}{23}{section.6}
+\contentsline {subsection}{\numberline {6.1}Joined graph results for the evaluation of different vertice numbers experiment}{23}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Memory Results}{23}{subsubsection.6.1.1}
+\contentsline {paragraph}{\numberline {6.1.1.1}Analysis of results}{24}{paragraph.6.1.1.1}
+\contentsline {paragraph}{\numberline {6.1.1.2}Conclusion}{24}{paragraph.6.1.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2}Time Results}{24}{subsubsection.6.1.2}
+\contentsline {paragraph}{\numberline {6.1.2.1}Analysis of results}{25}{paragraph.6.1.2.1}
+\contentsline {paragraph}{\numberline {6.1.2.2}Conclusion}{25}{paragraph.6.1.2.2}
+\contentsline {subsection}{\numberline {6.2}Empty graph results for the evaluation of different vertice numbers experiment}{26}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Memory Results}{26}{subsubsection.6.2.1}
+\contentsline {paragraph}{\numberline {6.2.1.1}Analysis of results}{26}{paragraph.6.2.1.1}
+\contentsline {paragraph}{\numberline {6.2.1.2}Conclusion}{27}{paragraph.6.2.1.2}
+\contentsline {subsubsection}{\numberline {6.2.2}Time Results}{27}{subsubsection.6.2.2}
+\contentsline {paragraph}{\numberline {6.2.2.1}Analysis of results}{28}{paragraph.6.2.2.1}
+\contentsline {subsection}{\numberline {6.3}Boundary Cases}{29}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Introduction}{29}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Memory Boundary Results}{32}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Ullman Algorithm}{32}{subsubsection.6.3.3}
+\contentsline {paragraph}{\numberline {6.3.3.1}Analysis of results}{32}{paragraph.6.3.3.1}
+\contentsline {subsubsection}{\numberline {6.3.4}VF2 Algorithm}{33}{subsubsection.6.3.4}
+\contentsline {paragraph}{\numberline {6.3.4.1}Analysis of results}{33}{paragraph.6.3.4.1}
+\contentsline {subsubsection}{\numberline {6.3.5}Conclution}{33}{subsubsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.6}Time Boundary Results}{35}{subsubsection.6.3.6}
+\contentsline {subsubsection}{\numberline {6.3.7}Ullman Algorithm}{35}{subsubsection.6.3.7}
+\contentsline {paragraph}{\numberline {6.3.7.1}Analysis of results}{35}{paragraph.6.3.7.1}
+\contentsline {subsubsection}{\numberline {6.3.8}VF2 Algorithm}{36}{subsubsection.6.3.8}
+\contentsline {paragraph}{\numberline {6.3.8.1}Analysis of results}{36}{paragraph.6.3.8.1}
+\contentsline {subsubsection}{\numberline {6.3.9}Conclution}{36}{subsubsection.6.3.9}
+\contentsline {section}{\numberline {7}Conclusion}{38}{section.7}

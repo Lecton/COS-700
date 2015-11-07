@@ -11,12 +11,12 @@ pairs of vertices with each other. Figure ~\ref{fig:simplegraph} demonstrates th
 
 \begin{figure}[H]
   \begin{center}
-      \includegraphics[width=0.2\textwidth]{simplegraph.png}
+      \includegraphics[width=0.18\textwidth]{simplegraph.png}
   \end{center}    
   \caption{Representation of a graph}
   \label{fig:simplegraph}
 \end{figure} 
-Graphs can either \textit{directed} or they can \textit{undirected}. This means that the edges in the graph could have an abscence of direction, as in the figure 
+Graphs can either \textit{directed} or they can \textit{undirected}. This means that the edges in the graph could have an abscence of direction, as in the Figure 
 ~\ref{fig:simplegraph}, or they could have a direction showing from which vertice an edge is coming from, and to which vertice the edge is going to. Figure ~\ref{fig:directedgraph} 
 demonstrates a directed graph, commonly known as a \textit{digraph}. This characteristic is demonstrated by the edge $3$,that goes from node $B$ to node $G$, and also by 
 edge 2 that goes from node $B$ to node $C$.
@@ -35,7 +35,7 @@ In this paper, the focus is primarily on directed graphs, and they shall be refe
 
 
 \subsection{Empty graph}
-An \textit{Empty graph}, is a graph consisting of \textit{n} vertices and zero edges, where n > 0. An example is demonstrated in the figure \ref{fig:empty_graph}
+An \textit{Empty graph}, is a graph consisting of \textit{n} vertices and zero edges, where n > 0. An example is demonstrated in the Figure \ref{fig:empty_graph}
 \begin{figure}[H]
   \begin{center}
       \includegraphics[width=0.65\textwidth]{empty.png}
@@ -44,7 +44,7 @@ An \textit{Empty graph}, is a graph consisting of \textit{n} vertices and zero e
   \label{fig:empty_graph}
 \end{figure}
 
-In the example above, figure \ref{fig:empty_graph} has 10 vertices but none of the vertices have a relationship with each other thus.
+In the example above, Figure \ref{fig:empty_graph} has 10 vertices but none of the vertices have a relationship with each other thus.
 
 \subsection{Digraph}
 A Digraph in mathematics is defined as is a pair of disjoint vertices and edges $(V,E)$, and their repective mappings that comprises of two components, namely the initial vertix and 
@@ -57,14 +57,14 @@ terminal vertice of each edge i.e. each edge has a initial vertix:
   \begin{equation}
     Vj\rightarrow Ej
   \end{equation} 
-   for some vertices $Vi$,$Vj$ in V and edges $Ei$,$Ej$ in E [7] refer to the figure ~\ref{fig:directedgraph}.
+   for some vertices $Vi$,$Vj$ in V and edges $Ei$,$Ej$ in E [7] refer to the Figure ~\ref{fig:directedgraph}.
 
 \subsection{Graph representation}
 Graphs are represented in a variaty of ways, from adjacency lists, incident matrices and adjacency matrices. The algorithms that are studied in this paper make us of adjacency matrices and adjacency list representations of graphs. 
 
 \subsubsection{Adjacency matrices}
 An adjacency matrices is a nxn matrix A, with $A(i,j)$ = 1 $iff(i,j) ∈ E$ [9]. This means that wherever there is an edge in the graph, it is denoted by a 1 in the matrix, places in the matrix where there is an absence of an edge, are denoted by 0.\newline\newline
-Figure ~\ref{fig:adjacencymatrix} depicts the association between the graph in figure ~\ref{fig:simplegraph} and its adjacency matrix.
+Figure ~\ref{fig:adjacencymatrix} depicts the association between the graph in Figure ~\ref{fig:simplegraph} and its adjacency matrix.
 \begin{figure}[H]
   \begin{center}
       \includegraphics[width=0.65\textwidth]{matrix.png}
@@ -78,7 +78,7 @@ Figure ~\ref{fig:adjacencymatrix} depicts the association between the graph in f
 \subsubsection{Adjacency list}
 An Adjacency list is vertices of a graph, of which each vertice is connected to the list. The vertices in an adjacency list point to their own list of edges that they are connected to 
 (i.e. the list contains the edges that connect them to other vertices).
-Figure ~\ref{fig:adjacencylist} depicts the association between the graph in figure ~\ref{fig:simplegraph} and its adjacency list.
+Figure ~\ref{fig:adjacencylist} depicts the association between the graph in Figure ~\ref{fig:simplegraph} and its adjacency list.
 \begin{figure}[H]
   \begin{center}
       \includegraphics[width=0.4\textwidth]{list.png}
@@ -88,14 +88,15 @@ Figure ~\ref{fig:adjacencylist} depicts the association between the graph in fig
 \end{figure}
 
 \subsubsection{Set of Pairs}
-Another representation of graphs is by the use of triplets $(source,destination,lable)$, as depicted in the thesis of Linda Marshall [17] . 
+\label{Set of Pairs}
+Another representation of graphs is by the use of triplets $(source,destination,lable)$, as depicted in the thesis of Linda Marshall [2] . 
 Each element of the triplet represents a specific attribute of the graph, the first element represent the source vertice, the second represents 
-the destination vertice and the last element represents the corresponding label for the edge. The representation of figure \ref{fig:directedgraph} 
+the destination vertice and the last element represents the corresponding label for the edge. The representation of Figure \ref{fig:directedgraph} 
 using this representation is demonstrated below.
 \begin{myEnumerate}
   \item $G = {(A,B,1), (B,C,2), (B,G,3), (C,E,4), (D,E,5), (E,G,6), (G,F,7), (G,I,8),(G,H,9), (I,H,10), (H,I,11)}$
 \end{myEnumerate}
-In this example, all starting vertices of figure \ref{fig:directedgraph} are places first, the end vertice second and the label last. It is important 
+In this example, all starting vertices of Figure \ref{fig:directedgraph} are places first, the end vertice second and the label last. It is important 
 to note that this order can be changed depending on the graph that is to represented [18].
 
 \subsection{Supergraphs and subgraphs}
@@ -109,7 +110,7 @@ $G${\tiny A} if all the vertices and edges that are in graph $G${\tiny A} are al
   \item Every edge of $G${\tiny A} is also an edge in $G${\tiny B}.
 \end{myEnumerate}
 
-In figure  ~\ref{fig:simplegraph}, the graph constructed by vertices $D,E,G,F$ and $I$ is the sub-graph of the entire graph. And thus the graph is a super-graph of the sub-graph constructed by the vertices, namely $D,E,G,F$ and $I$.
+In Figure  ~\ref{fig:simplegraph}, the graph constructed by vertices $D,E,G,F$ and $I$ is the sub-graph of the entire graph. And thus the graph is a super-graph of the sub-graph constructed by the vertices, namely $D,E,G,F$ and $I$.
 
 \subsection{Graph Isomorphism}
 This section introduces the concepts of \textit{complete isomorphism} and \textit{subgraph isomorphism}. These concepts are very important within the context 
@@ -117,7 +118,7 @@ of this paper because the algorithms studied in this paper are evaluate two sets
 \subsubsection{Complete Isomorphism}
 Two graphs are said to be isomorphic if they are syntactically similar to each other, $iff$ there is a bijection between their respective nodes which 
 make each edge of $G${\tiny A} correspond to exactly one edge of $G${\tiny B}, and vice versa [12], i.e. the graphs are structurally the same to each
-other. This property is demonstrated in figures ~\ref{fig:isomorphism}. 
+other. This property is demonstrated in Figures ~\ref{fig:isomorphism}. 
 The two graphs look very different, but when they are further inspected, it is evident that the two are a representation of the same structural scheme or maybe even the same graph that has been rearranged. \newline\newline Consider the vertice $1$ from the left-most graph, it has three edges going to and from vertices $2,4$ and $5$, and now consider the vertix $a$ from the right-most graph, it also has three vertices going to and from it, namely $g,h$ and $i$. These two vertices have the same structural, but from two different graphs, the same goes for all the other vertices in both graphs .i.e each vertice in the left-most graph can be associtated with one in the right-most graph as we did for vertices $1$ and $a$.
 
 \begin{figure}[H]
@@ -139,10 +140,10 @@ The two graphs look very different, but when they are further inspected, it is e
 A subgraph $G${\tiny A}  has a subgraph isomorphic relationship with a graph $G${\tiny B} $iff$ there is a 1:1 relationship between the vertice of graph 
 $G${\tiny A} and graph $G${\tiny B}. Thus all the vertices and corresponding of graph $G${\tiny A} are also present in $G${\tiny B} [1]. Mathematically this
 relationship is expressed as follows, let $G${\tiny A} = ($V${\tiny A},$E${\tiny A}) and let $G${\tiny B} be another graph that is defined as 
-follows $G${\tiny B} = ($V${\tiny B} [7]. The figure below depicts the subgraph isomorphism of figure \ref{fig:simplegraph}.
+follows $G${\tiny B} = ($V${\tiny B} [7]. The figure below depicts the subgraph isomorphism of Figure \ref{fig:simplegraph}.
 \begin{figure}[H]
   \begin{center}
-      \includegraphics[width=0.3\textwidth]{subgraph.png}
+      \includegraphics[width=0.2\textwidth]{subgraph.png}
   \end{center}    
   \caption{Subgraph isomorphism of figure \ref{fig:simplegraph}}
   \label{fig:isomorphism_subgraph}

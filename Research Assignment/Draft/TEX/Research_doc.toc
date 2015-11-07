@@ -59,16 +59,16 @@
 \contentsline {paragraph}{\numberline {6.2.2.1}Analysis of results}{28}{paragraph.6.2.2.1}
 \contentsline {subsection}{\numberline {6.3}Boundary Cases}{29}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}Introduction}{29}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Memory Boundary Results}{32}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Ullman Algorithm}{32}{subsubsection.6.3.3}
-\contentsline {paragraph}{\numberline {6.3.3.1}Analysis of results}{32}{paragraph.6.3.3.1}
-\contentsline {subsubsection}{\numberline {6.3.4}VF2 Algorithm}{33}{subsubsection.6.3.4}
-\contentsline {paragraph}{\numberline {6.3.4.1}Analysis of results}{33}{paragraph.6.3.4.1}
-\contentsline {subsubsection}{\numberline {6.3.5}Conclution}{33}{subsubsection.6.3.5}
-\contentsline {subsubsection}{\numberline {6.3.6}Time Boundary Results}{35}{subsubsection.6.3.6}
-\contentsline {subsubsection}{\numberline {6.3.7}Ullman Algorithm}{35}{subsubsection.6.3.7}
-\contentsline {paragraph}{\numberline {6.3.7.1}Analysis of results}{35}{paragraph.6.3.7.1}
-\contentsline {subsubsection}{\numberline {6.3.8}VF2 Algorithm}{36}{subsubsection.6.3.8}
-\contentsline {paragraph}{\numberline {6.3.8.1}Analysis of results}{36}{paragraph.6.3.8.1}
-\contentsline {subsubsection}{\numberline {6.3.9}Conclution}{36}{subsubsection.6.3.9}
-\contentsline {section}{\numberline {7}Conclusion}{38}{section.7}
+\contentsline {subsubsection}{\numberline {6.3.2}Memory Boundary Results}{30}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Ullman Algorithm}{31}{subsubsection.6.3.3}
+\contentsline {paragraph}{\numberline {6.3.3.1}Analysis of results}{31}{paragraph.6.3.3.1}
+\contentsline {subsubsection}{\numberline {6.3.4}VF2 Algorithm}{32}{subsubsection.6.3.4}
+\contentsline {paragraph}{\numberline {6.3.4.1}Analysis of results}{32}{paragraph.6.3.4.1}
+\contentsline {subsubsection}{\numberline {6.3.5}Conclution}{32}{subsubsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.6}Time Boundary Results}{33}{subsubsection.6.3.6}
+\contentsline {subsubsection}{\numberline {6.3.7}Ullman Algorithm}{33}{subsubsection.6.3.7}
+\contentsline {paragraph}{\numberline {6.3.7.1}Analysis of results}{33}{paragraph.6.3.7.1}
+\contentsline {subsubsection}{\numberline {6.3.8}VF2 Algorithm}{34}{subsubsection.6.3.8}
+\contentsline {paragraph}{\numberline {6.3.8.1}Analysis of results}{34}{paragraph.6.3.8.1}
+\contentsline {subsubsection}{\numberline {6.3.9}Conclution}{34}{subsubsection.6.3.9}
+\contentsline {section}{\numberline {7}Conclusion}{36}{section.7}

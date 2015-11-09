@@ -71,4 +71,8 @@
 \contentsline {subsubsection}{\numberline {6.3.8}VF2 Algorithm}{34}{subsubsection.6.3.8}
 \contentsline {paragraph}{\numberline {6.3.8.1}Analysis of results}{34}{paragraph.6.3.8.1}
 \contentsline {subsubsection}{\numberline {6.3.9}Conclution}{34}{subsubsection.6.3.9}
-\contentsline {section}{\numberline {7}Conclusion}{36}{section.7}
+\contentsline {section}{\numberline {7}Future Work and Conclusion}{36}{section.7}
+\contentsline {subsection}{\numberline {7.1}Suggestion for future work}{36}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Introduction}{36}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Suggestion for future work}{36}{subsubsection.7.1.2}
+\contentsline {subsection}{\numberline {7.2}Conclusion}{36}{subsection.7.2}

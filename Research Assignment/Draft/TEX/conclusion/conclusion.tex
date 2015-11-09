@@ -1,11 +1,30 @@
-\section{Conclusion}
+\section{Future Work and Conclusion}
+
+\subsection{Suggestion for future work}
+\label{Suggestion for future work}
+\subsubsection{Introduction}
+The work covered in this paper regarding graph syntax analysis using the Ullman [1] and VF2 [11] algorithm can be extended further aand this section provides 
+some suggestions for focus area to focus on for future studies.
+
+\subsubsection{Suggestion for future work}
+The algorithms studied in this paper can be also be compared with similar algorithms that also focus on syntax analysis of graphs to see how they perform 
+against them. Algorithms such as the the \textit{Similarity Flooding} [19], \textit{Schmidt and Druffel} [20] and \textit{Nauty} [20] algorithm, though not discusses in this paper, have an interesting approach 
+to graph syntax comparison, and have been very effective. \newline\newline
+Another suggestions on how the work in this paper can be extended is by combining the study of graph syntax analysis with that of semantic analysis of graphs.
+ The appication of this combines focus in graph theory can be very fruitful and can provide us with an idea of which are the best algorithms (one from syntax analysis and
+ and the other from semantic analysis) to put together to create a hybrid algorithm that focuses on both areas of graph comparison.
+
+
+\subsection{Conclusion}
 \label{Conclusion}
 This chapter introduces the result of the comparison of the algorithms based on Chapter \ref{Experiment Results}. The results in Chapter \ref{Experiment Results} 
 indicated that the two algorithms are arbitrarily similar with regards to the amount of memory used when performng the graph matching procedures of their
 respective executions.\newline\newline
 The two algorithms perform very differently when it comes to their respective execution times. The Ullman algorithm requires a lot of time complete its 
-exection, even in the best case scenrio where the conditions are favourable. The time required accross all different cases is relatively consistant.\newline
+exection, even in the best case scenrio where the conditions are favourable, as discussed and depicted in Section \ref{Time Boundary Results}. 
+The time required accross all different cases is relatively consistant, with very little inflactuation across all the defined cases, refer to Figure \ref{fig:case_ullman_time}.\newline\newline
 The VF2 algorithm performs differently accross its test cases. The algorithm requires very little time to complete its graph matching procedures for the 
-best cases, but the time required gradually increases as the cases become worse. Thus based on the presented evidence,the deduction that the VF2 algorithm 
-is more efficient than the Ullman algorithm when considering the time required to complete its execution.
+best cases, refer to Figure \ref{fig:case_vf2_time}, but the time required gradually increases as the cases become worse. \newline\newline
+Based on the presented evidence in Section \ref{Experiment Results},the deduction that the VF2 algorithm is more efficient than the Ullman algorithm when considering the time 
+required to complete its execution is reached, and this conclusion is substantiated by Sections \ref{Analysis of time results} and \ref{Conclusion of time results}.
 \newpage
